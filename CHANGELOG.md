@@ -19,6 +19,7 @@ El formato sigue en lo esencial [Keep a Changelog](https://keepachangelog.com/es
 
 ### Corregido / robustez
 
+- **Regresión `is:public` en `search/code`:** GitHub devuelve **0** resultados si se añade `is:public` a la query de búsqueda de código (calificador no aplicable como en la búsqueda de repositorios). Se dejó de usar; el README documenta el comportamiento del índice y el caso de repos privados visibles con token.
 - **HTTP 408 / “query timed out”**: antes podía abortar todo el flujo; ahora se reintenta por petición y, si persiste, se emite **advertencia** y se **conservan** los resultados ya obtenidos en esa consulta, continuando con el resto.
 - **Rate limit** en `search/code`: reintentos configurables (`--reintentos-rate-limit`, `--espera-rate-limit`); si sigue fallando, advertencia y resultados parciales de esa consulta.
 - **Límite de las primeras 1000 coincidencias** en una misma consulta paginada: detección en stderr, advertencia y corte de paginación sin tirar abajo las demás consultas.

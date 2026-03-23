@@ -31,6 +31,17 @@ def _as_dict(item: Any) -> dict[str, Any]:
     return {"raw": item}
 
 
+def _es_repositorio_publico_en_payload(data: dict[str, Any]) -> bool:
+    """Si el JSON trae ``visibility`` en ``repository``, exige ``public``; si no hay campo, se acepta el ítem."""
+    repo = data.get("repository") or data.get("repo") or data.get("repositorio")
+    if not isinstance(repo, dict):
+        return True
+    vis = repo.get("visibility")
+    if vis is None:
+        return True
+    return str(vis).lower() == "public"
+
+
 def _extraer_repositorio(data: dict[str, Any]) -> tuple[str, str, int | None]:
     repo = data.get("repository") or data.get("repo") or data.get("repositorio")
     nombre = ""
@@ -93,6 +104,8 @@ def normalizar_registros(items: Iterable[Any], origen: str = "") -> list[MatchRe
     for item in items:
         data = _as_dict(item)
         if not data:
+            continue
+        if not _es_repositorio_publico_en_payload(data):
             continue
         nombre, url, estrellas = _extraer_repositorio(data)
         ruta = _extraer_ruta(data)

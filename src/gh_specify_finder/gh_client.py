@@ -4,6 +4,9 @@ Cliente de GitHub CLI (`gh`) para búsqueda de código.
 Ejecuta varias consultas a `search/code` (fragmentación por subrutas bajo `.specify` más
 una consulta amplia y la vía `.gitignore`), fusiona ítems y agrupa por repositorio.
 La API solo devuelve hasta 1000 coincidencias por consulta; varias consultas suman cobertura.
+El calificador ``is:public`` **no es válido** en ``search/code`` (GitHub devuelve 0 resultados); el índice
+de búsqueda de código es esencialmente público; con ``gh`` autenticado podrían aparecer repos privados
+accesibles con tu token (caso poco frecuente).
 """
 
 from __future__ import annotations

@@ -40,6 +40,21 @@ class ParserTests(unittest.TestCase):
         self.assertEqual(_extraer_ruta({"name": ".gitignore", "path": ""}), ".gitignore")
         self.assertEqual(_extraer_ruta({"name": ".gitignore"}), ".gitignore")
 
+    def test_normalizar_omite_repos_privados_si_visibility(self):
+        items = [
+            {
+                "repository": {"nameWithOwner": "acme/priv", "visibility": "private"},
+                "path": ".specify/x",
+            },
+            {
+                "repository": {"nameWithOwner": "acme/pub", "visibility": "public"},
+                "path": ".specify/y",
+            },
+        ]
+        registros = normalizar_registros(items)
+        self.assertEqual(len(registros), 1)
+        self.assertEqual(registros[0].nombre_repo, "acme/pub")
+
     def test_normalizar_registros_agrupa_rutas(self):
         items = [
             {"repository": {"nameWithOwner": "acme/app", "url": "https://github.com/acme/app", "stargazerCount": 10}, "path": "a/.specify"},
@@ -59,6 +74,7 @@ class ParserTests(unittest.TestCase):
             registros = cargar_desde_json(ruta)
             df = registros_a_dataframe(registros)
             self.assertEqual(df.loc[0, "nombre_repo"], "acme/app")
+            self.assertEqual(df.loc[0, "enlace_github"], "https://github.com/acme/app")
             self.assertEqual(df.loc[0, "estrellas"], 10)
             self.assertEqual(df.loc[0, "ruta_coincidente"], "a/.specify")
             self.assertEqual(df.loc[0, "vias"], "directorio")

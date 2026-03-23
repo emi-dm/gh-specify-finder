@@ -22,6 +22,14 @@ from .models import MatchRecord
 
 VISTA_PREVIA_TABLA_DEFAULT = 15
 
+
+def enlace_github_canonico(nombre_repo: str) -> str:
+    """URL web del repo ``https://github.com/owner/repo`` a partir de ``nameWithOwner``."""
+    n = (nombre_repo or "").strip()
+    if not n or "/" not in n:
+        return ""
+    return f"https://github.com/{n}"
+
 console = Console()
 
 
@@ -32,6 +40,7 @@ def registros_a_dataframe(registros: list[MatchRecord]) -> pd.DataFrame:
         filas.append(
             {
                 "nombre_repo": registro.nombre_repo,
+                "enlace_github": enlace_github_canonico(registro.nombre_repo),
                 "url_repo": registro.url_repo,
                 "estrellas": registro.estrellas,
                 "ruta_coincidente": registro.ruta_coincidente,
@@ -45,6 +54,7 @@ def registros_a_dataframe(registros: list[MatchRecord]) -> pd.DataFrame:
         filas,
         columns=[
             "nombre_repo",
+            "enlace_github",
             "url_repo",
             "estrellas",
             "ruta_coincidente",

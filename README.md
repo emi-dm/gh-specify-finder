@@ -110,20 +110,21 @@ Tras juntar todos los ítems de las consultas a GitHub, la función [`normalizar
 
 1. **Clave única:** el identificador es el nombre del repo en forma `propietario/nombre` (`nameWithOwner` en la API), normalizado al campo `nombre_repo`. Cualquier coincidencia adicional del **mismo** repo no crea una segunda fila.
 
-2. **Fusión de datos:** si el mismo repo aparece en varias consultas o archivos, se **unen** en un solo registro: se rellenan `url_repo` y `estrellas` si antes faltaban y el nuevo ítem las trae.
+2. **Fusión de datos:** si el mismo repo aparece en varias consultas o archivos, se **unen** en un solo registro: se rellenan `url_repo` y `estrellas` si antes faltaban y el nuevo ítem las trae. La columna `enlace_github` se calcula siempre como `https://github.com/` + `nombre_repo`.
 
 3. **Rutas:** cada ítem aporta una ruta de archivo (`path` o `name`). Esas rutas se acumulan en una lista **sin repetir** la misma ruta dos veces (`add_path` en [`MatchRecord`](src/gh_specify_finder/models.py)). La primera ruta define `ruta_coincidente`; el resto queda en `rutas_coincidentes` y en el contador `coincidencias`.
 
 4. **Orden:** los repositorios se ordenan alfabéticamente por `nombre_repo` (y de forma estable por ruta principal) antes de exportar.
 
-El mismo criterio aplica cuando usas **`procesar`** sobre un JSON/JSONL: una fila por `owner/repo`, rutas acumuladas.
+El mismo criterio aplica cuando usas **`procesar`** sobre un JSON/JSONL: una fila por `owner/repo`, rutas acumuladas. Si cada ítem incluye `repository.visibility` y no es `public`, esa fila **se omite**. Si el JSON no trae `visibility`, no se filtra por visibilidad en `procesar`.
 
 ## Formato del CSV
 
 | Columna | Significado |
 |---------|-------------|
 | `nombre_repo` | `owner/repo` |
-| `url_repo` | URL del repositorio |
+| `enlace_github` | URL web del repo: `https://github.com/owner/repo` |
+| `url_repo` | URL del repositorio tal como viene de la API (p. ej. GraphQL) |
 | `estrellas` | Estrellas (API de búsqueda o GraphQL si no se usa `--no-estrellas`) |
 | `ruta_coincidente` | Primera ruta de coincidencia |
 | `rutas_coincidentes` | Todas las rutas, separadas por `; ` |
@@ -143,7 +144,7 @@ El mismo criterio aplica cuando usas **`procesar`** sobre un JSON/JSONL: una fil
 ## Limitaciones
 
 - **No existe garantía de “todos los repos de GitHub”.** La API pública `search/code` tiene techos, huecos de índice y cuotas; para un censo exhaustivo harían falta enfoques ajenos a esta CLI (p. ej. analizar [GitHub Archive](https://www.gharchive.org/) / BigQuery u otros datos masivos). Esta herramienta **maximiza lo razonable** vía muchas consultas disjuntas, pero no certifica completitud.
-- La búsqueda de código es **mejor esfuerzo**: repos privados, no indexados o con layouts muy raros pueden no aparecer.
+- **`search/code` no admite el calificador `is:public`**: si lo añades a la query, GitHub responde **0** coincidencias. El índice de búsqueda de código es en la práctica **público**; con `gh` autenticado podrían colarse repos **privados** a los que tu cuenta tiene acceso (raro en búsquedas masivas). En **`procesar`**, si el JSON trae `repository.visibility`, se descartan filas no públicas.
 - **Tope duro:** como mucho **1000 coincidencias recuperables por consulta**; el `total_count` del JSON puede ser mayor. Tras agrupar por repo, el CSV tiene **menos filas** que la suma de coincidencias.
 - **Modo completo (por defecto):** hasta **31** consultas × 1000 = **31 000 ítems** como techo teórico de código antes de deduplicar; en la práctica hay mucho solapamiento y el run es **largo** (decenas de minutos no es raro).
 - La API de **code search** limita peticiones (~9/min autenticado); usa `--espera-consultas` / `--espera` o `--rapido` si necesitas acortar tiempo.
