@@ -1,0 +1,750 @@
+nombre_repo,url_repo,estrellas,ruta_coincidente,rutas_coincidentes,coincidencias,origen
+0wnerDied/android_kernel_huawei_sm8350,https://api.github.com/repos/0wnerDied/android_kernel_huawei_sm8350,3.0,drivers/hwpower/cc_charger/wireless_charge/wireless_tx/wireless_tx_client_ui.c,drivers/hwpower/cc_charger/wireless_charge/wireless_tx/wireless_tx_client_ui.c,1,gh search code
+15933111693/copy-data-analysis,https://api.github.com/repos/15933111693/copy-data-analysis,,.claude/commands/speckit.plan.md,.claude/commands/speckit.plan.md,1,gh search code
+21-DOT-DEV/subtree,https://api.github.com/repos/21-DOT-DEV/subtree,2.0,.windsurf/rules/compliance-check.md,.windsurf/rules/compliance-check.md,1,gh search code
+21-DOT-DEV/swift-openssl,https://api.github.com/repos/21-DOT-DEV/swift-openssl,2.0,.windsurf/workflows/speckit.design-tokens.md,.windsurf/workflows/speckit.design-tokens.md; .windsurf/workflows/speckit.forge.design-tokens.md,2,gh search code
+24Seconds03/orderservice-speckit,https://api.github.com/repos/24Seconds03/orderservice-speckit,,doku.md,doku.md,1,gh search code
+40tude/piste_che,https://api.github.com/repos/40tude/piste_che,,.slugignore,.slugignore,1,gh search code
+7800-devtools/a7800,https://api.github.com/repos/7800-devtools/a7800,45.0,src/emu/image.cpp,src/emu/image.cpp,1,gh search code
+888888888881/spec-kit-chinese,https://api.github.com/repos/888888888881/spec-kit-chinese,194.0,.cursor/commands/speckit.checklist.md,.cursor/commands/speckit.checklist.md; .cursor/commands/speckit.analyze.md,2,gh search code
+a-b-street/abstreet,https://api.github.com/repos/a-b-street/abstreet,8112.0,apps/santa/src/music.rs,apps/santa/src/music.rs,1,gh search code
+A-RAVEN/CascadedEngine,https://api.github.com/repos/A-RAVEN/CascadedEngine,1.0,.claude/commands/speckit.specify.md,.claude/commands/speckit.specify.md,1,gh search code
+a4b-corporation/xTalent,https://api.github.com/repos/a4b-corporation/xTalent,,docs/SPEC-KIT-ANALYSIS.md,docs/SPEC-KIT-ANALYSIS.md,1,gh search code
+AA-Turner/top-pypi-sdists-2000,https://api.github.com/repos/AA-Turner/top-pypi-sdists-2000,,extracted/co/coolprop/wrappers/Python/CoolProp/CoolProp.pyx,extracted/co/coolprop/wrappers/Python/CoolProp/CoolProp.pyx; extracted/co/coolprop/src/Backends/Helmholtz/TransportRoutines.cpp,2,gh search code
+aaravcode-1/aarav-calculator,https://api.github.com/repos/aaravcode-1/aarav-calculator,,templates/index.html,templates/index.html,1,gh search code
+abdul-ahad-26/physical-ai-and-humanoid-robotics,https://api.github.com/repos/abdul-ahad-26/physical-ai-and-humanoid-robotics,2.0,CLAUDE.md,CLAUDE.md,1,gh search code
+abdulahad139/Todoapp-HackathonII,https://api.github.com/repos/abdulahad139/Todoapp-HackathonII,,.claude/settings.local.json.tmp.10268.1766989331461,.claude/settings.local.json.tmp.10268.1766989331461,1,gh search code
+AbdulSamad94/Hackhaton-SpecsKitPlus,https://api.github.com/repos/AbdulSamad94/Hackhaton-SpecsKitPlus,3.0,.claude/commands/sp.specify.md,.claude/commands/sp.specify.md,1,gh search code
+AbsaOSS/generate-release-notes,https://api.github.com/repos/AbsaOSS/generate-release-notes,12.0,steps.txt,steps.txt,1,gh search code
+absrzvi/bms-agent,https://api.github.com/repos/absrzvi/bms-agent,,tasks.md,tasks.md; .specify/scripts/bash/check-prerequisites.sh,2,gh search code
+abuxton/reddwarf-llm,https://api.github.com/repos/abuxton/reddwarf-llm,,common/mk/specify.mk,common/mk/specify.mk,1,gh search code
+acdvorak/jquery.caret,https://api.github.com/repos/acdvorak/jquery.caret,132.0,libs/qunit/pavlov.js,libs/qunit/pavlov.js,1,gh search code
+Activer007/ordinary-claude-skills,https://api.github.com/repos/Activer007/ordinary-claude-skills,8.0,skills_all/claude-win11-speckit-update-skill/SECURITY.md,skills_all/claude-win11-speckit-update-skill/SECURITY.md; skills_all/claude-win11-speckit-update-skill/CHANGELOG.md,2,gh search code
+adamjdavidson/vendoreval4,https://api.github.com/repos/adamjdavidson/vendoreval4,,claude.md,claude.md,1,gh search code
+AdhirRamjiawan/payslip4all,https://api.github.com/repos/AdhirRamjiawan/payslip4all,,payslip4all/.specify/scripts/bash/create-new-feature.sh,payslip4all/.specify/scripts/bash/create-new-feature.sh,1,gh search code
+AdoptOpenJDK/openjdk-portola,https://api.github.com/repos/AdoptOpenJDK/openjdk-portola,2.0,src/java.base/share/classes/sun/security/tools/keytool/Main.java,src/java.base/share/classes/sun/security/tools/keytool/Main.java,1,gh search code
+Advanced-Labs/DOTNExT,https://api.github.com/repos/Advanced-Labs/DOTNExT,,Docs/Pre Fork Docs - All projects/roslyn/analyzers/Report Analyzer Format.md,Docs/Pre Fork Docs - All projects/roslyn/analyzers/Report Analyzer Format.md,1,gh search code
+afcarl/reference,https://api.github.com/repos/afcarl/reference,,ssh.md,ssh.md,1,gh search code
+agent0ai/a0-launcher,https://api.github.com/repos/agent0ai/a0-launcher,25.0,AGENTS.md,AGENTS.md,1,gh search code
+agentii-ai/twitter-init-kit,https://api.github.com/repos/agentii-ai/twitter-init-kit,3.0,.twitterkit/scripts/bash/create-new-campaign.sh,.twitterkit/scripts/bash/create-new-campaign.sh,1,gh search code
+Ahmed-KHI/meeting-intelligence,https://api.github.com/repos/Ahmed-KHI/meeting-intelligence,,.gemini/commands/sp.plan.toml,.gemini/commands/sp.plan.toml,1,gh search code
+ahmed-lotfy-dev/my-portfolio,https://api.github.com/repos/ahmed-lotfy-dev/my-portfolio,,.dockerignore,.dockerignore,1,gh search code
+ahoward/tc,https://api.github.com/repos/ahoward/tc,75.0,AI.md,AI.md; specs/004-heli-cool-stdout/plan.md,2,gh search code
+Akber261986/humanoid_robotic_book,https://api.github.com/repos/Akber261986/humanoid_robotic_book,,CLAUDE.md,CLAUDE.md,1,gh search code
+akiojin/push-notification,https://api.github.com/repos/akiojin/push-notification,,CLAUDE.md,CLAUDE.md,1,gh search code
+akiojin/unity-mcp-server,https://api.github.com/repos/akiojin/unity-mcp-server,25.0,.specify/scripts/bash/update-specs-readme.sh,.specify/scripts/bash/update-specs-readme.sh,1,gh search code
+Akshita1414/Javascript,https://api.github.com/repos/Akshita1414/Javascript,,Javascript/Basics2/array.js,Javascript/Basics2/array.js,1,gh search code
+alegro96/BME680_AirQualitySensor,https://api.github.com/repos/alegro96/BME680_AirQualitySensor,,.specify/memory/spec.md,.specify/memory/spec.md,1,gh search code
+alexaandig/spec-kit,https://api.github.com/repos/alexaandig/spec-kit,,src/specify_cli/__init__.py,src/specify_cli/__init__.py,1,gh search code
+alfredoperez/speckit-companion,https://api.github.com/repos/alfredoperez/speckit-companion,26.0,.specify/memory/constitution.md,.specify/memory/constitution.md,1,gh search code
+aliakhav/DG_TITAN2D,https://api.github.com/repos/aliakhav/DG_TITAN2D,1.0,fsrc/pack_bc/bcelem.f,fsrc/pack_bc/bcelem.f,1,gh search code
+alibaba/dify,https://api.github.com/repos/alibaba/dify,4.0,web/i18n/it-IT/plugin.json,web/i18n/it-IT/plugin.json,1,gh search code
+alirezaandersen/idea_box,https://api.github.com/repos/alirezaandersen/idea_box,,public/assets/mocha/1.10.0-3caf215ba01eda4984284ed91ba64f1094101e1c7c957101c60dc535738a06ca.js,public/assets/mocha/1.10.0-3caf215ba01eda4984284ed91ba64f1094101e1c7c957101c60dc535738a06ca.js,1,gh search code
+alkem-io/client-web,https://api.github.com/repos/alkem-io/client-web,23.0,specs/004-guest-whiteboard-contributions/tasks.md,specs/004-guest-whiteboard-contributions/tasks.md,1,gh search code
+alkem-io/notifications,https://api.github.com/repos/alkem-io/notifications,3.0,agents.md,agents.md,1,gh search code
+alkem-io/test-suites,https://api.github.com/repos/alkem-io/test-suites,2.0,docs/QA-STRATEGIC-PLAN-2026.md,docs/QA-STRATEGIC-PLAN-2026.md,1,gh search code
+allanweber/nutrition-app,https://api.github.com/repos/allanweber/nutrition-app,,.specify/scripts/bash/create-new-feature.sh,.specify/scripts/bash/create-new-feature.sh,1,gh search code
+AlmightyTopher/cuzisaidso,https://api.github.com/repos/AlmightyTopher/cuzisaidso,,plan.md,plan.md,1,gh search code
+AlmightyTopher/wretchedesigns_the-Website,https://api.github.com/repos/AlmightyTopher/wretchedesigns_the-Website,,sofar.md,sofar.md,1,gh search code
+alotau/dwsolver,https://api.github.com/repos/alotau/dwsolver,21.0,.specify/memory/constitution.md,.specify/memory/constitution.md,1,gh search code
+amangupta20/eduops,https://api.github.com/repos/amangupta20/eduops,2.0,.specify/scripts/bash/create-new-feature.sh,.specify/scripts/bash/create-new-feature.sh,1,gh search code
+Ameen-Alam/Full-Stack-Web-Application,https://api.github.com/repos/Ameen-Alam/Full-Stack-Web-Application,3.0,CLAUDE.md,CLAUDE.md,1,gh search code
+amengede/getIntoGameDev,https://api.github.com/repos/amengede/getIntoGameDev,377.0,APIs/vulkan 2022/27 - Multithreaded Job System/Start/view/engine.cpp,APIs/vulkan 2022/27 - Multithreaded Job System/Start/view/engine.cpp,1,gh search code
+AMReX-Microelectronics/FerroX,https://api.github.com/repos/AMReX-Microelectronics/FerroX,30.0,Exec/Examples/inputs_mfis_eb,Exec/Examples/inputs_mfis_eb,1,gh search code
+AmRo1011/AssignMind,https://api.github.com/repos/AmRo1011/AssignMind,,.specify/memory/specification.md,.specify/memory/specification.md,1,gh search code
+Andre0923/TaiwanMarketTimeMachine,https://api.github.com/repos/Andre0923/TaiwanMarketTimeMachine,,.specify/scripts/powershell/common.ps1,.specify/scripts/powershell/common.ps1; .cursorrules,2,gh search code
+andrei-stsiapanau/soapclient-transports,https://api.github.com/repos/andrei-stsiapanau/soapclient-transports,,.specify/README.md,.specify/README.md,1,gh search code
+AndrewMcLachlan/MooAuth,https://api.github.com/repos/AndrewMcLachlan/MooAuth,,src/MooAuth.Modules.DataSources/Queries/PickList/Get.cs,src/MooAuth.Modules.DataSources/Queries/PickList/Get.cs; src/MooAuth.Modules.Roles/Queries/Get.cs,2,gh search code
+angelllemn/agi-force-mvp,https://api.github.com/repos/angelllemn/agi-force-mvp,,readme.MD,readme.MD,1,gh search code
+angelolab/publications,https://api.github.com/repos/angelolab/publications,18.0,2022-McCaffrey_etal_HumanTB/R/TBMIBIcellCountsBarGraph.R,2022-McCaffrey_etal_HumanTB/R/TBMIBIcellCountsBarGraph.R,1,gh search code
+angusmccloud/inventory-management-context,https://api.github.com/repos/angusmccloud/inventory-management-context,,.specify/memory/agent-shared-context.md,.specify/memory/agent-shared-context.md,1,gh search code
+anhtu1707/stream,https://api.github.com/repos/anhtu1707/stream,,frontend/data/locale/gl-ES.ini,frontend/data/locale/gl-ES.ini; frontend/data/locale/lo-LA.ini; frontend/data/locale/sv-SE.ini; frontend/data/locale/ms-MY.ini; frontend/data/locale/pl-PL.ini; frontend/data/locale/ka-GE.ini,6,gh search code
+apache/cloudstack,https://api.github.com/repos/apache/cloudstack,2843.0,ui/src/views/network/LoadBalancing.vue,ui/src/views/network/LoadBalancing.vue; server/src/main/java/com/cloud/network/NetworkServiceImpl.java,2,gh search code
+ardzz/perplexity-scrape,https://api.github.com/repos/ardzz/perplexity-scrape,13.0,.dockerignore,.dockerignore,1,gh search code
+AreebaZafarChohan/physical-ai-and-robotics,https://api.github.com/repos/AreebaZafarChohan/physical-ai-and-robotics,,QWEN.md,QWEN.md,1,gh search code
+ArkLabsHQ/arkadian,https://api.github.com/repos/ArkLabsHQ/arkadian,,.specify/scripts/bash/create-new-feature.sh,.specify/scripts/bash/create-new-feature.sh,1,gh search code
+arsscriptum/tracker-rank,https://api.github.com/repos/arsscriptum/tracker-rank,,src/cmdline.cpp,src/cmdline.cpp,1,gh search code
+ArtisanCloud/PowerX,https://api.github.com/repos/ArtisanCloud/PowerX,324.0,.codex/prompts/speckit.plan.md,.codex/prompts/speckit.plan.md,1,gh search code
+AsharibAli/q4-giaic-sunday,https://api.github.com/repos/AsharibAli/q4-giaic-sunday,18.0,📂class-code/class_jan_18/CLAUDE.md,📂class-code/class_jan_18/CLAUDE.md,1,gh search code
+AshleyColeman/speckit-breakdown,https://api.github.com/repos/AshleyColeman/speckit-breakdown,,AGENT.md,AGENT.md,1,gh search code
+Ashritha-Gangala/aws-doc-sdk,https://api.github.com/repos/Ashritha-Gangala/aws-doc-sdk,,java/example_code/emr/runjobflow-configurationclassification.java,java/example_code/emr/runjobflow-configurationclassification.java,1,gh search code
+asma-aslam30/hackathon,https://api.github.com/repos/asma-aslam30/hackathon,,.qwen/commands/sp.specify.md,.qwen/commands/sp.specify.md,1,gh search code
+assistant-ui/assistant-ui,https://api.github.com/repos/assistant-ui/assistant-ui,8983.0,scripts/cleanup-monorepo.sh,scripts/cleanup-monorepo.sh,1,gh search code
+asuutd/website,https://api.github.com/repos/asuutd/website,5.0,apps/events/.specify/memory/constitution.md,apps/events/.specify/memory/constitution.md,1,gh search code
+atesemre/AzurePowerShell,https://api.github.com/repos/atesemre/AzurePowerShell,1.0,src/ResourceGraph/ResourceGraph.Autorest/generated/runtime/Nodes/JsonDate.cs,src/ResourceGraph/ResourceGraph.Autorest/generated/runtime/Nodes/JsonDate.cs,1,gh search code
+athola/claude-night-market,https://api.github.com/repos/athola/claude-night-market,225.0,plugins/spec-kit/skills/speckit-orchestrator/modules/artifact-structure.md,plugins/spec-kit/skills/speckit-orchestrator/modules/artifact-structure.md,1,gh search code
+augentic/specify,https://api.github.com/repos/augentic/specify,1.0,AGENTS.md,AGENTS.md,1,gh search code
+Awaisprogram/hackathon-physical-ai-humanoid-textbook,https://api.github.com/repos/Awaisprogram/hackathon-physical-ai-humanoid-textbook,,CLAUDE.md,CLAUDE.md,1,gh search code
+awesome-agent-workflows/spec-driven-workflows,https://api.github.com/repos/awesome-agent-workflows/spec-driven-workflows,1.0,.specify/scripts/bash/prepare-execution-phase-review.sh,.specify/scripts/bash/prepare-execution-phase-review.sh; .specify/scripts/powershell/prepare-post-implementation-quality-plan.ps1; .specify/scripts/bash/prepare-agent-skill.sh,3,gh search code
+awsdocs/aws-doc-sdk-examples,https://api.github.com/repos/awsdocs/aws-doc-sdk-examples,10382.0,java/example_code/emr/runjobflow-configurationclassification.java,java/example_code/emr/runjobflow-configurationclassification.java; .doc_gen/metadata/iam_metadata.yaml,2,gh search code
+ayesha-muttalib123/physical-ai-book,https://api.github.com/repos/ayesha-muttalib123/physical-ai-book,,.specify/scripts/auto-append-phr.py,.specify/scripts/auto-append-phr.py,1,gh search code
+ayeshalee88/PHASEIII,https://api.github.com/repos/ayeshalee88/PHASEIII,,CLAUDE.md,CLAUDE.md,1,gh search code
+Ayush-PS/StreeShakti,https://api.github.com/repos/Ayush-PS/StreeShakti,,src/components/Styles/PeriodTracker.module.css,src/components/Styles/PeriodTracker.module.css,1,gh search code
+Azeem-2/final-docusarus,https://api.github.com/repos/Azeem-2/final-docusarus,1.0,CURSOR.md,CURSOR.md; .cursor/commands/sp.plan.md,2,gh search code
+Azure-Samples/art-voice-agent-accelerator,https://api.github.com/repos/Azure-Samples/art-voice-agent-accelerator,60.0,docs/archive/proposals/specify-integration-proposal.md,docs/archive/proposals/specify-integration-proposal.md,1,gh search code
+Azure/APICenter-Portal-Starter,https://api.github.com/repos/Azure/APICenter-Portal-Starter,37.0,.wiki/index.md,.wiki/index.md; .wiki/folder-structure.md,2,gh search code
+Azure/autorest.powershell,https://api.github.com/repos/Azure/autorest.powershell,121.0,tests-upgrade/tests-emitter/StorageAction.Management.brown/target/generated/runtime/Nodes/JsonDate.cs,tests-upgrade/tests-emitter/StorageAction.Management.brown/target/generated/runtime/Nodes/JsonDate.cs,1,gh search code
+Azure/azure-powershell,https://api.github.com/repos/Azure/azure-powershell,4674.0,src/Compute/Compute/Sync/Upload/UploadOperationMetaData.cs,src/Compute/Compute/Sync/Upload/UploadOperationMetaData.cs; generated/StorageAction/StorageAction.Autorest/generated/runtime/Nodes/JsonDate.cs; generated/NetworkCloud/NetworkCloud.Autorest/generated/runtime/Nodes/JsonDate.cs; generated/Fleet/Fleet.Autorest/generated/runtime/Nodes/JsonDate.cs; generated/Elastic/Elastic.Autorest/generated/runtime/Nodes/JsonDate.cs; generated/ResourceGraph/ResourceGraph.Autorest/generated/runtime/Nodes/JsonDate.cs,6,gh search code
+Azure/azure-sdk-for-net,https://api.github.com/repos/Azure/azure-sdk-for-net,5960.0,sdk/ai/Azure.AI.Extensions.OpenAI/src/Generated/Internal/TypeFormatters.cs,sdk/ai/Azure.AI.Extensions.OpenAI/src/Generated/Internal/TypeFormatters.cs,1,gh search code
+babalae/bettergi-scripts-list,https://api.github.com/repos/babalae/bettergi-scripts-list,411.0,repo/js/AutoPlan/main.js,repo/js/AutoPlan/main.js,1,gh search code
+bbrowning/vllm-spec-kit,https://api.github.com/repos/bbrowning/vllm-spec-kit,1.0,.specify/scripts/bash/create-new-feature.sh,.specify/scripts/bash/create-new-feature.sh,1,gh search code
+bdangit/myusage-skill,https://api.github.com/repos/bdangit/myusage-skill,,.claude/commands/speckit.implement.md,.claude/commands/speckit.implement.md,1,gh search code
+bethgelab/slow_disentanglement,https://api.github.com/repos/bethgelab/slow_disentanglement,73.0,scripts/evaluate_disentanglement.py,scripts/evaluate_disentanglement.py,1,gh search code
+Bezkup/quizzy,https://api.github.com/repos/Bezkup/quizzy,1.0,.specify/templates/tasks-template.md,.specify/templates/tasks-template.md,1,gh search code
+bigsmartben/sdd,https://api.github.com/repos/bigsmartben/sdd,,scripts/powershell/setup-plan.ps1,scripts/powershell/setup-plan.ps1,1,gh search code
+bilals/lotrec,https://api.github.com/repos/bilals/lotrec,8.0,CLAUDE.md,CLAUDE.md,1,gh search code
+BingluCS/CBB,https://api.github.com/repos/BingluCS/CBB,,Application/FerroX/Exec/Examples/inputs_mfis_eb,Application/FerroX/Exec/Examples/inputs_mfis_eb,1,gh search code
+Bitspark/slang-editor,https://api.github.com/repos/Bitspark/slang-editor,4.0,src/app/components/blueprint-config-form.ts,src/app/components/blueprint-config-form.ts,1,gh search code
+bitwarden/server,https://api.github.com/repos/bitwarden/server,18306.0,src/Infrastructure.EntityFramework/Dirt/Repositories/EventRepository.cs,src/Infrastructure.EntityFramework/Dirt/Repositories/EventRepository.cs,1,gh search code
+BlackHacked/spec-kit-template,https://api.github.com/repos/BlackHacked/spec-kit-template,,.cursor/commands/speckit.checklist.md,.cursor/commands/speckit.checklist.md; .cursor/commands/speckit.analyze.md,2,gh search code
+boisenoise/skills-collections,https://api.github.com/repos/boisenoise/skills-collections,3.0,skills/antigravity-speckit-updater/SKILL.md,skills/antigravity-speckit-updater/SKILL.md,1,gh search code
+BoltDoggy/work,https://api.github.com/repos/BoltDoggy/work,3.0,CLAUDE.md,CLAUDE.md,1,gh search code
+bookcasey/harsh,https://api.github.com/repos/bookcasey/harsh,127.0,README.md,README.md,1,gh search code
+bosornd/todo,https://api.github.com/repos/bosornd/todo,,DSM.md,DSM.md,1,gh search code
+BrainsoupFactory/moment-neural-network,https://api.github.com/repos/BrainsoupFactory/moment-neural-network,12.0,examples/mnist/mnist.py,examples/mnist/mnist.py,1,gh search code
+brandon-fox/Meta-Oracle,https://api.github.com/repos/brandon-fox/Meta-Oracle,,.agent/workflows/speckit-tasks.md,.agent/workflows/speckit-tasks.md,1,gh search code
+brberis/speckit-tdd-sdd,https://api.github.com/repos/brberis/speckit-tdd-sdd,,src/specify_cli/__init__.py,src/specify_cli/__init__.py,1,gh search code
+caiqing/mind-note,https://api.github.com/repos/caiqing/mind-note,4.0,CLAUDE.md,CLAUDE.md; .claude/commands/speckit.constitution.md,2,gh search code
+campbellmcgavin/envisionary,https://api.github.com/repos/campbellmcgavin/envisionary,,Envisionary/View/Card/PhotoCard.swift,Envisionary/View/Card/PhotoCard.swift,1,gh search code
+canon-yousuf/governor-sindh-it-course,https://api.github.com/repos/canon-yousuf/governor-sindh-it-course,1.0,quarter4/Hackathons/hackathon_one_/.specify/scripts/powershell/create-new-feature.ps1,quarter4/Hackathons/hackathon_one_/.specify/scripts/powershell/create-new-feature.ps1,1,gh search code
+CarlosDemetrio/sistema-hydroom-rpg-front-end,https://api.github.com/repos/CarlosDemetrio/sistema-hydroom-rpg-front-end,,.specify/BACKEND_DEBT_IMPROVEMENTS.md,.specify/BACKEND_DEBT_IMPROVEMENTS.md,1,gh search code
+CBIIT/nci-webtools-dccps-cedcd,https://api.github.com/repos/CBIIT/nci-webtools-dccps-cedcd,3.0,client/src/components/MortalityForm/MortalityForm.css,client/src/components/MortalityForm/MortalityForm.css,1,gh search code
+Ceimon/NemLoginSigning,https://api.github.com/repos/Ceimon/NemLoginSigning,,library/itextsharp-netstandard/src/core/iTextSharp/text/error_messages/en.lng,library/itextsharp-netstandard/src/core/iTextSharp/text/error_messages/en.lng,1,gh search code
+Chabana1591/spec-kit-ja,https://api.github.com/repos/Chabana1591/spec-kit-ja,,original/docs/upgrade.md,original/docs/upgrade.md,1,gh search code
+channell/Cephei,https://api.github.com/repos/channell/Cephei,38.0,Cephei.XL/Functions/Trbdf2Function.fs,Cephei.XL/Functions/Trbdf2Function.fs,1,gh search code
+charlesthobe/chdman,https://api.github.com/repos/charlesthobe/chdman,45.0,src/emu/diimage.cpp,src/emu/diimage.cpp,1,gh search code
+chen893/VibePortfolio,https://api.github.com/repos/chen893/VibePortfolio,,.claude/commands-zh/speckit.specify.md,.claude/commands-zh/speckit.specify.md,1,gh search code
+CIDRAM/CIDRAM,https://api.github.com/repos/CIDRAM/CIDRAM,113.0,vault/assets/frontend/default/_files.html,vault/assets/frontend/default/_files.html,1,gh search code
+claricle/postsvg,https://api.github.com/repos/claricle/postsvg,,docs/api-reference/postsvg-module.adoc,docs/api-reference/postsvg-module.adoc,1,gh search code
+Claude-Code-Community-Ireland/claude-code-resources,https://api.github.com/repos/Claude-Code-Community-Ireland/claude-code-resources,7.0,claude-md/frontend/vendoreval4/CLAUDE.md,claude-md/frontend/vendoreval4/CLAUDE.md,1,gh search code
+ClaudioSavelli/documentations_DSMLL,https://api.github.com/repos/ClaudioSavelli/documentations_DSMLL,,docs/pandas/_sources/user_guide/reshaping.rst.txt,docs/pandas/_sources/user_guide/reshaping.rst.txt,1,gh search code
+ClementG/QualityWaterAlert,https://api.github.com/repos/ClementG/QualityWaterAlert,1.0,.specify/memory/EXECUTIVE_SUMMARY.md,.specify/memory/EXECUTIVE_SUMMARY.md,1,gh search code
+CLOCKWORK-TEMPTATION/yarab-we-elnby-thecopy,https://api.github.com/repos/CLOCKWORK-TEMPTATION/yarab-we-elnby-thecopy,,apps/web/src/app/(main)/actorai-arabic/.specify/scripts/powershell/update-agent-context.ps1,apps/web/src/app/(main)/actorai-arabic/.specify/scripts/powershell/update-agent-context.ps1,1,gh search code
+cnjn/test,https://api.github.com/repos/cnjn/test,,.cursor/commands/speckit.checklist.md,.cursor/commands/speckit.checklist.md; .cursor/commands/speckit.analyze.md,2,gh search code
+cnoe-io/ai-platform-engineering,https://api.github.com/repos/cnoe-io/ai-platform-engineering,328.0,.specify/ARCHITECTURE.md,.specify/ARCHITECTURE.md; docs/docs/development/spec-driven-development.md; .specify/SKILLS.md,3,gh search code
+codacy-open-source-projects-scans/jenkins,https://api.github.com/repos/codacy-open-source-projects-scans/jenkins,,war/src/main/webapp/scripts/hudson-behavior.js,war/src/main/webapp/scripts/hudson-behavior.js,1,gh search code
+code-father-practise/sion-picture-frontend,https://api.github.com/repos/code-father-practise/sion-picture-frontend,,.specify/.file-hashes,.specify/.file-hashes,1,gh search code
+code-onigiri/Github-Copilot-Spec-development,https://api.github.com/repos/code-onigiri/Github-Copilot-Spec-development,,GUIDE.md,GUIDE.md,1,gh search code
+CodeGeneration-2020/ai-qa,https://api.github.com/repos/CodeGeneration-2020/ai-qa,,skills/qa.verify-specs.md,skills/qa.verify-specs.md,1,gh search code
+codemie-ai/codemie-code,https://api.github.com/repos/codemie-ai/codemie-code,183.0,src/frameworks/plugins/speckit.plugin.ts,src/frameworks/plugins/speckit.plugin.ts,1,gh search code
+codervisor/lean-spec-docs,https://api.github.com/repos/codervisor/lean-spec-docs,,docs/guide/migration.mdx,docs/guide/migration.mdx,1,gh search code
+coforma/pie-shop,https://api.github.com/repos/coforma/pie-shop,1.0,.specify/WORKFLOW.md,.specify/WORKFLOW.md,1,gh search code
+connor-git-yaml/cc-plugin-market,https://api.github.com/repos/connor-git-yaml/cc-plugin-market,3.0,src/cli/commands/prepare.ts,src/cli/commands/prepare.ts; specs/032-rename-speckit-to-spec-driver/plan.md; specs/032-rename-speckit-to-spec-driver/data-model.md; plugins/spec-driver/agents/product-research.md,4,gh search code
+CoolProp/CoolProp,https://api.github.com/repos/CoolProp/CoolProp,976.0,wrappers/Python/CoolProp/CoolProp.pyx,wrappers/Python/CoolProp/CoolProp.pyx; src/Backends/Helmholtz/TransportRoutines.cpp,2,gh search code
+cooneycw/claude-power-pack,https://api.github.com/repos/cooneycw/claude-power-pack,14.0,.claude/commands/evaluate/issue.md,.claude/commands/evaluate/issue.md; lib/cicd/container.py,2,gh search code
+cooneycw/codex-power-pack,https://api.github.com/repos/cooneycw/codex-power-pack,,.codex/prompts/spec/help.md,.codex/prompts/spec/help.md,1,gh search code
+cooperative-computing-lab/cctools,https://api.github.com/repos/cooperative-computing-lab/cctools,143.0,work_queue/src/bindings/python3/work_queue_example.py,work_queue/src/bindings/python3/work_queue_example.py,1,gh search code
+couchbase/docs-couchbase-lite,https://api.github.com/repos/couchbase/docs-couchbase-lite,13.0,modules/swift/pages/p2psync-multipeer.adoc,modules/swift/pages/p2psync-multipeer.adoc,1,gh search code
+couchbaselabs/docs-devex,https://api.github.com/repos/couchbaselabs/docs-devex,4.0,modules/n1ql/pages/n1ql-language-reference/transactions.adoc,modules/n1ql/pages/n1ql-language-reference/transactions.adoc,1,gh search code
+Covek01/WCF-chatbot,https://api.github.com/repos/Covek01/WCF-chatbot,,docs-main/samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.globalization/vb/dates8.vb,docs-main/samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.globalization/vb/dates8.vb,1,gh search code
+cr24osome/spec-kit,https://api.github.com/repos/cr24osome/spec-kit,,docs/upgrade.md,docs/upgrade.md,1,gh search code
+cran/funkycells,https://api.github.com/repos/cran/funkycells,,inst/doc/lungcancer.R,inst/doc/lungcancer.R,1,gh search code
+cristianfcortes/Hackathon_Keralty_2025,https://api.github.com/repos/cristianfcortes/Hackathon_Keralty_2025,,docs/upgrade.md,docs/upgrade.md,1,gh search code
+crossyourfingers/alexxed,https://api.github.com/repos/crossyourfingers/alexxed,,.specify/memory/constitution-gaps.md,.specify/memory/constitution-gaps.md,1,gh search code
+csckcac/platform,https://api.github.com/repos/csckcac/platform,2.0,components/wsdl2code/org.wso2.carbon.modules.wsdl2code.ui/src/main/java/org/wso2/carbon/wsdl2code/ui/client/codegen-options.xml,components/wsdl2code/org.wso2.carbon.modules.wsdl2code.ui/src/main/java/org/wso2/carbon/wsdl2code/ui/client/codegen-options.xml,1,gh search code
+CwtchMH/Academix,https://api.github.com/repos/CwtchMH/Academix,,.specify/scripts/powershell/update-agent-context.ps1,.specify/scripts/powershell/update-agent-context.ps1,1,gh search code
+CwtchMH/edu-chain-block-be,https://api.github.com/repos/CwtchMH/edu-chain-block-be,,.specify/scripts/powershell/update-agent-context.ps1,.specify/scripts/powershell/update-agent-context.ps1,1,gh search code
+cyl19970726/Code3,https://api.github.com/repos/cyl19970726/Code3,9.0,workflows/spec-kit-mcp/src/prompts/clarify.ts,workflows/spec-kit-mcp/src/prompts/clarify.ts,1,gh search code
+czcorpus/kontext,https://api.github.com/repos/czcorpus/kontext,78.0,cypress/e2e/subcorpora.cy.js,cypress/e2e/subcorpora.cy.js; cypress/e2e/queryHistory.cy.js,2,gh search code
+d0whc3r/minecraft-servers,https://api.github.com/repos/d0whc3r/minecraft-servers,,.specify/scripts/bash/create-new-feature.sh,.specify/scripts/bash/create-new-feature.sh,1,gh search code
+Dachon/LearningJDK,https://api.github.com/repos/Dachon/LearningJDK,,src/sun/security/util/Resources_zh_CN.java,src/sun/security/util/Resources_zh_CN.java,1,gh search code
+danielcbright/claude-learns,https://api.github.com/repos/danielcbright/claude-learns,2.0,FAQ.md,FAQ.md; manifest.yaml,2,gh search code
+Danphillipz/wheres-waldo,https://api.github.com/repos/Danphillipz/wheres-waldo,,SETUP_SUMMARY.md,SETUP_SUMMARY.md,1,gh search code
+danribes/mystic-ecom-cloud,https://api.github.com/repos/danribes/mystic-ecom-cloud,,.specify/memory/tasks_phase12.md,.specify/memory/tasks_phase12.md,1,gh search code
+darfaz/spec-os-shared-suite,https://api.github.com/repos/darfaz/spec-os-shared-suite,,CLAUDE.md,CLAUDE.md,1,gh search code
+DawidNowak/AiLootGenerator,https://api.github.com/repos/DawidNowak/AiLootGenerator,,.specify/scripts/powershell/update-agent-context.ps1,.specify/scripts/powershell/update-agent-context.ps1,1,gh search code
+dbbuilder/github-spec-kit-editor,https://api.github.com/repos/dbbuilder/github-spec-kit-editor,,TODO.md,TODO.md,1,gh search code
+dbflute-example/dbflute-example-on-play2java,https://api.github.com/repos/dbflute-example/dbflute-example-on-play2java,2.0,app/docksidestage/dbflute/bsbhv/BsMemberSecurityBhv.java,app/docksidestage/dbflute/bsbhv/BsMemberSecurityBhv.java; app/org/docksidestage/dbflute/bsbhv/BsMemberWithdrawalBhv.java; app/docksidestage/dbflute/cbean/bs/BsRegionCB.java; app/docksidestage/dbflute/bsbhv/BsMemberLoginBhv.java; app/docksidestage/dbflute/cbean/bs/BsMemberWithdrawalCB.java,5,gh search code
+dbflute-example/dbflute-example-with-non-rdb,https://api.github.com/repos/dbflute-example/dbflute-example-with-non-rdb,1.0,src/main/java/org/docksidestage/dbflute/cbean/bs/BsMemberLoginCB.java,src/main/java/org/docksidestage/dbflute/cbean/bs/BsMemberLoginCB.java,1,gh search code
+dbflute-test/dbflute-test-dbms-oracle,https://api.github.com/repos/dbflute-test/dbflute-test-dbms-oracle,,src/main/java/org/docksidestage/oracle/dbflute/cbean/bs/BsServiceRankCB.java,src/main/java/org/docksidestage/oracle/dbflute/cbean/bs/BsServiceRankCB.java,1,gh search code
+dbflute-test/giant-mysql,https://api.github.com/repos/dbflute-test/giant-mysql,,src/main/java/org/docksidestage/dbflute/cbean/bs/BsProductStatusCB.java,src/main/java/org/docksidestage/dbflute/cbean/bs/BsProductStatusCB.java,1,gh search code
+dbflute/dbflute-intro,https://api.github.com/repos/dbflute/dbflute-intro,8.0,dbflute_introdb/templates/om/java/bsbhv/BaseBhv.vm,dbflute_introdb/templates/om/java/bsbhv/BaseBhv.vm,1,gh search code
+dceoy/pdmt5,https://api.github.com/repos/dceoy/pdmt5,,.specify/scripts/bash/create-new-feature.sh,.specify/scripts/bash/create-new-feature.sh,1,gh search code
+deepeshBodh/human-in-loop,https://api.github.com/repos/deepeshBodh/human-in-loop,24.0,.claude/agents/release-manager.md,.claude/agents/release-manager.md,1,gh search code
+deepin-community/mame,https://api.github.com/repos/deepin-community/mame,,src/emu/diimage.cpp,src/emu/diimage.cpp,1,gh search code
+Demolinator/Talal-s-TDA,https://api.github.com/repos/Demolinator/Talal-s-TDA,1.0,.specify/scripts/bash/validate-migration.sh,.specify/scripts/bash/validate-migration.sh,1,gh search code
+DenShtur/ios-project,https://api.github.com/repos/DenShtur/ios-project,,Demo-Speckit-messageAppUITests/.specify/scripts/bash/update-agent-context.sh,Demo-Speckit-messageAppUITests/.specify/scripts/bash/update-agent-context.sh,1,gh search code
+department-of-veterans-affairs/vets-api,https://api.github.com/repos/department-of-veterans-affairs/vets-api,261.0,modules/survivors_benefits/spec/lib/survivors_benefits/pdf_fill/output/21P-534EZ_section-9.json,modules/survivors_benefits/spec/lib/survivors_benefits/pdf_fill/output/21P-534EZ_section-9.json,1,gh search code
+DesconCore/WoW-Armory,https://api.github.com/repos/DesconCore/WoW-Armory,22.0,_css/master.css,_css/master.css,1,gh search code
+Dev4w4n/e-masjid.my,https://api.github.com/repos/Dev4w4n/e-masjid.my,93.0,specs/003-we-need-to/plan.md,specs/003-we-need-to/plan.md,1,gh search code
+DevHammad0/physical-ai-robotics-textbook,https://api.github.com/repos/DevHammad0/physical-ai-robotics-textbook,,.cursor/commands/sp.plan.md,.cursor/commands/sp.plan.md,1,gh search code
+DevMinGeonPark/FineGst_FE,https://api.github.com/repos/DevMinGeonPark/FineGst_FE,1.0,CLAUDE.md,CLAUDE.md,1,gh search code
+deweyou/ui,https://api.github.com/repos/deweyou/ui,,.codex/prompts/speckit.specify.md,.codex/prompts/speckit.specify.md,1,gh search code
+Dezocode/opencli,https://api.github.com/repos/Dezocode/opencli,1.0,modules/spec_memory.py,modules/spec_memory.py,1,gh search code
+diamanthaxhimusa/techstitution,https://api.github.com/repos/diamanthaxhimusa/techstitution,,app/static/css/stylesheet.css,app/static/css/stylesheet.css,1,gh search code
+DIGI-UW/analyzer-mock-server,https://api.github.com/repos/DIGI-UW/analyzer-mock-server,,AGENTS.md,AGENTS.md,1,gh search code
+DIGI-UW/OpenELIS-Global-2,https://api.github.com/repos/DIGI-UW/OpenELIS-Global-2,208.0,.specify/core/commands/speckit.clarify.md,.specify/core/commands/speckit.clarify.md; specs/008-patient-merge/spec.md; .specify/oe/commands/download-ci-logs.md; .specify/oe/commands/speckit.tasks.md,4,gh search code
+DINHDUY/ai-workflow-kit,https://api.github.com/repos/DINHDUY/ai-workflow-kit,,workflows/speckit/SPEC.md,workflows/speckit/SPEC.md,1,gh search code
+doggy8088/spec-kit,https://api.github.com/repos/doggy8088/spec-kit,251.0,docs/local-development.md,docs/local-development.md; templates/plan-template.md,2,gh search code
+doggy8088/speckit-initializr,https://api.github.com/repos/doggy8088/speckit-initializr,19.0,reconfigure-speckit.js,reconfigure-speckit.js,1,gh search code
+dogwood008/ipa-answer-sheet-disclosure,https://api.github.com/repos/dogwood008/ipa-answer-sheet-disclosure,,.eslintrc.cjs,.eslintrc.cjs,1,gh search code
+doitsu2014/crypto-pocket-butler,https://api.github.com/repos/doitsu2014/crypto-pocket-butler,3.0,.claude/commands/speckit.specify.md,.claude/commands/speckit.specify.md,1,gh search code
+DonMdas/Yoga_Pose_Tracking,https://api.github.com/repos/DonMdas/Yoga_Pose_Tracking,,SRS.md,SRS.md,1,gh search code
+dotnet/docs,https://api.github.com/repos/dotnet/docs,4670.0,samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.globalization/vb/dates8.vb,samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.globalization/vb/dates8.vb; samples/snippets/csharp/VS_Snippets_CLR/Formatting.DateAndTime.Standard/cs/Roundtrip1.cs,2,gh search code
+dotnet/roslyn,https://api.github.com/repos/dotnet/roslyn,20306.0,docs/analyzers/Report Analyzer Format.md,docs/analyzers/Report Analyzer Format.md,1,gh search code
+draagron/Poseidon2,https://api.github.com/repos/draagron/Poseidon2,,QWEN.md,QWEN.md; .claude/commands/speckit.refactor.md; .specify/extensions/README.md; .specify/extensions/DEVELOPMENT.md,4,gh search code
+dstmath/HWFramework,https://api.github.com/repos/dstmath/HWFramework,261.0,P9-8.0/src/main/java/sun/security/util/Resources.java,P9-8.0/src/main/java/sun/security/util/Resources.java; Honor5C-7.0/src/main/java/java/net/URL.java,2,gh search code
+dstmath/OppoR15,https://api.github.com/repos/dstmath/OppoR15,8.0,app/src/main/java/sun/security/util/Resources.java,app/src/main/java/sun/security/util/Resources.java,1,gh search code
+dtgfdgfgf/SDD-WorkSpace,https://api.github.com/repos/dtgfdgfgf/SDD-WorkSpace,,bone.ini,bone.ini,1,gh search code
+dtinth/thaiWitter3,https://api.github.com/repos/dtinth/thaiWitter3,17.0,public/test/pavlov.js,public/test/pavlov.js,1,gh search code
+dudick123/app-migrator-claude,https://api.github.com/repos/dudick123/app-migrator-claude,,OUTPUT.md,OUTPUT.md,1,gh search code
+dvcrn/openclaw-skills-marketplace,https://api.github.com/repos/dvcrn/openclaw-skills-marketplace,2.0,plugins/karmafeast--strudel-music/skills/strudel-music/README.md,plugins/karmafeast--strudel-music/skills/strudel-music/README.md; plugins/mydearzsy--sdd-dev-workflow/skills/sdd-dev-workflow/scripts/init-project.sh,2,gh search code
+DYAI2025/Stoppclock-page,https://api.github.com/repos/DYAI2025/Stoppclock-page,3.0,.specify/PHASE1_COMPLETION.md,.specify/PHASE1_COMPLETION.md,1,gh search code
+Dzmitry-Kliuchnik/LifeTime,https://api.github.com/repos/Dzmitry-Kliuchnik/LifeTime,,.claude/commands/speckit.plan.md,.claude/commands/speckit.plan.md,1,gh search code
+earelin/agora-ui,https://api.github.com/repos/earelin/agora-ui,,CLAUDE.md,CLAUDE.md,1,gh search code
+EAZaidi/Physical-AI-Humanoid-Robotics-Textbook,https://api.github.com/repos/EAZaidi/Physical-AI-Humanoid-Robotics-Textbook,1.0,.dockerignore,.dockerignore,1,gh search code
+eclipse-score/orchestrator,https://api.github.com/repos/eclipse-score/orchestrator,4.0,src/orchestration/src/events/events_provider.rs,src/orchestration/src/events/events_provider.rs,1,gh search code
+eddyvalencia96/AIBoilerPlate,https://api.github.com/repos/eddyvalencia96/AIBoilerPlate,,CODEX.md,CODEX.md; .agent/sub-agents/qa.md,2,gh search code
+efargas/S7-Tools,https://api.github.com/repos/efargas/S7-Tools,1.0,.specify/scripts/bash/update-agent-context.sh,.specify/scripts/bash/update-agent-context.sh,1,gh search code
+eiselekd/lang,https://api.github.com/repos/eiselekd/lang,,rust/interesting/interesting_code/rust-prehistory/src/rt/uthash-1.6/doc/txt/userguide.txt,rust/interesting/interesting_code/rust-prehistory/src/rt/uthash-1.6/doc/txt/userguide.txt,1,gh search code
+eitatech/gatomia-vscode,https://api.github.com/repos/eitatech/gatomia-vscode,1.0,ui/src/features/welcome/components/config-section.tsx,ui/src/features/welcome/components/config-section.tsx,1,gh search code
+ekwator/truth-training,https://api.github.com/repos/ekwator/truth-training,4.0,docs/archive/.specify/templates/agent-file-template.md,docs/archive/.specify/templates/agent-file-template.md,1,gh search code
+elsa-workflows/elsa-core,https://api.github.com/repos/elsa-workflows/elsa-core,7666.0,.specify/memory/constitution.md,.specify/memory/constitution.md,1,gh search code
+emteknetnz/winter04,https://api.github.com/repos/emteknetnz/winter04,,.github/prompts/speckit.tasks.prompt.md,.github/prompts/speckit.tasks.prompt.md,1,gh search code
+emudhra-integration-sdk/dotnet-core-esign-sdk,https://api.github.com/repos/emudhra-integration-sdk/dotnet-core-esign-sdk,,eSignLibrary/text/error_messages/en.lng,eSignLibrary/text/error_messages/en.lng,1,gh search code
+emudhra-integration-sdk/dotnet-framework-esign-sdk,https://api.github.com/repos/emudhra-integration-sdk/dotnet-framework-esign-sdk,,text/error_messages/en.lng,text/error_messages/en.lng,1,gh search code
+enoonan/ash_backpex,https://api.github.com/repos/enoonan/ash_backpex,30.0,CONTRIBUTING.md,CONTRIBUTING.md,1,gh search code
+Enriquefft/next-fullstack-template,https://api.github.com/repos/Enriquefft/next-fullstack-template,6.0,.specify/templates/plan-template.md,.specify/templates/plan-template.md; .claude/settings.local.json,2,gh search code
+ep-infosec/28_nasa_europa,https://api.github.com/repos/ep-infosec/28_nasa_europa,,examples/UBO/UBO-initial-state.nddl,examples/UBO/UBO-initial-state.nddl,1,gh search code
+ErichStyger/mcuoneclipse,https://api.github.com/repos/ErichStyger/mcuoneclipse,760.0,Examples/MCUXpresso/FRDM-K64F/FRDM-K64F_gcov_bm/FRDM-K64F_gcov_bm PE Debug.launch,Examples/MCUXpresso/FRDM-K64F/FRDM-K64F_gcov_bm/FRDM-K64F_gcov_bm PE Debug.launch; Examples/Eclipse/Teensy/Teensy31_Blinky/Teensy31_Blinky PnE.launch; Examples/KDS/FRDM-K64F120M/FRDM-K64F_USB_CDC/FRDM-K64F_USB_CDC PnE.launch; Examples/KDS/FRDM-KL25Z/FRDM-KL25Z_ESP8266_ThingSpeak/FRDM-KL25Z_ESP8266_ThingSpeak PnE.launch,4,gh search code
+ErwinLambujon/ElevateMe,https://api.github.com/repos/ErwinLambujon/ElevateMe,,static/css/App.css,static/css/App.css,1,gh search code
+eserlan/Codex-Cryptica,https://api.github.com/repos/eserlan/Codex-Cryptica,,.agent/workflows/sdd-analyze.md,.agent/workflows/sdd-analyze.md,1,gh search code
+ESMG/gridtools,https://api.github.com/repos/ESMG/gridtools,23.0,docs/manual/gridtoolAppTutorial.ipynb,docs/manual/gridtoolAppTutorial.ipynb,1,gh search code
+ESP-rCommunity/ESP-rSource,https://api.github.com/repos/ESP-rCommunity/ESP-rSource,24.0,src/cetc/DG_controller.F,src/cetc/DG_controller.F,1,gh search code
+ethpanda-org/ETHShanghai-2025,https://api.github.com/repos/ethpanda-org/ETHShanghai-2025,15.0,projects/cina/contracts/CINA/.specify/scripts/bash/update-agent-context.sh,projects/cina/contracts/CINA/.specify/scripts/bash/update-agent-context.sh,1,gh search code
+euvl/vue-notification,https://api.github.com/repos/euvl/vue-notification,2386.0,README.md,README.md,1,gh search code
+ev3rlit/ride-the-wave,https://api.github.com/repos/ev3rlit/ride-the-wave,,docs/clients/copilot.md,docs/clients/copilot.md,1,gh search code
+exalearn/ExaMol,https://api.github.com/repos/exalearn/ExaMol,13.0,docs/api/examol.rst,docs/api/examol.rst,1,gh search code
+FAIR-DM/fairdm,https://api.github.com/repos/FAIR-DM/fairdm,,docs/more/changelog.md,docs/more/changelog.md,1,gh search code
+fanfanccluo/predicting-annual-air-pollution,https://api.github.com/repos/fanfanccluo/predicting-annual-air-pollution,,cs02.Rmd,cs02.Rmd,1,gh search code
+FatecFranca/ModeloProjetoSoftware,https://api.github.com/repos/FatecFranca/ModeloProjetoSoftware,4.0,AGENTS.md,AGENTS.md; .specify/scripts/bash/validate-spec-kit.sh,2,gh search code
+ferdiazreyes-icloud/fitness-dashboard,https://api.github.com/repos/ferdiazreyes-icloud/fitness-dashboard,,tasks.md,tasks.md,1,gh search code
+fetch150zy/chrome-bib-ext,https://api.github.com/repos/fetch150zy/chrome-bib-ext,,.claude/commands/speckit.specify.md,.claude/commands/speckit.specify.md,1,gh search code
+FeynmanZhou/console,https://api.github.com/repos/FeynmanZhou/console,2.0,src/components/Forms/GrayRelease/Version/index.scss,src/components/Forms/GrayRelease/Version/index.scss,1,gh search code
+FG-Tech-Consultant/interview-me-prj,https://api.github.com/repos/FG-Tech-Consultant/interview-me-prj,,.claude/commands/speckit.specifypd.md,.claude/commands/speckit.specifypd.md,1,gh search code
+FJS-Services-Inc/strategiq,https://api.github.com/repos/FJS-Services-Inc/strategiq,,.claude/commands/speckit.plan.md,.claude/commands/speckit.plan.md,1,gh search code
+FrancoStino/opencode-skills-antigravity,https://api.github.com/repos/FrancoStino/opencode-skills-antigravity,3.0,bundled-skills/speckit-updater/SKILL.md,bundled-skills/speckit-updater/SKILL.md,1,gh search code
+frankbria/codeframe-aco,https://api.github.com/repos/frankbria/codeframe-aco,1.0,CLAUDE.md,CLAUDE.md,1,gh search code
+frtu/agents-os,https://api.github.com/repos/frtu/agents-os,,leader-toolbox/memory/.specify/memory/constitution_README.md,leader-toolbox/memory/.specify/memory/constitution_README.md; leader-toolbox/.specify/memory/constitution_README.md,2,gh search code
+fsheee/spec-kit-demo-expenses-tracker,https://api.github.com/repos/fsheee/spec-kit-demo-expenses-tracker,,GEMINI.md,GEMINI.md,1,gh search code
+funai-wiki/funai-infer-chain,https://api.github.com/repos/funai-wiki/funai-infer-chain,,funai-signer/src/client/mod.rs,funai-signer/src/client/mod.rs,1,gh search code
+futuremobilitylabcsu/src,https://api.github.com/repos/futuremobilitylabcsu/src,,universe/autoware.universe/planning/behavior_velocity_run_out_module/src/manager.cpp,universe/autoware.universe/planning/behavior_velocity_run_out_module/src/manager.cpp,1,gh search code
+Gabriel-Lopezz/Open-Source,https://api.github.com/repos/Gabriel-Lopezz/Open-Source,,doc/source/user_guide/reshaping.rst,doc/source/user_guide/reshaping.rst,1,gh search code
+galiparanu/Adapter,https://api.github.com/repos/galiparanu/Adapter,,SETUP_COMPLETE.md,SETUP_COMPLETE.md; docs/gemini-integration.md,2,gh search code
+GauravSharmaCode/AI-Study-Planner,https://api.github.com/repos/GauravSharmaCode/AI-Study-Planner,,.qwen/commands/qwen.specify.md,.qwen/commands/qwen.specify.md,1,gh search code
+GaZmagik/claude-memory-plugin,https://api.github.com/repos/GaZmagik/claude-memory-plugin,5.0,.specify/specs/feature/001-memory-plugin/tasks.md,.specify/specs/feature/001-memory-plugin/tasks.md,1,gh search code
+gbif/hp-specify,https://api.github.com/repos/gbif/hp-specify,,home.md,home.md,1,gh search code
+geekerstar/OpenJdk-11,https://api.github.com/repos/geekerstar/OpenJdk-11,,src/sun/security/util/Resources_zh_CN.java,src/sun/security/util/Resources_zh_CN.java,1,gh search code
+GekoCloud/gekocloud-console,https://api.github.com/repos/GekoCloud/gekocloud-console,,src/components/Forms/GrayRelease/Version/index.scss,src/components/Forms/GrayRelease/Version/index.scss,1,gh search code
+GekoCloud/kconsole,https://api.github.com/repos/GekoCloud/kconsole,1.0,src/components/Forms/GrayRelease/Version/index.scss,src/components/Forms/GrayRelease/Version/index.scss,1,gh search code
+gellieb/workspace,https://api.github.com/repos/gellieb/workspace,,SQL .md,SQL .md,1,gh search code
+GiantCroissant-Lunar/sango-card,https://api.github.com/repos/GiantCroissant-Lunar/sango-card,,.specify/status/coordination-status.md,.specify/status/coordination-status.md; .agent/AGENTS.md,2,gh search code
+github/docs,https://api.github.com/repos/github/docs,19164.0,content/migrations/using-ghe-migrator/migrating-data-to-github-enterprise-server.md,content/migrations/using-ghe-migrator/migrating-data-to-github-enterprise-server.md,1,gh search code
+github/spec-kit,https://api.github.com/repos/github/spec-kit,81156.0,src/specify_cli/extensions.py,src/specify_cli/extensions.py,1,gh search code
+githubstudycloud/gij001,https://api.github.com/repos/githubstudycloud/gij001,,.claude/commands/plan.md,.claude/commands/plan.md,1,gh search code
+glucky0898/JDKCodeReading,https://api.github.com/repos/glucky0898/JDKCodeReading,1.0,src/sun/security/util/Resources_zh_CN.java,src/sun/security/util/Resources_zh_CN.java,1,gh search code
+goldbergyoni/test-coverage-mcp,https://api.github.com/repos/goldbergyoni/test-coverage-mcp,40.0,specs/002-coverage-diff-tracking/plan.md,specs/002-coverage-diff-tracking/plan.md,1,gh search code
+graydon/rust-prehistory,https://api.github.com/repos/graydon/rust-prehistory,713.0,src/rt/uthash-1.6/doc/txt/userguide.txt,src/rt/uthash-1.6/doc/txt/userguide.txt,1,gh search code
+GrundtvigsVaerker/develp,https://api.github.com/repos/GrundtvigsVaerker/develp,,public/stylesheets/placeCSS.css,public/stylesheets/placeCSS.css,1,gh search code
+gyasis/PromptChain,https://api.github.com/repos/gyasis/PromptChain,,GITHUB_SPEC_KIT_CHEATSHEET.md,GITHUB_SPEC_KIT_CHEATSHEET.md,1,gh search code
+H0onnn/spec-kit-test,https://api.github.com/repos/H0onnn/spec-kit-test,,.gemini/commands/speckit.specify.toml,.gemini/commands/speckit.specify.toml,1,gh search code
+hallba/BioModelAnalyzer,https://api.github.com/repos/hallba/BioModelAnalyzer,6.0,.specify/specs/001-linux-modernization/tasks.md,.specify/specs/001-linux-modernization/tasks.md,1,gh search code
+hanya/BookmarksMenu,https://api.github.com/repos/hanya/BookmarksMenu,3.0,po/de.po,po/de.po; po/fr.po; po/ja.po,3,gh search code
+HarborGuard/HarborGuard,https://api.github.com/repos/HarborGuard/HarborGuard,600.0,.dockerignore,.dockerignore,1,gh search code
+HarishRohini/PinplayTools,https://api.github.com/repos/HarishRohini/PinplayTools,5.0,out.2,out.2,1,gh search code
+HarshCasper/NeoAlgo,https://api.github.com/repos/HarshCasper/NeoAlgo,890.0,Python/ml/Flight_Delay_Predictions.ipynb,Python/ml/Flight_Delay_Predictions.ipynb,1,gh search code
+hashi-demo-lab/terraform-provider-bcm,https://api.github.com/repos/hashi-demo-lab/terraform-provider-bcm,1.0,.specify/scripts/bash/update-agent-context.sh,.specify/scripts/bash/update-agent-context.sh; .claude/agents/speckit.constitution.md,2,gh search code
+hcoona/schemastore-pkl,https://api.github.com/repos/hcoona/schemastore-pkl,,hk.pkl,hk.pkl,1,gh search code
+henriquemoody/charlie,https://api.github.com/repos/henriquemoody/charlie,6.0,examples/speckit/.cursor/commands/speckit.implement.md,examples/speckit/.cursor/commands/speckit.implement.md,1,gh search code
+Hieu-vn/voip-ai-agent,https://api.github.com/repos/Hieu-vn/voip-ai-agent,,.gemini/commands/speckit.specify.toml,.gemini/commands/speckit.specify.toml,1,gh search code
+Hisn00w/Spec-Kit-VS-Code,https://api.github.com/repos/Hisn00w/Spec-Kit-VS-Code,7.0,.gemini/commands/speckit.specify.toml,.gemini/commands/speckit.specify.toml; src/commands/specifyCommand.ts,2,gh search code
+hooriyaa/evolution-of-todo,https://api.github.com/repos/hooriyaa/evolution-of-todo,,QWEN.md,QWEN.md,1,gh search code
+Horlamedhey/yourfootprint,https://api.github.com/repos/Horlamedhey/yourfootprint,,assets/style.scss,assets/style.scss,1,gh search code
+howie/digital-twin-of-your-organization,https://api.github.com/repos/howie/digital-twin-of-your-organization,,.gemini/commands/speckit.specify.toml,.gemini/commands/speckit.specify.toml,1,gh search code
+hqwuzhaoyi/hass-ac-modbus,https://api.github.com/repos/hqwuzhaoyi/hass-ac-modbus,5.0,AGENTS.md,AGENTS.md,1,gh search code
+huahuaxu/Hotspot,https://api.github.com/repos/huahuaxu/Hotspot,6.0,jdk/src/share/classes/sun/security/util/Resources_sv.java,jdk/src/share/classes/sun/security/util/Resources_sv.java,1,gh search code
+hugogu/journal-maker,https://api.github.com/repos/hugogu/journal-maker,,CLAUDE.md,CLAUDE.md,1,gh search code
+hugogu/oh-my-skills,https://api.github.com/repos/hugogu/oh-my-skills,,setup.ps1,setup.ps1,1,gh search code
+Huzafi/AI-Native-Physical-Book,https://api.github.com/repos/Huzafi/AI-Native-Physical-Book,,CLAUDE.md,CLAUDE.md,1,gh search code
+iajzenszmi/CodeCode,https://api.github.com/repos/iajzenszmi/CodeCode,1.0,718-2,718-2; 718-programsample3.f; 718-2.f,3,gh search code
+iajzenszmi/Decent-Code-1,https://api.github.com/repos/iajzenszmi/Decent-Code-1,,718-2,718-2; 718-2.f; 718-programsample3.f,3,gh search code
+iamywl/CNCF,https://api.github.com/repos/iamywl/CNCF,,jenkins/war/src/main/webapp/scripts/hudson-behavior.js,jenkins/war/src/main/webapp/scripts/hudson-behavior.js,1,gh search code
+iand675/fizz,https://api.github.com/repos/iand675/fizz,,claude.md,claude.md; agent.md,2,gh search code
+IBM/iac-spec-kit,https://api.github.com/repos/IBM/iac-spec-kit,51.0,examples/04-landing-zone/cloud-workflows/gcp.md,examples/04-landing-zone/cloud-workflows/gcp.md,1,gh search code
+IEIAuto/AutoDRRT,https://api.github.com/repos/IEIAuto/AutoDRRT,54.0,src/autodrrt.application/planning/behavior_velocity_run_out_module/src/manager.cpp,src/autodrrt.application/planning/behavior_velocity_run_out_module/src/manager.cpp,1,gh search code
+im-rafael/autokit,https://api.github.com/repos/im-rafael/autokit,,base/.specify/scripts/bash/create-new-feature.sh,base/.specify/scripts/bash/create-new-feature.sh,1,gh search code
+imsanghaar/agentfactory,https://api.github.com/repos/imsanghaar/agentfactory,,.claude/commands/sp.specify.md,.claude/commands/sp.specify.md; .github/prompts/sp.specify.prompt.md,2,gh search code
+INB-Nathan/WIMS-BFP-PROTOTYPE,https://api.github.com/repos/INB-Nathan/WIMS-BFP-PROTOTYPE,,.cursor/rules/reviewer.mdc,.cursor/rules/reviewer.mdc,1,gh search code
+InfantLab/tada,https://api.github.com/repos/InfantLab/tada,,.claude/commands/speckit-tasks.md,.claude/commands/speckit-tasks.md,1,gh search code
+infobloxopen/ib-schema-registry,https://api.github.com/repos/infobloxopen/ib-schema-registry,,Makefile,Makefile,1,gh search code
+informatico-madrid/Architect-Expert-Gap-Forge,https://api.github.com/repos/informatico-madrid/Architect-Expert-Gap-Forge,,.specify/agents-roo/code-aegf-coder.yaml,.specify/agents-roo/code-aegf-coder.yaml,1,gh search code
+Insightpulseai/odoo,https://api.github.com/repos/Insightpulseai/odoo,4.0,.claude/commands/speckit.plan.md,.claude/commands/speckit.plan.md; odoo/.claude/commands/speckit.plan.md; odoo/odoo/.claude/commands/speckit.plan.md; odoo/odoo/odoo/.claude/commands/speckit.plan.md,4,gh search code
+intent-integrity-chain/kit,https://api.github.com/repos/intent-integrity-chain/kit,27.0,.claude/skills/iikit-core/scripts/bash/fetch-tile-evals.sh,.claude/skills/iikit-core/scripts/bash/fetch-tile-evals.sh; .claude/skills/iikit-core/scripts/bash/session-context-hook.sh; .claude/skills/iikit-core/scripts/dashboard/src/checklist.js,3,gh search code
+Interis-mk/AI-Hackathon,https://api.github.com/repos/Interis-mk/AI-Hackathon,,ai_hackathon/.specify/scripts/powershell/update-agent-context.ps1,ai_hackathon/.specify/scripts/powershell/update-agent-context.ps1,1,gh search code
+Irome/Azerothcore-Armory,https://api.github.com/repos/Irome/Azerothcore-Armory,4.0,_css/master.css,_css/master.css,1,gh search code
+irvinm/Title-Tamer,https://api.github.com/repos/irvinm/Title-Tamer,2.0,.agent/workflows/speckit.clarify.md,.agent/workflows/speckit.clarify.md,1,gh search code
+irvinm/TST-Tree-Sorter,https://api.github.com/repos/irvinm/TST-Tree-Sorter,1.0,.agent/workflows/speckit.clarify.md,.agent/workflows/speckit.clarify.md; .webextignore,2,gh search code
+ishiko732/vibe-coding-presets,https://api.github.com/repos/ishiko732/vibe-coding-presets,,.specify/scripts/bash/create-new-feature.sh,.specify/scripts/bash/create-new-feature.sh,1,gh search code
+Ismaouste/sidewalk-studio,https://api.github.com/repos/Ismaouste/sidewalk-studio,,docs/ai/workflows.md,docs/ai/workflows.md,1,gh search code
+itext/itextsharp,https://api.github.com/repos/itext/itextsharp,1396.0,src/core/iTextSharp/text/error_messages/en.lng,src/core/iTextSharp/text/error_messages/en.lng,1,gh search code
+itiliti/autotask-mcp,https://api.github.com/repos/itiliti/autotask-mcp,,WARP.md,WARP.md,1,gh search code
+ItsKumailHere/taskdotdo,https://api.github.com/repos/ItsKumailHere/taskdotdo,,QWEN.md,QWEN.md,1,gh search code
+IvanMurzak/Unity-MCP,https://api.github.com/repos/IvanMurzak/Unity-MCP,1455.0,.claude/commands/speckit.plan.md,.claude/commands/speckit.plan.md,1,gh search code
+ivo-toby/synthext,https://api.github.com/repos/ivo-toby/synthext,,.specify/autonomous-builder-prd.md,.specify/autonomous-builder-prd.md,1,gh search code
+j-mo/AWS-SDKs,https://api.github.com/repos/j-mo/AWS-SDKs,,java/example_code/emr/runjobflow-configurationclassification.java,java/example_code/emr/runjobflow-configurationclassification.java,1,gh search code
+j7-dev/wp-power-shop,https://api.github.com/repos/j7-dev/wp-power-shop,10.0,.specify/templates/plan-template.md,.specify/templates/plan-template.md,1,gh search code
+j7-dev/wp-powerhouse,https://api.github.com/repos/j7-dev/wp-powerhouse,4.0,.specify/templates/plan-template.md,.specify/templates/plan-template.md,1,gh search code
+Jack840517/AzurePowershell,https://api.github.com/repos/Jack840517/AzurePowershell,2.0,src/Elastic/generated/runtime/Nodes/JsonDate.cs,src/Elastic/generated/runtime/Nodes/JsonDate.cs; src/ResourceGraph/ResourceGraph.Autorest/generated/runtime/Nodes/JsonDate.cs,2,gh search code
+jagoanbunda/laravel,https://api.github.com/repos/jagoanbunda/laravel,,.dockerignore,.dockerignore,1,gh search code
+jantman/machine-access-control,https://api.github.com/repos/jantman/machine-access-control,1.0,.specify/scripts/bash/common.sh,.specify/scripts/bash/common.sh; .claude/commands/speckit.plan.md,2,gh search code
+janvanwassenhove/mITyFactory,https://api.github.com/repos/janvanwassenhove/mITyFactory,,.specify/glossary.md,.specify/glossary.md,1,gh search code
+JaviMontano/jm-agentic-development-kit,https://api.github.com/repos/JaviMontano/jm-agentic-development-kit,,aad-metodologia/.claude/skills/iikit-core/scripts/bash/fetch-tile-evals.sh,aad-metodologia/.claude/skills/iikit-core/scripts/bash/fetch-tile-evals.sh; aad-metodologia/.claude/skills/iikit-core/scripts/bash/session-context-hook.sh; aad-metodologia/.claude/skills/iikit-core/scripts/dashboard/src/checklist.js,3,gh search code
+jclaudan/firefish,https://api.github.com/repos/jclaudan/firefish,1.0,packages/client/src/components/global/MkAd.vue,packages/client/src/components/global/MkAd.vue,1,gh search code
+jcornell3/tamshai-enterprise-ai,https://api.github.com/repos/jcornell3/tamshai-enterprise-ai,,docs/status/V1.4_UPDATE_STATUS.md,docs/status/V1.4_UPDATE_STATUS.md,1,gh search code
+Jean-claude21/vtt-labs,https://api.github.com/repos/Jean-claude21/vtt-labs,,note.txt,note.txt,1,gh search code
+jeffwu0624/20251117_TennisGame,https://api.github.com/repos/jeffwu0624/20251117_TennisGame,,GEMINI.md,GEMINI.md,1,gh search code
+jejacks0n/teaspoon,https://api.github.com/repos/jejacks0n/teaspoon,1422.0,teaspoon-mocha/lib/teaspoon/mocha/assets/mocha/1.10.0.js,teaspoon-mocha/lib/teaspoon/mocha/assets/mocha/1.10.0.js,1,gh search code
+jemustain/greco-coin,https://api.github.com/repos/jemustain/greco-coin,,.specify/CONSTITUTION_SUMMARY.md,.specify/CONSTITUTION_SUMMARY.md,1,gh search code
+jenkinsci/jenkins,https://api.github.com/repos/jenkinsci/jenkins,25120.0,war/src/main/webapp/scripts/hudson-behavior.js,war/src/main/webapp/scripts/hudson-behavior.js; core/src/main/resources/jenkins/security/ApiTokenProperty/resources.js,2,gh search code
+jenkinsci/job-config-history-plugin,https://api.github.com/repos/jenkinsci/job-config-history-plugin,55.0,src/main/resources/hudson/plugins/jobConfigHistory/checkbox-logic.js,src/main/resources/hudson/plugins/jobConfigHistory/checkbox-logic.js,1,gh search code
+jenkinsci/role-strategy-plugin,https://api.github.com/repos/jenkinsci/role-strategy-plugin,145.0,src/main/webapp/js/tableManage.js,src/main/webapp/js/tableManage.js,1,gh search code
+jeremi-ahmuuo/Data-Analysis,https://api.github.com/repos/jeremi-ahmuuo/Data-Analysis,,Customer Satisfaction/codes.R,Customer Satisfaction/codes.R,1,gh search code
+jeremyeder/acpctl,https://api.github.com/repos/jeremyeder/acpctl,,rfe.md,rfe.md,1,gh search code
+jesec/flood,https://api.github.com/repos/jesec/flood,2724.0,client/src/javascript/components/modals/feeds-modal/FeedsTab.tsx,client/src/javascript/components/modals/feeds-modal/FeedsTab.tsx,1,gh search code
+jessehammons/pywcsk,https://api.github.com/repos/jessehammons/pywcsk,,attic/.claude/commands/speckit.specify.md,attic/.claude/commands/speckit.specify.md,1,gh search code
+jessenaiman/chapter-zero,https://api.github.com/repos/jessenaiman/chapter-zero,,.qwen/commands/speckit.specify.toml,.qwen/commands/speckit.specify.toml,1,gh search code
+JetBrains/intellij-community,https://api.github.com/repos/JetBrains/intellij-community,19855.0,python/testSrc/com/jetbrains/python/console/PythonConsoleParsingTest.java,python/testSrc/com/jetbrains/python/console/PythonConsoleParsingTest.java; platform/dvcs-api/src/com/intellij/dvcs/push/VcsError.java,2,gh search code
+jeyalmonte/BillStockManager-Backend,https://api.github.com/repos/jeyalmonte/BillStockManager-Backend,,src/Infrastructure/Billing/Persistence/Repositories/InvoiceRepository.cs,src/Infrastructure/Billing/Persistence/Repositories/InvoiceRepository.cs,1,gh search code
+jflowers/get-out,https://api.github.com/repos/jflowers/get-out,,openspec/config.yaml,openspec/config.yaml,1,gh search code
+jgtolentino/opex,https://api.github.com/repos/jgtolentino/opex,,TASKS.md,TASKS.md,1,gh search code
+jjunho/HsJupyter,https://api.github.com/repos/jjunho/HsJupyter,4.0,AGENTS.md,AGENTS.md,1,gh search code
+jmanhype/speckit,https://api.github.com/repos/jmanhype/speckit,13.0,.claude/skills/beads-integration/SKILL.md,.claude/skills/beads-integration/SKILL.md,1,gh search code
+jnhuynh/spec-kit-simpsons-loops,https://api.github.com/repos/jnhuynh/spec-kit-simpsons-loops,4.0,templates/CLAUDE.md,templates/CLAUDE.md; claude-agents/lisa.md; .claude/agents/lisa.md,3,gh search code
+joeolson42/WFIP2,https://api.github.com/repos/joeolson42/WFIP2,,WRFV3.9/chem/module_aerosols_sorgam.F,WRFV3.9/chem/module_aerosols_sorgam.F; WRFV3.7.1/chem/module_aerosols_sorgam.F,2,gh search code
+joeolson42/WRFv3.9_HRRRv4,https://api.github.com/repos/joeolson42/WRFv3.9_HRRRv4,,chem/module_aerosols_sorgam.F,chem/module_aerosols_sorgam.F,1,gh search code
+john-agentic-ai-tools/crush,https://api.github.com/repos/john-agentic-ai-tools/crush,,CLAUDE.md,CLAUDE.md,1,gh search code
+johnair01/bars-engine,https://api.github.com/repos/johnair01/bars-engine,1.0,.specify/specs/quest-metabolism-wizard-gm/spec.md,.specify/specs/quest-metabolism-wizard-gm/spec.md; packages/bars-core/src/archetype-overlay/index.ts; src/lib/feature-decomposition.ts; .specify/specs/sage-brief-v2/spec.md; src/lib/daemon-active-state.ts; src/lib/gm-face-modifiers/index.ts; .specify/backlog/prompts/flow-simulator-cli.md; .specify/backlog/prompts/quest-library-wave-routing.md; src/lib/quest-grammar/compileQuestSkeleton.ts; packages/bars-core/src/quest-grammar/compileQuestSkeleton.ts; .specify/backlog/prompts/quest-grammar-ux-flow.md,11,gh search code
+johnHackworth/goblin,https://api.github.com/repos/johnHackworth/goblin,57.0,packages/client/src/components/global/MkAd.vue,packages/client/src/components/global/MkAd.vue,1,gh search code
+johnnify/chrono,https://api.github.com/repos/johnnify/chrono,,.claude/settings.json,.claude/settings.json,1,gh search code
+johnparayno/judoklar,https://api.github.com/repos/johnparayno/judoklar,,.specify/templates/spec-template.md,.specify/templates/spec-template.md,1,gh search code
+JohnScolaro/advent-of-code,https://api.github.com/repos/JohnScolaro/advent-of-code,2.0,2019/intcode/computer_helpers.py,2019/intcode/computer_helpers.py,1,gh search code
+JonathanHoskins/sneakershop,https://api.github.com/repos/JonathanHoskins/sneakershop,,package.json,package.json,1,gh search code
+jonshaffer/wgu-extension,https://api.github.com/repos/jonshaffer/wgu-extension,1.0,CLAUDE.md,CLAUDE.md,1,gh search code
+Joonki0111/src,https://api.github.com/repos/Joonki0111/src,,universe/autoware.universe/planning/behavior_velocity_run_out_module/src/manager.cpp,universe/autoware.universe/planning/behavior_velocity_run_out_module/src/manager.cpp,1,gh search code
+joshuafuller/beacon,https://api.github.com/repos/joshuafuller/beacon,5.0,specs/005-foundation-consolidation/COMPLETION_VALIDATION.md,specs/005-foundation-consolidation/COMPLETION_VALIDATION.md,1,gh search code
+joshuajhun/ideaBox2.0,https://api.github.com/repos/joshuajhun/ideaBox2.0,,public/assets/mocha/1.10.0-3caf215ba01eda4984284ed91ba64f1094101e1c7c957101c60dc535738a06ca.js,public/assets/mocha/1.10.0-3caf215ba01eda4984284ed91ba64f1094101e1c7c957101c60dc535738a06ca.js,1,gh search code
+josiahH-cf/espansr,https://api.github.com/repos/josiahH-cf/espansr,,workflow/PLAYBOOK.md,workflow/PLAYBOOK.md,1,gh search code
+josiahH-cf/orchestratr,https://api.github.com/repos/josiahH-cf/orchestratr,,workflow/LINT_REPORT.md,workflow/LINT_REPORT.md,1,gh search code
+josiahH-cf/workflow,https://api.github.com/repos/josiahH-cf/workflow,,template/workflow/LINT_REPORT.md,template/workflow/LINT_REPORT.md,1,gh search code
+Josuro030/azure-powershell-clone,https://api.github.com/repos/Josuro030/azure-powershell-clone,,src/ResourceGraph/ResourceGraph.Autorest/generated/runtime/Nodes/JsonDate.cs,src/ResourceGraph/ResourceGraph.Autorest/generated/runtime/Nodes/JsonDate.cs,1,gh search code
+JunyangShao/SunnyMilkJDK,https://api.github.com/repos/JunyangShao/SunnyMilkJDK,3.0,src/java.base/share/classes/sun/security/tools/keytool/Main.java,src/java.base/share/classes/sun/security/tools/keytool/Main.java,1,gh search code
+justinbarias/opentelemetry-instrumentation-claude-agent-sdk,https://api.github.com/repos/justinbarias/opentelemetry-instrumentation-claude-agent-sdk,,.claude/commands/speckit.plan.md,.claude/commands/speckit.plan.md,1,gh search code
+justinhuangcode/tmuxpulse,https://api.github.com/repos/justinhuangcode/tmuxpulse,1.0,Cargo.toml,Cargo.toml,1,gh search code
+juvenal/openrender,https://api.github.com/repos/juvenal/openrender,6.0,.qwen/commands/speckit.specify.toml.backup,.qwen/commands/speckit.specify.toml.backup; .gemini/commands/speckit.specify.toml,2,gh search code
+jwill9999/spec-kit,https://api.github.com/repos/jwill9999/spec-kit,1.0,scripts/powershell/update-agent-context.ps1,scripts/powershell/update-agent-context.ps1,1,gh search code
+jxxiangwen/JavaStudy,https://api.github.com/repos/jxxiangwen/JavaStudy,,java9SrcStudy/src/java.base/sun/security/util/AuthResources_ko.java,java9SrcStudy/src/java.base/sun/security/util/AuthResources_ko.java; java9SrcStudy/src/java.base/sun/security/util/Resources_ja.java,2,gh search code
+kangjianwei/LearningJDK,https://api.github.com/repos/kangjianwei/LearningJDK,1554.0,src/sun/security/util/Resources_zh_CN.java,src/sun/security/util/Resources_zh_CN.java,1,gh search code
+karmaterminal/strudel-music,https://api.github.com/repos/karmaterminal/strudel-music,,README.md,README.md,1,gh search code
+kazuma0606/rust-microservice-with-envoy,https://api.github.com/repos/kazuma0606/rust-microservice-with-envoy,1.0,.claude/commands/speckit.plan.md,.claude/commands/speckit.plan.md,1,gh search code
+keen0429/assistant-ui,https://api.github.com/repos/keen0429/assistant-ui,4.0,scripts/cleanup-monorepo.sh,scripts/cleanup-monorepo.sh,1,gh search code
+klaaay/spec-toolkit,https://api.github.com/repos/klaaay/spec-toolkit,1.0,packages/spec-kit-ts/src/spec-kit-templates/base/.specify/plugins/fe-rule/hooks/pre-plan-check.sh,packages/spec-kit-ts/src/spec-kit-templates/base/.specify/plugins/fe-rule/hooks/pre-plan-check.sh; packages/spec-kit-ts/src/spec-kit-templates/scripts/sh/.specify/scripts/bash/plugin-loader.sh,2,gh search code
+KliniKaCRO/Y90RS,https://api.github.com/repos/KliniKaCRO/Y90RS,,urso_analysis_codebook.R,urso_analysis_codebook.R,1,gh search code
+klojtas/numbers,https://api.github.com/repos/klojtas/numbers,,.specify/scripts/validation/validate-constitution.ps1,.specify/scripts/validation/validate-constitution.ps1; .specify/memory/IMPLEMENTATION_SUMMARY.md,2,gh search code
+knitli/codeweaver,https://api.github.com/repos/knitli/codeweaver,7.0,.specify/scripts/bash/update-agent-context.sh,.specify/scripts/bash/update-agent-context.sh,1,gh search code
+KnottyDyes/cribl-hc,https://api.github.com/repos/KnottyDyes/cribl-hc,4.0,scripts/build_spec_context.sh,scripts/build_spec_context.sh; .specify/skills/commit-safety.md; docs/PRD.md,3,gh search code
+komiyak/sandbox-opengl-22,https://api.github.com/repos/komiyak/sandbox-opengl-22,,vertex_specification/color_vertex_specification.h,vertex_specification/color_vertex_specification.h,1,gh search code
+kriszyp/alkali,https://api.github.com/repos/kriszyp/alkali,167.0,Variable.js,Variable.js,1,gh search code
+kuding-go/api-x-spec,https://api.github.com/repos/kuding-go/api-x-spec,,.specify/scripts/powershell/setup-plan.ps1,.specify/scripts/powershell/setup-plan.ps1,1,gh search code
+kvcop/ai-kb-assistant,https://api.github.com/repos/kvcop/ai-kb-assistant,,.codex/prompts/speckit.checklist.md,.codex/prompts/speckit.checklist.md,1,gh search code
+Kxd395/ASAM_App,https://api.github.com/repos/Kxd395/ASAM_App,,INDEX.md,INDEX.md,1,gh search code
+LadiosSopp/art-voice-agent-accelerator,https://api.github.com/repos/LadiosSopp/art-voice-agent-accelerator,,docs/archive/proposals/specify-integration-proposal.md,docs/archive/proposals/specify-integration-proposal.md,1,gh search code
+laibaaimran22/Hackathon-2-Todo-App-speckit,https://api.github.com/repos/laibaaimran22/Hackathon-2-Todo-App-speckit,,Phase-1/CLAUDE.md,Phase-1/CLAUDE.md,1,gh search code
+langgenius/dify,https://api.github.com/repos/langgenius/dify,134081.0,web/i18n/nl-NL/common.json,web/i18n/nl-NL/common.json; web/i18n/pl-PL/common.json; web/i18n/it-IT/plugin.json,3,gh search code
+lastaflute/lastaflute-example-harbor,https://api.github.com/repos/lastaflute/lastaflute-example-harbor,6.0,src/main/java/org/docksidestage/dbflute/cbean/bs/BsRegionCB.java,src/main/java/org/docksidestage/dbflute/cbean/bs/BsRegionCB.java; src/main/java/org/docksidestage/dbflute/bsbhv/BsProductStatusBhv.java; src/main/java/org/docksidestage/dbflute/cbean/bs/BsProductCB.java,3,gh search code
+lastaflute/lastaflute-example-paradeplaza,https://api.github.com/repos/lastaflute/lastaflute-example-paradeplaza,,src/main/java/org/docksidestage/dbflute/bsbhv/BsPurchaseBhv.java,src/main/java/org/docksidestage/dbflute/bsbhv/BsPurchaseBhv.java,1,gh search code
+LChiara/mcp-jira-integration,https://api.github.com/repos/LChiara/mcp-jira-integration,,.specify/PLAN.md,.specify/PLAN.md,1,gh search code
+leocamello/spec-kit-v-model,https://api.github.com/repos/leocamello/spec-kit-v-model,14.0,.specify/memory/constitution.md,.specify/memory/constitution.md,1,gh search code
+leonardoFu/speckit-wiggum-toolkit,https://api.github.com/repos/leonardoFu/speckit-wiggum-toolkit,,.claude/commands/speckit.review.md,.claude/commands/speckit.review.md,1,gh search code
+leonardomoraisf/ai-usage-tracking-extension,https://api.github.com/repos/leonardomoraisf/ai-usage-tracking-extension,1.0,.specify/templates/spec-template.md,.specify/templates/spec-template.md,1,gh search code
+leonartist7/Creator,https://api.github.com/repos/leonartist7/Creator,,spec-kit-main/docs/upgrade.md,spec-kit-main/docs/upgrade.md,1,gh search code
+leonbreukelman/smactorio,https://api.github.com/repos/leonbreukelman/smactorio,,GEMINI.md,GEMINI.md; src/smactorio/templates/speckit.constitution.agent.md.j2,2,gh search code
+liangz0707/TenEngine,https://api.github.com/repos/liangz0707/TenEngine,,.claude/commands/contracts-push.md,.claude/commands/contracts-push.md,1,gh search code
+libs-factory/riso-spec-kit,https://api.github.com/repos/libs-factory/riso-spec-kit,,src/specify_cli/__init__.py,src/specify_cli/__init__.py; scripts/bash/epic-breakdown.sh,2,gh search code
+lila-graph/ra-commons,https://api.github.com/repos/lila-graph/ra-commons,1.0,CLAUDE.md,CLAUDE.md,1,gh search code
+limm33/jdk-source,https://api.github.com/repos/limm33/jdk-source,143.0,jdk1.9/src/main/java/java.base/sun/security/util/AuthResources_ko.java,jdk1.9/src/main/java/java.base/sun/security/util/AuthResources_ko.java; jdk1.9/src/main/java/java.base/sun/security/util/Resources_ja.java,2,gh search code
+Linfee/spec-kit-cn,https://api.github.com/repos/Linfee/spec-kit-cn,565.0,scripts/powershell/update-agent-context.ps1,scripts/powershell/update-agent-context.ps1; docs/local-development.md,2,gh search code
+lingxling/awesome-skills-cn,https://api.github.com/repos/lingxling/awesome-skills-cn,23.0,antigravity-awesome-skills/skills/speckit-updater/SKILL.md,antigravity-awesome-skills/skills/speckit-updater/SKILL.md,1,gh search code
+liu1352183717/MyKeyTool,https://api.github.com/repos/liu1352183717/MyKeyTool,1.0,app/src/main/java/sun/security/util/Resources_sv.java,app/src/main/java/sun/security/util/Resources_sv.java,1,gh search code
+liuwei1989/jdk,https://api.github.com/repos/liuwei1989/jdk,,src/sun/security/util/Resources_zh_CN.java,src/sun/security/util/Resources_zh_CN.java,1,gh search code
+ljquan/aitu,https://api.github.com/repos/ljquan/aitu,477.0,.codebuddy/commands/README-speckit-auto.md,.codebuddy/commands/README-speckit-auto.md,1,gh search code
+LJT-520/openClaw-backup,https://api.github.com/repos/LJT-520/openClaw-backup,,skills/karmafeast/strudel-music/README.md,skills/karmafeast/strudel-music/README.md,1,gh search code
+ll7/robot_sf_ll7,https://api.github.com/repos/ll7/robot_sf_ll7,5.0,AGENTS.md,AGENTS.md,1,gh search code
+Logrui/suna-advanced-workflows,https://api.github.com/repos/Logrui/suna-advanced-workflows,,.agent/workflows/plan.md,.agent/workflows/plan.md,1,gh search code
+louiswicker/rapv5,https://api.github.com/repos/louiswicker/rapv5,,sorc/rap_wrfarw.fd/WRFV3.9/chem/module_aerosols_sorgam.F,sorc/rap_wrfarw.fd/WRFV3.9/chem/module_aerosols_sorgam.F,1,gh search code
+louiswicker/WRF,https://api.github.com/repos/louiswicker/WRF,,phys/module_cu_mskf.F,phys/module_cu_mskf.F,1,gh search code
+lsendel/sass,https://api.github.com/repos/lsendel/sass,,llms.txt,llms.txt,1,gh search code
+luajit-remake/luajit-remake,https://api.github.com/repos/luajit-remake/luajit-remake,1282.0,annotated/bytecodes/global_put.cpp,annotated/bytecodes/global_put.cpp,1,gh search code
+luzhenqian/ai-coding-lab,https://api.github.com/repos/luzhenqian/ai-coding-lab,31.0,agent/repo-analyzer/.specify/memory/constitution.md,agent/repo-analyzer/.specify/memory/constitution.md,1,gh search code
+luzumi/raeuberbude,https://api.github.com/repos/luzumi/raeuberbude,,AGENT.md,AGENT.md; scripts/start-docker-complete.bat,2,gh search code
+lwyBZss8924d/ACPLazyBridge,https://api.github.com/repos/lwyBZss8924d/ACPLazyBridge,3.0,WARP.md,WARP.md; scripts/sdd/setup-plan.sh; specs/AGENTS.md,3,gh search code
+maccotaro/ai-micro-specs,https://api.github.com/repos/maccotaro/ai-micro-specs,,.specify/memory/project-context-core.md,.specify/memory/project-context-core.md,1,gh search code
+madelinben/website-template,https://api.github.com/repos/madelinben/website-template,1.0,.claude/rules/database.md,.claude/rules/database.md,1,gh search code
+madihaisawesome/chorate-madiha,https://api.github.com/repos/madihaisawesome/chorate-madiha,,web/i18n/it-IT/plugin.json,web/i18n/it-IT/plugin.json,1,gh search code
+maERP/maERP,https://api.github.com/repos/maERP/maERP,87.0,src/maERP.Application/Features/ImportExport/Queries/CustomerCsvExport/CustomerCsvExportHandler.cs,src/maERP.Application/Features/ImportExport/Queries/CustomerCsvExport/CustomerCsvExportHandler.cs,1,gh search code
+majiayu000/claude-skill-registry,https://api.github.com/repos/majiayu000/claude-skill-registry,132.0,skills/data/create-specs/metadata.json,skills/data/create-specs/metadata.json; skills/data/ctx-collector/metadata.json; skills/productivity/beads-integration/SKILL.md; skills/productivity/beads-integration-jmanhype-speckit/SKILL.md,4,gh search code
+majiayu000/claude-skill-registry-data,https://api.github.com/repos/majiayu000/claude-skill-registry-data,2.0,other/other/speckit-updater/SKILL.md,other/other/speckit-updater/SKILL.md; data/create-specs/metadata.json; data/ctx-collector/metadata.json; productivity/beads-integration/SKILL.md; productivity/beads-integration-jmanhype-speckit/SKILL.md,5,gh search code
+making/spring-boot-db-samples,https://api.github.com/repos/making/spring-boot-db-samples,73.0,demo-dbflute/src/main/java/com/example/dbflute/cbean/cq/bs/AbstractBsPizzaToppingsCQ.java,demo-dbflute/src/main/java/com/example/dbflute/cbean/cq/bs/AbstractBsPizzaToppingsCQ.java,1,gh search code
+mako-tos/kintore2,https://api.github.com/repos/mako-tos/kintore2,,.specify/templates/agent-file-template.md,.specify/templates/agent-file-template.md,1,gh search code
+Manitowoc-Tool-and-Manufacturing/MTM_Avalonia_Template,https://api.github.com/repos/Manitowoc-Tool-and-Manufacturing/MTM_Avalonia_Template,,docs/SPECIFY-CHECKLIST.md,docs/SPECIFY-CHECKLIST.md,1,gh search code
+Manitowoc-Tool-and-Manufacturing/MTM_WIP_Application_Avalonia,https://api.github.com/repos/Manitowoc-Tool-and-Manufacturing/MTM_WIP_Application_Avalonia,1.0,.specify/docs/gsc-phase3-validation.md,.specify/docs/gsc-phase3-validation.md,1,gh search code
+mapo80/speckit-autopilot,https://api.github.com/repos/mapo80/speckit-autopilot,,templates/spec-kit-claude/.specify/scripts/bash/create-new-feature.sh,templates/spec-kit-claude/.specify/scripts/bash/create-new-feature.sh,1,gh search code
+marbl/metAMOS,https://api.github.com/repos/marbl/metAMOS,93.0,Utilities/ruffus/ruffus_exceptions.py,Utilities/ruffus/ruffus_exceptions.py,1,gh search code
+marekhummel/ferrunitas,https://api.github.com/repos/marekhummel/ferrunitas,1.0,examples/misc.rs,examples/misc.rs,1,gh search code
+maripo/CustomFilter,https://api.github.com/repos/maripo/CustomFilter,66.0,ts/src/pref/list_rules.ts,ts/src/pref/list_rules.ts,1,gh search code
+marswangyang/spec-kit-skill,https://api.github.com/repos/marswangyang/spec-kit-skill,,SKILL.md,SKILL.md,1,gh search code
+martha-ketsela-mengistu/project-chimera-agentic-infrastructure,https://api.github.com/repos/martha-ketsela-mengistu/project-chimera-agentic-infrastructure,,.agent/rules/specs-first.md,.agent/rules/specs-first.md,1,gh search code
+MartyBonacci/spec-kit-extensions,https://api.github.com/repos/MartyBonacci/spec-kit-extensions,66.0,commands/speckit.refactor.md,commands/speckit.refactor.md; extensions/README.md,2,gh search code
+maryumxx/PADH-Book,https://api.github.com/repos/maryumxx/PADH-Book,,frontend/.specify/scripts/powershell/create-new-feature.ps1,frontend/.specify/scripts/powershell/create-new-feature.ps1,1,gh search code
+maslennikov-ig/BuhBot,https://api.github.com/repos/maslennikov-ig/BuhBot,1.0,.claude/commands/speckit.checklist.md,.claude/commands/speckit.checklist.md,1,gh search code
+maslennikov-ig/claude-code-orchestrator-kit,https://api.github.com/repos/maslennikov-ig/claude-code-orchestrator-kit,155.0,.claude/commands/speckit.checklist.md,.claude/commands/speckit.checklist.md,1,gh search code
+mathewab/actual-assist,https://api.github.com/repos/mathewab/actual-assist,10.0,AGENTS.md,AGENTS.md,1,gh search code
+MatiasJRB/turnero,https://api.github.com/repos/MatiasJRB/turnero,,.specify/scripts/powershell/common.ps1,.specify/scripts/powershell/common.ps1,1,gh search code
+MatthiasWissink/structured-queries,https://api.github.com/repos/MatthiasWissink/structured-queries,1.0,.npmignore,.npmignore,1,gh search code
+mavlink/qgroundcontrol,https://api.github.com/repos/mavlink/qgroundcontrol,4449.0,src/MissionManager/MissionSettingsItem.cc,src/MissionManager/MissionSettingsItem.cc,1,gh search code
+Max-We/rlvr-for-timeline-summarization,https://api.github.com/repos/Max-We/rlvr-for-timeline-summarization,,r1_searcher/OpenRLHF-RAG/dpsk1_5b-1node-grpo-jjh-log.txt,r1_searcher/OpenRLHF-RAG/dpsk1_5b-1node-grpo-jjh-log.txt,1,gh search code
+Maximus-Technologies-Uganda/maximus-training-patrick-mirror,https://api.github.com/repos/Maximus-Technologies-Uganda/maximus-training-patrick-mirror,,spec-kit-scaffold/.specify/scripts/powershell/setup-plan.ps1,spec-kit-scaffold/.specify/scripts/powershell/setup-plan.ps1; README.md.bootstrap-backup,2,gh search code
+Maxwell-Rosen/gkylmax,https://api.github.com/repos/Maxwell-Rosen/gkylmax,,stellar-wham1x-restart-lores/jobscript-gkyl-stellar,stellar-wham1x-restart-lores/jobscript-gkyl-stellar; wham1x_saturation_scaling/jobscript-scaling-gkyl-traverse,2,gh search code
+mb46010/signal_pipe,https://api.github.com/repos/mb46010/signal_pipe,,llms.txt,llms.txt,1,gh search code
+mbartolini18/WRFV4_spp,https://api.github.com/repos/mbartolini18/WRFV4_spp,,phys/module_cu_mskf.F,phys/module_cu_mskf.F,1,gh search code
+mbpfws/speckit-buff-v2,https://api.github.com/repos/mbpfws/speckit-buff-v2,,CLAUDE.md,CLAUDE.md,1,gh search code
+MCSDWes/chalk-line,https://api.github.com/repos/MCSDWes/chalk-line,,.specify/scripts/powershell/update-agent-context.ps1,.specify/scripts/powershell/update-agent-context.ps1,1,gh search code
+mdudaj/nimr-billing,https://api.github.com/repos/mdudaj/nimr-billing,,.dockerignore,.dockerignore,1,gh search code
+MeAndRhythm/vue3-pure-cron,https://api.github.com/repos/MeAndRhythm/vue3-pure-cron,5.0,src/components/SecondPicker.vue,src/components/SecondPicker.vue,1,gh search code
+meco40/openworker,https://api.github.com/repos/meco40/openworker,,package.json,package.json,1,gh search code
+mehdic/ARTK,https://api.github.com/repos/mehdic/ARTK,,bazinga/scripts/parse-speckit-tasks.sh,bazinga/scripts/parse-speckit-tasks.sh,1,gh search code
+mehdic/bazinga,https://api.github.com/repos/mehdic/bazinga,20.0,scripts/parse-speckit-tasks.sh,scripts/parse-speckit-tasks.sh,1,gh search code
+mehdic/CDC,https://api.github.com/repos/mehdic/CDC,,.claude/scripts/parse-speckit-tasks.sh,.claude/scripts/parse-speckit-tasks.sh; bazinga/scripts/parse-speckit-tasks.sh,2,gh search code
+mehdic/stock-monitor,https://api.github.com/repos/mehdic/stock-monitor,,.claude/scripts/parse-speckit-tasks.sh,.claude/scripts/parse-speckit-tasks.sh,1,gh search code
+mephyston/ia-spec-driven-dev,https://api.github.com/repos/mephyston/ia-spec-driven-dev,,.specify/README.md,.specify/README.md,1,gh search code
+MetOffice/simulation-systems,https://api.github.com/repos/MetOffice/simulation-systems,50.0,source/FurtherDetails/coding_style.rst,source/FurtherDetails/coding_style.rst,1,gh search code
+mhkz/fanqie-novels-skills,https://api.github.com/repos/mhkz/fanqie-novels-skills,1.0,templates/scripts/powershell/manage-relations.ps1,templates/scripts/powershell/manage-relations.ps1; templates/scripts/bash/analyze-story.sh,2,gh search code
+michen00/ctrl-f,https://api.github.com/repos/michen00/ctrl-f,,.specify/scripts/bash/setup-plan.sh,.specify/scripts/bash/setup-plan.sh,1,gh search code
+Microck/ordinary-claude-skills,https://api.github.com/repos/Microck/ordinary-claude-skills,142.0,skills_all/claude-win11-speckit-update-skill/SECURITY.md,skills_all/claude-win11-speckit-update-skill/SECURITY.md; skills_all/claude-win11-speckit-update-skill/CHANGELOG.md,2,gh search code
+microsoft/TypeScript,https://api.github.com/repos/microsoft/TypeScript,108250.0,src/testRunner/parallel/worker.ts,src/testRunner/parallel/worker.ts,1,gh search code
+micsapp/micstec-skills,https://api.github.com/repos/micsapp/micstec-skills,,claude-code/claude-night-market/plugins/spec-kit/skills/speckit-orchestrator/modules/artifact-structure.md,claude-code/claude-night-market/plugins/spec-kit/skills/speckit-orchestrator/modules/artifact-structure.md,1,gh search code
+minniai/wottle,https://api.github.com/repos/minniai/wottle,1.0,.cursor/rules/specify-rules.mdc,.cursor/rules/specify-rules.mdc,1,gh search code
+mintlify-atlas/docs-atlas-0c5cacdc,https://api.github.com/repos/mintlify-atlas/docs-atlas-0c5cacdc,,installation.mdx,installation.mdx; agents/overview.mdx,2,gh search code
+MistRay/jdk-study,https://api.github.com/repos/MistRay/jdk-study,5.0,jdk1.9/src/main/java/java.base/sun/security/util/AuthResources_ko.java,jdk1.9/src/main/java/java.base/sun/security/util/AuthResources_ko.java; jdk1.9/src/main/java/java.base/sun/security/util/Resources_ja.java,2,gh search code
+mixseek/mixseek-core,https://api.github.com/repos/mixseek/mixseek-core,47.0,CLAUDE.md,CLAUDE.md,1,gh search code
+mjulstein/godot-gta,https://api.github.com/repos/mjulstein/godot-gta,,.specify/templates/constitution-template.md,.specify/templates/constitution-template.md,1,gh search code
+mjunaidca/banana_image_editor,https://api.github.com/repos/mjunaidca/banana_image_editor,3.0,QWEN.md,QWEN.md; .qwen/commands/tasks.toml,2,gh search code
+mjunaidca/robolearn,https://api.github.com/repos/mjunaidca/robolearn,7.0,CLAUDE.md,CLAUDE.md,1,gh search code
+mkgask/game-mytownmap,https://api.github.com/repos/mkgask/game-mytownmap,,AGENTS.md,AGENTS.md,1,gh search code
+mkgask/game-mytownmap.old,https://api.github.com/repos/mkgask/game-mytownmap.old,,.docs-human-ja/README.ja.md,.docs-human-ja/README.ja.md,1,gh search code
+mlanza/boulder-dash,https://api.github.com/repos/mlanza/boulder-dash,,libs/atomic/shell.js,libs/atomic/shell.js,1,gh search code
+mmicko/VeriEMU,https://api.github.com/repos/mmicko/VeriEMU,7.0,src/emu/image.cpp,src/emu/image.cpp,1,gh search code
+mmonteleone/pavlov,https://api.github.com/repos/mmonteleone/pavlov,172.0,pavlov.js,pavlov.js,1,gh search code
+mob-sakai/OpenSesame,https://api.github.com/repos/mob-sakai/OpenSesame,35.0,roslyn/docs/analyzers/Report Analyzer Format.md,roslyn/docs/analyzers/Report Analyzer Format.md,1,gh search code
+moghazy17/jobradar,https://api.github.com/repos/moghazy17/jobradar,,.claude/commands/speckit.specify.md,.claude/commands/speckit.specify.md,1,gh search code
+Mohsin-Raza-developer/Physical-AI-Humanoid-Robotics-Textbook,https://api.github.com/repos/Mohsin-Raza-developer/Physical-AI-Humanoid-Robotics-Textbook,,QWEN.md,QWEN.md; CLAUDE.md,2,gh search code
+monolayer/monorepo,https://api.github.com/repos/monolayer/monorepo,6.0,packages/sdk/.gemini/commands/speckit.specify.toml,packages/sdk/.gemini/commands/speckit.specify.toml,1,gh search code
+Monotoba/OpenPrintKit,https://api.github.com/repos/Monotoba/OpenPrintKit,1.0,spec.md,spec.md,1,gh search code
+monteirojoaoluiz/InvestoPilotwo,https://api.github.com/repos/monteirojoaoluiz/InvestoPilotwo,,.claude/commands/speckit.tasks.md,.claude/commands/speckit.tasks.md,1,gh search code
+moonbitlang/moon,https://api.github.com/repos/moonbitlang/moon,387.0,crates/moonbuild-rupes-recta/src/build_plan/builders.rs,crates/moonbuild-rupes-recta/src/build_plan/builders.rs,1,gh search code
+MoonLadderStudios/MoonMind,https://api.github.com/repos/MoonLadderStudios/MoonMind,7.0,specs/070-manifest-ingest/quickstart.md,specs/070-manifest-ingest/quickstart.md; specs/004-install-codex-spec/plan.md; specs/020-generic-container-runner/plan.md; specs/042-queue-layout-switch/plan.md; specs/070-manifest-ingest-runtime/quickstart.md; specs/053-resubmit-terminal-tasks/quickstart.md; specs/071-temporal-migration-5-13/plan.md; specs/011-remote-worker-daemon/plan.md; specs/049-task-recurring-schedules/checklists/requirements.md; specs/069-temporal-dashboard-integration/tasks.md,10,gh search code
+mplorentz/horcrux,https://api.github.com/repos/mplorentz/horcrux,15.0,specs/003-lockbox-recovery/plan.md,specs/003-lockbox-recovery/plan.md,1,gh search code
+Mr-Noiam/physical-ai-textbook,https://api.github.com/repos/Mr-Noiam/physical-ai-textbook,,about.md,about.md,1,gh search code
+MrNizzy/caffy,https://api.github.com/repos/MrNizzy/caffy,1.0,.specify/scripts/powershell/update-agent-context.ps1,.specify/scripts/powershell/update-agent-context.ps1,1,gh search code
+msaad-ai/Evolution-of-Todo,https://api.github.com/repos/msaad-ai/Evolution-of-Todo,,phase-2/.specify/templates/landing/QUICKSTART.md,phase-2/.specify/templates/landing/QUICKSTART.md; phase-3/.specify/templates/landing/QUICKSTART.md,2,gh search code
+msftsean/vibecoded_marathon_photos,https://api.github.com/repos/msftsean/vibecoded_marathon_photos,1.0,CLAUDE.md,CLAUDE.md,1,gh search code
+msheikhmoin/Physical-AI-Robotics,https://api.github.com/repos/msheikhmoin/Physical-AI-Robotics,,specify/scripts/powershell/create-new-feature.ps1,specify/scripts/powershell/create-new-feature.ps1,1,gh search code
+MuhammadAbdullah95/spec_driven_development,https://api.github.com/repos/MuhammadAbdullah95/spec_driven_development,7.0,todo-list-app_qwen_cli/.specify/scripts/bash/update-agent-context.sh,todo-list-app_qwen_cli/.specify/scripts/bash/update-agent-context.sh,1,gh search code
+muhammadmubashir72/AIDD-30-Days-Challenge,https://api.github.com/repos/muhammadmubashir72/AIDD-30-Days-Challenge,,Task-08/.specify/scripts/powershell/create-new-feature.ps1,Task-08/.specify/scripts/powershell/create-new-feature.ps1,1,gh search code
+MuhammadMuneebSiddique/Hackathon_02,https://api.github.com/repos/MuhammadMuneebSiddique/Hackathon_02,,Phase_01/CLAUDE.md,Phase_01/CLAUDE.md,1,gh search code
+muhammadsami987123/AISpec-Driven-Hackathon_book,https://api.github.com/repos/muhammadsami987123/AISpec-Driven-Hackathon_book,,.cursor/commands/sp.plan.md,.cursor/commands/sp.plan.md,1,gh search code
+mulesoft/docs-connectors,https://api.github.com/repos/mulesoft/docs-connectors,34.0,salesforce/11.3/modules/ROOT/pages/salesforce-connector-config-topics.adoc,salesforce/11.3/modules/ROOT/pages/salesforce-connector-config-topics.adoc,1,gh search code
+muliPal/balansys,https://api.github.com/repos/muliPal/balansys,,v_14/code/app.ts,v_14/code/app.ts,1,gh search code
+munificent/magpie,https://api.github.com/repos/munificent/magpie,376.0,spec/lib/async/Channel.mag,spec/lib/async/Channel.mag; spec/lib/magpie/core/List.mag,2,gh search code
+MustafaAgentBuilder/Sir-Project-Tutor-Agent,https://api.github.com/repos/MustafaAgentBuilder/Sir-Project-Tutor-Agent,,Tutor_Agent_v0.2/.cursor/commands/sp.specify.md,Tutor_Agent_v0.2/.cursor/commands/sp.specify.md,1,gh search code
+mWater/wwmc-map,https://api.github.com/repos/mWater/wwmc-map,,src/components/popup/tabs/WaterActionTab.tsx,src/components/popup/tabs/WaterActionTab.tsx,1,gh search code
+myoshi2891/The-Wild-Oasis-For-User,https://api.github.com/repos/myoshi2891/The-Wild-Oasis-For-User,1.0,CLAUDE.md,CLAUDE.md,1,gh search code
+nadeemsangrasi/humanoid-and-robotic-book,https://api.github.com/repos/nadeemsangrasi/humanoid-and-robotic-book,,.specify/README.md,.specify/README.md,1,gh search code
+naila-ady/AI_book_hacakthon,https://api.github.com/repos/naila-ady/AI_book_hacakthon,,frontend/.specify/scripts/powershell/create-new-feature.ps1,frontend/.specify/scripts/powershell/create-new-feature.ps1,1,gh search code
+nakatatsu/psm,https://api.github.com/repos/nakatatsu/psm,,.claude/skills/speckit.plan/SKILL.md,.claude/skills/speckit.plan/SKILL.md,1,gh search code
+NASA-AMMOS/MMGIS,https://api.github.com/repos/NASA-AMMOS/MMGIS,194.0,.specify/scripts/bash/common.sh,.specify/scripts/bash/common.sh; .specify/scripts/bash/create-new-feature.sh,2,gh search code
+nasa/europa,https://api.github.com/repos/nasa/europa,226.0,examples/UBO/UBO-initial-state.nddl,examples/UBO/UBO-initial-state.nddl,1,gh search code
+NAVEED261/project-1,https://api.github.com/repos/NAVEED261/project-1,,CLAUDE.md,CLAUDE.md,1,gh search code
+NCAR/COAWST-3DPBL,https://api.github.com/repos/NCAR/COAWST-3DPBL,,WRF/phys/module_cu_mskf.F,WRF/phys/module_cu_mskf.F,1,gh search code
+ncrmro/tetrastack,https://api.github.com/repos/ncrmro/tetrastack,1.0,PLAN.md,PLAN.md,1,gh search code
+NCX-Community/Ncx,https://api.github.com/repos/NCX-Community/Ncx,70.0,.claude/commands/speckit.plan.md,.claude/commands/speckit.plan.md,1,gh search code
+near/wallet-selector,https://api.github.com/repos/near/wallet-selector,180.0,packages/modal-ui/src/lib/components/styles.css,packages/modal-ui/src/lib/components/styles.css,1,gh search code
+nestojimenez/AWStextExtract,https://api.github.com/repos/nestojimenez/AWStextExtract,,java/example_code/emr/runjobflow-configurationclassification.java,java/example_code/emr/runjobflow-configurationclassification.java,1,gh search code
+NeverMore93/opencode-feishu,https://api.github.com/repos/NeverMore93/opencode-feishu,14.0,CLAUDE.md,CLAUDE.md,1,gh search code
+next-l/enju_leaf,https://api.github.com/repos/next-l/enju_leaf,126.0,app/controllers/agent_merge_lists_controller.rb,app/controllers/agent_merge_lists_controller.rb,1,gh search code
+Niallfitzy1/simrig-autolauncher,https://api.github.com/repos/Niallfitzy1/simrig-autolauncher,,SimRigAutoLauncher/.specify/scripts/powershell/update-agent-context.ps1,SimRigAutoLauncher/.specify/scripts/powershell/update-agent-context.ps1,1,gh search code
+niklasschreiber/vulner,https://api.github.com/repos/niklasschreiber/vulner,,APEX/LightningFlowComponents-master/flow_action_components/HTTPBuilder/force-app/main/default/lwc/mapJSONArrayCPE/mapJSONArrayCPE.html,APEX/LightningFlowComponents-master/flow_action_components/HTTPBuilder/force-app/main/default/lwc/mapJSONArrayCPE/mapJSONArrayCPE.html,1,gh search code
+nilver987/PDS-2025-2-test-sonar-test-oreginal,https://api.github.com/repos/nilver987/PDS-2025-2-test-sonar-test-oreginal,,docker/jenkins/jenkins_home/plugins/role-strategy/js/tableManage.js,docker/jenkins/jenkins_home/plugins/role-strategy/js/tableManage.js,1,gh search code
+nirinovich/malitix,https://api.github.com/repos/nirinovich/malitix,,eslint.config.js,eslint.config.js,1,gh search code
+NL-BioImaging/biomero,https://api.github.com/repos/NL-BioImaging/biomero,25.0,biomero/constants.py,biomero/constants.py,1,gh search code
+NOAA-CSL/WRF-Chem_CSL_Publications,https://api.github.com/repos/NOAA-CSL/WRF-Chem_CSL_Publications,,Qindan_Zhu_et_al_2024/WRF-Chem-source-code/RACM2B-VCP/WRF-Chem-csl_release-v4.2.2_racm_berk_vcp_noI/phys/module_cu_mskf.F,Qindan_Zhu_et_al_2024/WRF-Chem-source-code/RACM2B-VCP/WRF-Chem-csl_release-v4.2.2_racm_berk_vcp_noI/phys/module_cu_mskf.F,1,gh search code
+NOAA-EMC/HRRR,https://api.github.com/repos/NOAA-EMC/HRRR,9.0,sorc/hrrr_wrfarw.fd/WRFV3.9/chem/module_aerosols_sorgam.F,sorc/hrrr_wrfarw.fd/WRFV3.9/chem/module_aerosols_sorgam.F,1,gh search code
+NOAHXDM/NGEip,https://api.github.com/repos/NOAHXDM/NGEip,1.0,.specify/scripts/bash/create-new-feature.sh,.specify/scripts/bash/create-new-feature.sh,1,gh search code
+nomadkaraoke/python-audio-separator,https://api.github.com/repos/nomadkaraoke/python-audio-separator,1087.0,.specify/templates/plan-template.md,.specify/templates/plan-template.md; specs/main/plan.md,2,gh search code
+nordluf/gemini-dockerized-cli,https://api.github.com/repos/nordluf/gemini-dockerized-cli,4.0,seed/entrypoint.sh,seed/entrypoint.sh,1,gh search code
+novelbytelabs/ArqonHPO,https://api.github.com/repos/novelbytelabs/ArqonHPO,,.specify/templates/spec-template.md,.specify/templates/spec-template.md,1,gh search code
+nprbst/speck,https://api.github.com/repos/nprbst/speck,3.0,.speck/transformation-history.json,.speck/transformation-history.json; plugins/speck/scripts/check-prerequisites.ts,2,gh search code
+nuitsjp/mkdocs-mermaid-to-svg,https://api.github.com/repos/nuitsjp/mkdocs-mermaid-to-svg,1.0,.claude/commands/speckit.plan.md,.claude/commands/speckit.plan.md,1,gh search code
+obsproject/obs-studio,https://api.github.com/repos/obsproject/obs-studio,71120.0,frontend/data/locale/gl-ES.ini,frontend/data/locale/gl-ES.ini; frontend/data/locale/lo-LA.ini; frontend/data/locale/sv-SE.ini; frontend/data/locale/ms-MY.ini; frontend/data/locale/pl-PL.ini; frontend/data/locale/ka-GE.ini,6,gh search code
+open-platform-model/opm,https://api.github.com/repos/open-platform-model/opm,2.0,AGENTS.md,AGENTS.md,1,gh search code
+openclaw/skills,https://api.github.com/repos/openclaw/skills,3286.0,skills/karmafeast/strudel-music/README.md,skills/karmafeast/strudel-music/README.md; skills/mydearzsy/sdd-dev-workflow/scripts/init-project.sh,2,gh search code
+openjdk-mirror/jdk7u-jdk,https://api.github.com/repos/openjdk-mirror/jdk7u-jdk,539.0,src/share/classes/sun/security/util/Resources_sv.java,src/share/classes/sun/security/util/Resources_sv.java,1,gh search code
+openjdk/playground,https://api.github.com/repos/openjdk/playground,7.0,src/java.base/share/classes/sun/security/tools/keytool/Main.java,src/java.base/share/classes/sun/security/tools/keytool/Main.java,1,gh search code
+openjdkgit/playground,https://api.github.com/repos/openjdkgit/playground,,src/java.base/share/classes/sun/security/tools/keytool/Main.java,src/java.base/share/classes/sun/security/tools/keytool/Main.java,1,gh search code
+OpenLiberty/open-liberty,https://api.github.com/repos/OpenLiberty/open-liberty,1241.0,dev/com.ibm.ws.config/src/com/ibm/ws/config/xml/internal/MetaTypeRegistry.java,dev/com.ibm.ws.config/src/com/ibm/ws/config/xml/internal/MetaTypeRegistry.java,1,gh search code
+OpenNeuroStudies/OpenNeuroStudies,https://api.github.com/repos/OpenNeuroStudies/OpenNeuroStudies,2.0,CLAUDE.md,CLAUDE.md,1,gh search code
+OpenZeppelin/guardian,https://api.github.com/repos/OpenZeppelin/guardian,4.0,.agents/skills/speckit-plan/SKILL.md,.agents/skills/speckit-plan/SKILL.md,1,gh search code
+opsmill/infrahub-ansible,https://api.github.com/repos/opsmill/infrahub-ansible,16.0,.specify/scripts/bash/update-agent-context.sh,.specify/scripts/bash/update-agent-context.sh,1,gh search code
+opsmill/infrahub-demo-service-catalog,https://api.github.com/repos/opsmill/infrahub-demo-service-catalog,8.0,dev/commands/speckit.plan.md,dev/commands/speckit.plan.md,1,gh search code
+orb-zone/dotted-json,https://api.github.com/repos/orb-zone/dotted-json,,.claude/commands/plan.md,.claude/commands/plan.md; .specify/agents/performance-auditor.md,2,gh search code
+orb-zone/web-craft,https://api.github.com/repos/orb-zone/web-craft,,.claude/commands/plan.md,.claude/commands/plan.md; .specify/agents/performance-auditor.md,2,gh search code
+ordinary7Zz/speckit_Test,https://api.github.com/repos/ordinary7Zz/speckit_Test,,.cursor/commands/speckit.checklist.md,.cursor/commands/speckit.checklist.md; .cursor/commands/speckit.analyze.md,2,gh search code
+originnet-meta/syndy-creator-studio,https://api.github.com/repos/originnet-meta/syndy-creator-studio,,frontend/data/locale/gl-ES.ini,frontend/data/locale/gl-ES.ini; frontend/data/locale/lo-LA.ini; frontend/data/locale/sv-SE.ini; frontend/data/locale/ms-MY.ini; frontend/data/locale/pl-PL.ini; frontend/data/locale/ka-GE.ini,6,gh search code
+ospgroupvn/so-xo-2026,https://api.github.com/repos/ospgroupvn/so-xo-2026,,.claude/commands/speckit.specify.md,.claude/commands/speckit.specify.md,1,gh search code
+pandas-dev/pandas,https://api.github.com/repos/pandas-dev/pandas,48221.0,doc/source/user_guide/reshaping.rst,doc/source/user_guide/reshaping.rst,1,gh search code
+pandas-dev/pandas-dev.github.io,https://api.github.com/repos/pandas-dev/pandas-dev.github.io,,pandas-docs/dev/_sources/user_guide/reshaping.rst.txt,pandas-docs/dev/_sources/user_guide/reshaping.rst.txt,1,gh search code
+papalino456/RoboMop,https://api.github.com/repos/papalino456/RoboMop,2.0,WARP.md,WARP.md,1,gh search code
+Papanii/GitBeadsIssueManagement,https://api.github.com/repos/Papanii/GitBeadsIssueManagement,,bin/bdim,bin/bdim,1,gh search code
+paradoxinversion/eoe-2026,https://api.github.com/repos/paradoxinversion/eoe-2026,,.specify/templates/spec-template.md,.specify/templates/spec-template.md,1,gh search code
+parseen254/template-11-2025,https://api.github.com/repos/parseen254/template-11-2025,,AGENTS.md,AGENTS.md,1,gh search code
+partme-ai/speckit-skills,https://api.github.com/repos/partme-ai/speckit-skills,1.0,AGENTS.md,AGENTS.md,1,gh search code
+pauljbernard/browsersm,https://api.github.com/repos/pauljbernard/browsersm,3.0,.specify/specs/IMPLEMENTATION_GUIDE.md,.specify/specs/IMPLEMENTATION_GUIDE.md,1,gh search code
+paulrayner/ddd_sample_app_ruby,https://api.github.com/repos/paulrayner/ddd_sample_app_ruby,247.0,spec/domain/cargo/cargo_spec.rb,spec/domain/cargo/cargo_spec.rb,1,gh search code
+peaceful-weapon/art-voice-agent-accelerator-S,https://api.github.com/repos/peaceful-weapon/art-voice-agent-accelerator-S,,docs/archive/proposals/specify-integration-proposal.md,docs/archive/proposals/specify-integration-proposal.md,1,gh search code
+peachpiecompiler/Peachpie.Microsoft.CodeAnalysis,https://api.github.com/repos/peachpiecompiler/Peachpie.Microsoft.CodeAnalysis,10.0,docs/analyzers/Report Analyzer Format.md,docs/analyzers/Report Analyzer Format.md,1,gh search code
+pegesund/Gruntvig,https://api.github.com/repos/pegesund/Gruntvig,1.0,public/stylesheets/placeCSS.css,public/stylesheets/placeCSS.css,1,gh search code
+peluzzza/OrchestationAgentsSkillLike,https://api.github.com/repos/peluzzza/OrchestationAgentsSkillLike,,demos/specify-pipeline-demo/EXPECTED_FLOW.md,demos/specify-pipeline-demo/EXPECTED_FLOW.md,1,gh search code
+pentaho/pentaho-kettle,https://api.github.com/repos/pentaho/pentaho-kettle,8322.0,ui/src/main/java/org/pentaho/di/ui/job/entries/trans/JobEntryBaseDialog.java,ui/src/main/java/org/pentaho/di/ui/job/entries/trans/JobEntryBaseDialog.java; plugins/excel/core/src/main/resources/org/pentaho/di/trans/steps/excelwriter/messages/messages_en_US.properties,2,gh search code
+peternicholls/Home-Temperature-Monitoring,https://api.github.com/repos/peternicholls/Home-Temperature-Monitoring,,AGENTS.md,AGENTS.md; .github/agents/copilot-instructions.md,2,gh search code
+pigfoot/gemini-cli-hubs,https://api.github.com/repos/pigfoot/gemini-cli-hubs,,.GEMINI.md,.GEMINI.md,1,gh search code
+pigfoot/gha-user-agent,https://api.github.com/repos/pigfoot/gha-user-agent,1.0,GEMINI.md,GEMINI.md,1,gh search code
+PixelAndSyntax/Legacy-Backend-SpringBoot2-Java11,https://api.github.com/repos/PixelAndSyntax/Legacy-Backend-SpringBoot2-Java11,,.specify/templates/commands/tasks.md,.specify/templates/commands/tasks.md,1,gh search code
+pkirsanov/bubbles,https://api.github.com/repos/pkirsanov/bubbles,,bubbles/scripts/cli.sh,bubbles/scripts/cli.sh; docs/recipes/setup-project.md; agents/bubbles.status.agent.md,3,gh search code
+PMuraya/outlook,https://api.github.com/repos/PMuraya/outlook,,v/code/app.ts,v/code/app.ts,1,gh search code
+polarizertech/spec-kit-extensions,https://api.github.com/repos/polarizertech/spec-kit-extensions,9.0,install.sh,install.sh,1,gh search code
+pollumlabs/tutumon-app,https://api.github.com/repos/pollumlabs/tutumon-app,1.0,src/styles/tailwind.css,src/styles/tailwind.css,1,gh search code
+popoloni/non-deterministic-sdd,https://api.github.com/repos/popoloni/non-deterministic-sdd,2.0,playbooks/03-legacy-integration.md,playbooks/03-legacy-integration.md,1,gh search code
+powermedia/FreeSwitch,https://api.github.com/repos/powermedia/FreeSwitch,2.0,libs/freetdm/src/ftmod/ftmod_zt/ftmod_zt.c,libs/freetdm/src/ftmod/ftmod_zt/ftmod_zt.c,1,gh search code
+PR-CYBR/PR-CYBR-M3SH-BBS,https://api.github.com/repos/PR-CYBR/PR-CYBR-M3SH-BBS,2.0,.specify/spec.md,.specify/spec.md,1,gh search code
+PR-CYBR/PR-CYBR-MGMT-N0D3,https://api.github.com/repos/PR-CYBR/PR-CYBR-MGMT-N0D3,,.specify/plan.md,.specify/plan.md,1,gh search code
+PR-CYBR/PR-SJU,https://api.github.com/repos/PR-CYBR/PR-SJU,,DOCKER.md,DOCKER.md,1,gh search code
+pradeepmouli/confignore,https://api.github.com/repos/pradeepmouli/confignore,,.github/agents/speckit.enhance.agent.md,.github/agents/speckit.enhance.agent.md,1,gh search code
+pradeepmouli/hap-fluent,https://api.github.com/repos/pradeepmouli/hap-fluent,1.0,.specify/extensions/workflows/commands/issue-sync-after-tasks.md,.specify/extensions/workflows/commands/issue-sync-after-tasks.md; .specify/extensions/workflows/commands/enhance.md; .specify/extensions/workflows/extensions/DEVELOPMENT.md; .specify/extensions/workflows/scripts/powershell/create-hotfix.ps1; .github/agents/speckit.workflows.bugfix.agent.md; .codex/commands/speckit.enhance.md; .specify/scripts/bash/common.sh,7,gh search code
+pradeepmouli/HomeAtlas,https://api.github.com/repos/pradeepmouli/HomeAtlas,1.0,.github/agents/speckit.enhance.agent.md,.github/agents/speckit.enhance.agent.md,1,gh search code
+pradeepmouli/homebridge-rabbitair,https://api.github.com/repos/pradeepmouli/homebridge-rabbitair,1.0,.specify/scripts/bash/create-refactor.sh,.specify/scripts/bash/create-refactor.sh; .github/agents/speckit.enhance.agent.md,2,gh search code
+pradeepmouli/kettle-mcp,https://api.github.com/repos/pradeepmouli/kettle-mcp,1.0,.specify/templates/commands/plan.md,.specify/templates/commands/plan.md,1,gh search code
+pradeepmouli/langium-zod,https://api.github.com/repos/pradeepmouli/langium-zod,1.0,.specify/extensions/workflows/commands/enhance.md,.specify/extensions/workflows/commands/enhance.md; .specify/scripts/bash/create-hotfix.sh; .specify/scripts/bash/create-refactor.sh; .specify/extensions/workflows/scripts/powershell/create-hotfix.ps1; .specify/scripts/bash/common.sh,5,gh search code
+pradeepmouli/lspeasy,https://api.github.com/repos/pradeepmouli/lspeasy,1.0,.specify/scripts/bash/create-hotfix.sh,.specify/scripts/bash/create-hotfix.sh,1,gh search code
+pradeepmouli/lsproxy,https://api.github.com/repos/pradeepmouli/lsproxy,,.specify/scripts/bash/create-hotfix.sh,.specify/scripts/bash/create-hotfix.sh; .github/agents/speckit.enhance.agent.md,2,gh search code
+pradeepmouli/objectenvy,https://api.github.com/repos/pradeepmouli/objectenvy,1.0,.specify/extensions/workflows/commands/issue-sync-after-tasks.md,.specify/extensions/workflows/commands/issue-sync-after-tasks.md; .specify/extensions/workflows/commands/enhance.md; .specify/extensions/workflows/extensions/DEVELOPMENT.md; .specify/scripts/bash/create-refactor.sh; .specify/extensions/workflows/scripts/powershell/create-hotfix.ps1; .specify/scripts/bash/common.sh,6,gh search code
+pradeepmouli/procxy,https://api.github.com/repos/pradeepmouli/procxy,1.0,.specify/extensions/workflows/commands/issue-sync-after-tasks.md,.specify/extensions/workflows/commands/issue-sync-after-tasks.md; .specify/extensions/workflows/commands/enhance.md; .specify/extensions/workflows/extensions/DEVELOPMENT.md; .specify/extensions/workflows/scripts/powershell/create-hotfix.ps1; .specify/scripts/bash/common.sh,5,gh search code
+pradeepmouli/rune-langium,https://api.github.com/repos/pradeepmouli/rune-langium,1.0,.specify/scripts/bash/create-hotfix.sh,.specify/scripts/bash/create-hotfix.sh; .agents/commands/speckit.bugfix.md; .claude/skills/speckit-enhance/SKILL.md,3,gh search code
+pradeepmouli/spec-kit-extensions,https://api.github.com/repos/pradeepmouli/spec-kit-extensions,3.0,commands/issue-sync-after-tasks.md,commands/issue-sync-after-tasks.md,1,gh search code
+pradeepmouli/unacy,https://api.github.com/repos/pradeepmouli/unacy,1.0,.specify/extensions/workflows/commands/enhance.md,.specify/extensions/workflows/commands/enhance.md; .specify/extensions/workflows/commands/issue-sync-after-tasks.md; .specify/extensions/workflows/scripts/powershell/create-hotfix.ps1; .specify/scripts/bash/create-refactor.sh; .specify/scripts/bash/common.sh,5,gh search code
+pradeepmouli/zod-to-form,https://api.github.com/repos/pradeepmouli/zod-to-form,1.0,tsconfig.json,tsconfig.json; .agents/commands/speckit.bugfix.md; .specify/scripts/bash/create-hotfix.sh; .specify/scripts/bash/create-refactor.sh,4,gh search code
+Priivacy-ai/spec-kitty,https://api.github.com/repos/Priivacy-ai/spec-kitty,955.0,src/specify_cli/upgrade/migrations/m_0_13_0_update_constitution_templates.py,src/specify_cli/upgrade/migrations/m_0_13_0_update_constitution_templates.py,1,gh search code
+pureplay-ai/pureplay-plug-ui,https://api.github.com/repos/pureplay-ai/pureplay-plug-ui,,scripts/cleanup-monorepo.sh,scripts/cleanup-monorepo.sh,1,gh search code
+pymc-devs/pymc-extras,https://api.github.com/repos/pymc-devs/pymc-extras,136.0,pymc_extras/statespace/models/ETS.py,pymc_extras/statespace/models/ETS.py,1,gh search code
+pythonpydev/xfce4-terminal-theme-creator,https://api.github.com/repos/pythonpydev/xfce4-terminal-theme-creator,,.specify/AUDIT.md,.specify/AUDIT.md,1,gh search code
+Qnurye/jubilant-octo-journey,https://api.github.com/repos/Qnurye/jubilant-octo-journey,1.0,AGENTS.md,AGENTS.md; CLAUDE.md,2,gh search code
+Qucs/qucs,https://api.github.com/repos/Qucs/qucs,1280.0,qucs-filter-v2/qf_settings.cpp,qucs-filter-v2/qf_settings.cpp,1,gh search code
+raawaa/jav-scrapy,https://api.github.com/repos/raawaa/jav-scrapy,1166.0,IFLOW.md,IFLOW.md; .specify/templates/plan-template.md,2,gh search code
+raccioly/docguard,https://api.github.com/repos/raccioly/docguard,8.0,cli/ensure-skills.mjs,cli/ensure-skills.mjs,1,gh search code
+Radix-Obsidian/Sheplang,https://api.github.com/repos/Radix-Obsidian/Sheplang,,.specify/CURRENT_STATUS.md,.specify/CURRENT_STATUS.md,1,gh search code
+railroadmedia/railcontent,https://api.github.com/repos/railroadmedia/railcontent,,todo.md,todo.md,1,gh search code
+rajarshibemech/sql-agent,https://api.github.com/repos/rajarshibemech/sql-agent,,.specify/memory/agent.md,.specify/memory/agent.md,1,gh search code
+rakibulmuhajir/Haasib,https://api.github.com/repos/rakibulmuhajir/Haasib,1.0,QWEN.md,QWEN.md; docs/spec-reference.md,2,gh search code
+ranasagar/hamro-saath-safa-nepal-v3.1,https://api.github.com/repos/ranasagar/hamro-saath-safa-nepal-v3.1,,.specify/plans/project-plan.md,.specify/plans/project-plan.md,1,gh search code
+raphaeltm/simple-agent-manager,https://api.github.com/repos/raphaeltm/simple-agent-manager,23.0,specs/010-docs-review/research.md,specs/010-docs-review/research.md,1,gh search code
+RaquelYang/Aigo,https://api.github.com/repos/RaquelYang/Aigo,,.specify/scripts/bash/create-new-feature.sh,.specify/scripts/bash/create-new-feature.sh,1,gh search code
+RaythaHQ/raytha-core,https://api.github.com/repos/RaythaHQ/raytha-core,,.cursor/standards.md,.cursor/standards.md,1,gh search code
+Razaib-khan/Hackathon-2-phases-2-3-4-5-,https://api.github.com/repos/Razaib-khan/Hackathon-2-phases-2-3-4-5-,,CLAUDE.md,CLAUDE.md,1,gh search code
+rcmilan/poc-cpprts,https://api.github.com/repos/rcmilan/poc-cpprts,,.claude/commands/speckit.specify.md,.claude/commands/speckit.specify.md,1,gh search code
+rcorrear/bamf,https://api.github.com/repos/rcorrear/bamf,,.specify/scripts/bash/create-new-feature.sh,.specify/scripts/bash/create-new-feature.sh,1,gh search code
+re-cinq/wave,https://api.github.com/repos/re-cinq/wave,13.0,.specify/scripts/bash/bmad-setup.sh,.specify/scripts/bash/bmad-setup.sh,1,gh search code
+refactory-lang/config-agent,https://api.github.com/repos/refactory-lang/config-agent,,.agents/commands/speckit.bugfix.md,.agents/commands/speckit.bugfix.md,1,gh search code
+refactory-lang/refactory-template,https://api.github.com/repos/refactory-lang/refactory-template,,.agents/commands/speckit.bugfix.md,.agents/commands/speckit.bugfix.md,1,gh search code
+refugies-info/karfur,https://api.github.com/repos/refugies-info/karfur,30.0,AGENTS.md,AGENTS.md,1,gh search code
+reh3376/mdemg,https://api.github.com/repos/reh3376/mdemg,8.0,docs/archive/benchmarks/whk-wms/archive/whk-wms-file-list.txt,docs/archive/benchmarks/whk-wms/archive/whk-wms-file-list.txt,1,gh search code
+relax4u/titanium-mixi-graph-api-examples,https://api.github.com/repos/relax4u/titanium-mixi-graph-api-examples,3.0,Resources/example/ui/voice.js,Resources/example/ui/voice.js,1,gh search code
+respec/VB6,https://api.github.com/repos/respec/VB6,15.0,WebDataManager/USGSstandalone/modStandaloneMain.bas,WebDataManager/USGSstandalone/modStandaloneMain.bas,1,gh search code
+revity-group/revity-agentic-dev-framework-app,https://api.github.com/repos/revity-group/revity-agentic-dev-framework-app,1.0,docs/7-sdd.md,docs/7-sdd.md,1,gh search code
+rh-aiservices-bu/sardeenz,https://api.github.com/repos/rh-aiservices-bu/sardeenz,38.0,docs/architecture.md,docs/architecture.md,1,gh search code
+rhuss/cc-sdd,https://api.github.com/repos/rhuss/cc-sdd,9.0,docs/plugin-schema.md,docs/plugin-schema.md,1,gh search code
+RiazMehmood/humanoid-robotics-textbook-project,https://api.github.com/repos/RiazMehmood/humanoid-robotics-textbook-project,,.cursor/commands/sp.plan.md,.cursor/commands/sp.plan.md,1,gh search code
+richardkdrew/assisted-ai-practice,https://api.github.com/repos/richardkdrew/assisted-ai-practice,,module5/.specify/scripts/bash/update-agent-context.sh,module5/.specify/scripts/bash/update-agent-context.sh,1,gh search code
+Rickenbacker620/dotfiles,https://api.github.com/repos/Rickenbacker620/dotfiles,,dot_gitignore,dot_gitignore,1,gh search code
+rizrmd/auto-simple,https://api.github.com/repos/rizrmd/auto-simple,,CRUSH.md,CRUSH.md,1,gh search code
+rktech0078/phase_05,https://api.github.com/repos/rktech0078/phase_05,,.cursorrules,.cursorrules,1,gh search code
+rlerikse/bigfamfestival,https://api.github.com/repos/rlerikse/bigfamfestival,,.specify/workspace/all-specs.md,.specify/workspace/all-specs.md,1,gh search code
+roblibob/minute,https://api.github.com/repos/roblibob/minute,102.0,specs/014-custom-meeting-prompts/plan.md,specs/014-custom-meeting-prompts/plan.md,1,gh search code
+roboalchemist/llm-code-docs,https://api.github.com/repos/roboalchemist/llm-code-docs,4.0,docs/github-scraped/pandas/source/user_guide/reshaping.rst,docs/github-scraped/pandas/source/user_guide/reshaping.rst,1,gh search code
+rogadev/ryanroga.com,https://api.github.com/repos/rogadev/ryanroga.com,,.cursor/commands/speckit.plan.md,.cursor/commands/speckit.plan.md,1,gh search code
+Roger-235/school_project,https://api.github.com/repos/Roger-235/school_project,,.specify/scripts/powershell/update-agent-context.ps1,.specify/scripts/powershell/update-agent-context.ps1,1,gh search code
+RosePasta/Denchmark_BRs,https://api.github.com/repos/RosePasta/Denchmark_BRs,8.0,JSonSet/simplejson/deepset-ai+haystack/577.json,JSonSet/simplejson/deepset-ai+haystack/577.json,1,gh search code
+rossedfort/idea_box_backend,https://api.github.com/repos/rossedfort/idea_box_backend,,public/assets/mocha/1.10.0-3caf215ba01eda4984284ed91ba64f1094101e1c7c957101c60dc535738a06ca.js,public/assets/mocha/1.10.0-3caf215ba01eda4984284ed91ba64f1094101e1c7c957101c60dc535738a06ca.js,1,gh search code
+rossedfort/idea_box_two,https://api.github.com/repos/rossedfort/idea_box_two,,public/assets/mocha/1.10.0-3caf215ba01eda4984284ed91ba64f1094101e1c7c957101c60dc535738a06ca.js,public/assets/mocha/1.10.0-3caf215ba01eda4984284ed91ba64f1094101e1c7c957101c60dc535738a06ca.js,1,gh search code
+rshade/finfocus-spec,https://api.github.com/repos/rshade/finfocus-spec,,.npmignore,.npmignore,1,gh search code
+RUCAIBox/R1-Searcher,https://api.github.com/repos/RUCAIBox/R1-Searcher,700.0,OpenRLHF-RAG/dpsk1_5b-1node-grpo-jjh-log.txt,OpenRLHF-RAG/dpsk1_5b-1node-grpo-jjh-log.txt,1,gh search code
+RunMaestro/Maestro,https://api.github.com/repos/RunMaestro/Maestro,2567.0,src/prompts/speckit/speckit.help.md,src/prompts/speckit/speckit.help.md,1,gh search code
+RussianLioN/moltinger,https://api.github.com/repos/RussianLioN/moltinger,1.0,.claude/commands/speckit.checklist.md,.claude/commands/speckit.checklist.md,1,gh search code
+rustyrazorblade/easy-db-lab,https://api.github.com/repos/rustyrazorblade/easy-db-lab,32.0,openspec/archive/.specify/memory/constitution.md,openspec/archive/.specify/memory/constitution.md,1,gh search code
+rzkmak/moneyflow,https://api.github.com/repos/rzkmak/moneyflow,,Makefile,Makefile,1,gh search code
+S2thend/cursor-history,https://api.github.com/repos/S2thend/cursor-history,50.0,.specify/memory/constitution.md,.specify/memory/constitution.md,1,gh search code
+SAAD-NADEEM/physical-ai-book,https://api.github.com/repos/SAAD-NADEEM/physical-ai-book,,QWEN.md,QWEN.md,1,gh search code
+safe-global/safe-wallet-monorepo,https://api.github.com/repos/safe-global/safe-wallet-monorepo,552.0,specs/004-migrate-no-fee-campaign/plan.md,specs/004-migrate-no-fee-campaign/plan.md,1,gh search code
+saidhn/TimeDryClean,https://api.github.com/repos/saidhn/TimeDryClean,,.specify/scripts/powershell/setup-speckit.ps1,.specify/scripts/powershell/setup-speckit.ps1,1,gh search code
+salsa-rs/salsa,https://api.github.com/repos/salsa-rs/salsa,2791.0,components/salsa-macro-rules/src/setup_tracked_fn.rs,components/salsa-macro-rules/src/setup_tracked_fn.rs,1,gh search code
+sanel/vaadin8,https://api.github.com/repos/sanel/vaadin8,,documentation/layout/layout-absolutelayout.asciidoc,documentation/layout/layout-absolutelayout.asciidoc,1,gh search code
+saravananniit/broadcom_ui_design,https://api.github.com/repos/saravananniit/broadcom_ui_design,,sdd.txt,sdd.txt,1,gh search code
+SashaChun/TestAiStyden,https://api.github.com/repos/SashaChun/TestAiStyden,,plan.md,plan.md,1,gh search code
+satwareAG/doctrine-firebird-driver,https://api.github.com/repos/satwareAG/doctrine-firebird-driver,3.0,.cline/commands/speckit.constitution.md,.cline/commands/speckit.constitution.md,1,gh search code
+schneiderik/fields,https://api.github.com/repos/schneiderik/fields,131.0,spec/lib/pavlov.js,spec/lib/pavlov.js,1,gh search code
+schwichtgit/ai-resume,https://api.github.com/repos/schwichtgit/ai-resume,4.0,CLAUDE.md,CLAUDE.md,1,gh search code
+Scofowiz/TacWrite3,https://api.github.com/repos/Scofowiz/TacWrite3,,TACWRITEMAINLEVEL/spec-kit-main/docs/upgrade.md,TACWRITEMAINLEVEL/spec-kit-main/docs/upgrade.md,1,gh search code
+sconover/mcplaygrounds,https://api.github.com/repos/sconover/mcplaygrounds,,notes.txt,notes.txt,1,gh search code
+se-sic/VaRA-Tool-Suite,https://api.github.com/repos/se-sic/VaRA-Tool-Suite,14.0,varats/varats/projects/c_projects/libvpx.py,varats/varats/projects/c_projects/libvpx.py; varats/varats/projects/c_projects/libsigrok.py,2,gh search code
+seanchatmangpt/ggen,https://api.github.com/repos/seanchatmangpt/ggen,3.0,.specify/CLOSURE_EVIDENCE.md,.specify/CLOSURE_EVIDENCE.md; run-validation.sh; .specify/MARKET-PHASE-DIAGRAM-REFERENCE.txt,3,gh search code
+semad/myfarsi_design,https://api.github.com/repos/semad/myfarsi_design,,script/generate_toc.sh,script/generate_toc.sh,1,gh search code
+ShadowAUS/chez-king-portal,https://api.github.com/repos/ShadowAUS/chez-king-portal,,.tessl/tiles/tessl-labs/intent-integrity-kit/skills/iikit-core/scripts/bash/fetch-tile-evals.sh,.tessl/tiles/tessl-labs/intent-integrity-kit/skills/iikit-core/scripts/bash/fetch-tile-evals.sh; .tessl/tiles/tessl-labs/intent-integrity-kit/skills/iikit-core/scripts/bash/session-context-hook.sh,2,gh search code
+ShahmeerHashmi/ai-textbook,https://api.github.com/repos/ShahmeerHashmi/ai-textbook,,CLAUDE.md,CLAUDE.md,1,gh search code
+ShahmeerHashmi/ai.native.docusaurus,https://api.github.com/repos/ShahmeerHashmi/ai.native.docusaurus,,CLAUDE.md,CLAUDE.md,1,gh search code
+Shamsass/AI-Robotics-and-Humanoid-book,https://api.github.com/repos/Shamsass/AI-Robotics-and-Humanoid-book,,docs/.specify/scripts/powershell/setup-plan.ps1,docs/.specify/scripts/powershell/setup-plan.ps1; docs/.specify/scripts/powershell/update-agent-context.ps1,2,gh search code
+shannah/codenameone-avian,https://api.github.com/repos/shannah/codenameone-avian,12.0,jdk7u-dev/jdk/src/share/classes/sun/security/util/Resources_sv.java,jdk7u-dev/jdk/src/share/classes/sun/security/util/Resources_sv.java,1,gh search code
+shaoqing404/ops_spec_kylin,https://api.github.com/repos/shaoqing404/ops_spec_kylin,6.0,AGENTS.md,AGENTS.md; AI-GUIDE.md,2,gh search code
+shazilk-dev/spec-kit-plus-clone,https://api.github.com/repos/shazilk-dev/spec-kit-plus-clone,,src/specify_cli/__init__.py,src/specify_cli/__init__.py,1,gh search code
+shitapatilptc/java,https://api.github.com/repos/shitapatilptc/java,1.0,src/java.base/sun/security/util/Resources_ja.java,src/java.base/sun/security/util/Resources_ja.java,1,gh search code
+shortcut-guide/keiba-scrape,https://api.github.com/repos/shortcut-guide/keiba-scrape,,.history/.specify/templates/plan-template_20260213181952.md,.history/.specify/templates/plan-template_20260213181952.md; .history/.specify/templates/plan-template_20260213182805.md; .specify/templates/plan-template.md,3,gh search code
+SickGear/SickGear,https://api.github.com/repos/SickGear/SickGear,762.0,sickgear/tv.py,sickgear/tv.py,1,gh search code
+sickn33/antigravity-awesome-skills,https://api.github.com/repos/sickn33/antigravity-awesome-skills,26725.0,skills/speckit-updater/SKILL.md,skills/speckit-updater/SKILL.md,1,gh search code
+sigil-tech/sigil,https://api.github.com/repos/sigil-tech/sigil,2.0,CONTRIBUTING.md,CONTRIBUTING.md,1,gh search code
+SimonThuillier/simple-circuit-engine,https://api.github.com/repos/SimonThuillier/simple-circuit-engine,4.0,.specify/scripts/bash/create-new-feature.sh,.specify/scripts/bash/create-new-feature.sh,1,gh search code
+singhdhruv9/powershell,https://api.github.com/repos/singhdhruv9/powershell,,src/ResourceGraph/ResourceGraph.Autorest/generated/runtime/Nodes/JsonDate.cs,src/ResourceGraph/ResourceGraph.Autorest/generated/runtime/Nodes/JsonDate.cs,1,gh search code
+SIPfoundry/freeswitch,https://api.github.com/repos/SIPfoundry/freeswitch,7.0,libs/freetdm/src/ftmod/ftmod_zt/ftmod_zt.c,libs/freetdm/src/ftmod/ftmod_zt/ftmod_zt.c,1,gh search code
+sirkirby/ten-second-tom,https://api.github.com/repos/sirkirby/ten-second-tom,1.0,AGENTS.md,AGENTS.md; CLAUDE.md,2,gh search code
+SivanLiu/HwFrameWorkSource,https://api.github.com/repos/SivanLiu/HwFrameWorkSource,178.0,P9_8_0_0/src/main/java/sun/security/util/Resources.java,P9_8_0_0/src/main/java/sun/security/util/Resources.java; Mate20_9_0_0/src/main/java/sun/security/util/Resources.java; Mate10_8_1_0/src/main/java/sun/security/util/Resources.java,3,gh search code
+skycruzer/fleet-management-v2,https://api.github.com/repos/skycruzer/fleet-management-v2,,.claude/commands/speckit.specify.md,.claude/commands/speckit.specify.md,1,gh search code
+slachapelle/anon_disentanglement_via_mechanism_sparsity,https://api.github.com/repos/slachapelle/anon_disentanglement_via_mechanism_sparsity,,baseline_models/slowvae/scripts/evaluate_disentanglement.py,baseline_models/slowvae/scripts/evaluate_disentanglement.py,1,gh search code
+sohamzycus/ContractOS,https://api.github.com/repos/sohamzycus/ContractOS,2.0,.specify/scripts/bash/create-new-feature.sh,.specify/scripts/bash/create-new-feature.sh,1,gh search code
+sohamzycus/PresentiQ,https://api.github.com/repos/sohamzycus/PresentiQ,,.specify/.specify/scripts/bash/create-new-feature.sh,.specify/.specify/scripts/bash/create-new-feature.sh,1,gh search code
+Soneritics/vibe-outlook-responder,https://api.github.com/repos/Soneritics/vibe-outlook-responder,,.specify/plan.md,.specify/plan.md,1,gh search code
+sontixyou/ranger.nvim,https://api.github.com/repos/sontixyou/ranger.nvim,1.0,implement-ranger/.specify/scripts/bash/update-agent-context.sh,implement-ranger/.specify/scripts/bash/update-agent-context.sh,1,gh search code
+SoupPotato/SWTOR-Animation-Mods,https://api.github.com/repos/SoupPotato/SWTOR-Animation-Mods,16.0,files/missileblast_trail-fix.prt,files/missileblast_trail-fix.prt,1,gh search code
+space-metrics-ai/engineering-delivery-playbook,https://api.github.com/repos/space-metrics-ai/engineering-delivery-playbook,,agents/knowledge/spec-kit.md,agents/knowledge/spec-kit.md,1,gh search code
+spec-board/spec-board,https://api.github.com/repos/spec-board/spec-board,9.0,src/app/api/projects/register/route.ts,src/app/api/projects/register/route.ts,1,gh search code
+specify/specify6,https://api.github.com/repos/specify/specify6,15.0,src/edu/ku/brc/specify/datamodel/Storage.java,src/edu/ku/brc/specify/datamodel/Storage.java; src/edu/ku/brc/specify/tasks/subpane/qb/TableQRI.java; src/edu/ku/brc/specify/tools/export/ExportCmdLine.java; src/edu/ku/brc/specify/tasks/subpane/ESResultsSubPane.java,4,gh search code
+specify/specify7,https://api.github.com/repos/specify/specify7,84.0,specifyweb/specify/urls.py,specifyweb/specify/urls.py; specifyweb/backend/setup_tool/setup_tasks.py; specifyweb/backend/backup_tool/views.py; specifyweb/backend/express_search/views.py; specifyweb/specify/models_utils/check_versions.py; specifyweb/frontend/js_src/lib/components/DataModel/collectionApi.ts; specifyweb/backend/stored_queries/format.py; specifyweb/backend/interactions/views.py; specifyweb/middleware/general.py,9,gh search code
+sPHENIX-Collaboration/pythia6,https://api.github.com/repos/sPHENIX-Collaboration/pythia6,2.0,pythiaeRHIC/pythia/pyresd.f,pythiaeRHIC/pythia/pyresd.f,1,gh search code
+SpillwaveSolutions/skills_viewer,https://api.github.com/repos/SpillwaveSolutions/skills_viewer,33.0,docs/requirements/main.md,docs/requirements/main.md,1,gh search code
+srini009/tau2,https://api.github.com/repos/srini009/tau2,1.0,INSTALL,INSTALL,1,gh search code
+ssdeanx/Genkit-UI,https://api.github.com/repos/ssdeanx/Genkit-UI,3.0,eslint.config.js,eslint.config.js,1,gh search code
+StackExchange/StackExchange.Redis,https://api.github.com/repos/StackExchange/StackExchange.Redis,6147.0,src/StackExchange.Redis/Maintenance/AzureMaintenanceEvent.cs,src/StackExchange.Redis/Maintenance/AzureMaintenanceEvent.cs,1,gh search code
+stefaniuk/awesome-promptfiles,https://api.github.com/repos/stefaniuk/awesome-promptfiles,3.0,scripts/config/.markdownlintignore,scripts/config/.markdownlintignore,1,gh search code
+steverhall/SonosPhone,https://api.github.com/repos/steverhall/SonosPhone,6.0,tools/prereq.py,tools/prereq.py,1,gh search code
+strimzi/strimzi-kafka-operator,https://api.github.com/repos/strimzi/strimzi-kafka-operator,5748.0,documentation/modules/drain-cleaner/proc-drain-cleaner-deploying.adoc,documentation/modules/drain-cleaner/proc-drain-cleaner-deploying.adoc,1,gh search code
+StuartF303/Sorcha,https://api.github.com/repos/StuartF303/Sorcha,,.specify/AI-CODE-DOCUMENTATION-POLICY.md,.specify/AI-CODE-DOCUMENTATION-POLICY.md,1,gh search code
+studyzy/codei18n,https://api.github.com/repos/studyzy/codei18n,,CODEBUDDY.md,CODEBUDDY.md,1,gh search code
+studyzy/imewlconverter,https://api.github.com/repos/studyzy/imewlconverter,9768.0,CLAUDE.md,CLAUDE.md,1,gh search code
+SuiteCRM/SuiteDocs,https://api.github.com/repos/SuiteCRM/SuiteDocs,73.0,content/admin/administration-panel/Release.adoc,content/admin/administration-panel/Release.adoc,1,gh search code
+SundayYogurt/jenkins-express-app,https://api.github.com/repos/SundayYogurt/jenkins-express-app,,docker/jenkins_home/war/scripts/hudson-behavior.js,docker/jenkins_home/war/scripts/hudson-behavior.js,1,gh search code
+SuperMap/vue-iclient,https://api.github.com/repos/SuperMap/vue-iclient,206.0,src/mapboxgl/tdt/route/TdtRoute.vue,src/mapboxgl/tdt/route/TdtRoute.vue,1,gh search code
+Supersonic/android_kernel_huawei_abr,https://api.github.com/repos/Supersonic/android_kernel_huawei_abr,8.0,drivers/hwpower/cc_charger/wireless_charge/wireless_tx/wireless_tx_client_ui.c,drivers/hwpower/cc_charger/wireless_charge/wireless_tx/wireless_tx_client_ui.c,1,gh search code
+swk/fs_test,https://api.github.com/repos/swk/fs_test,5.0,libs/freetdm/src/ftmod/ftmod_zt/ftmod_zt.c,libs/freetdm/src/ftmod/ftmod_zt/ftmod_zt.c,1,gh search code
+syeda-hoorain-ali/personal-ai-employee-hackathon,https://api.github.com/repos/syeda-hoorain-ali/personal-ai-employee-hackathon,,.claude/commands/sp.plan.md,.claude/commands/sp.plan.md,1,gh search code
+Syedaashnaghazanfar/todo-app,https://api.github.com/repos/Syedaashnaghazanfar/todo-app,2.0,.claude/settings.local.json.tmp.10268.1766989331461,.claude/settings.local.json.tmp.10268.1766989331461,1,gh search code
+systmms/segnomms,https://api.github.com/repos/systmms/segnomms,,CLAUDE.md,CLAUDE.md; .specify/scripts/bash/create-new-feature.sh,2,gh search code
+Tamoura/way2quran.com,https://api.github.com/repos/Tamoura/way2quran.com,,.specify/templates/commands/specify.md,.specify/templates/commands/specify.md; .claude/commands/speckit-tasks.md,2,gh search code
+Tariq6610/The-evolution-of-Todo-App,https://api.github.com/repos/Tariq6610/The-evolution-of-Todo-App,,.specify/scripts/bash/create-phr.sh,.specify/scripts/bash/create-phr.sh,1,gh search code
+teanalab/TGENEX,https://api.github.com/repos/teanalab/TGENEX,,readme.md,readme.md,1,gh search code
+technicalpickles/dotfiles-devcontainer,https://api.github.com/repos/technicalpickles/dotfiles-devcontainer,,.specify/scripts/bash/create-new-feature.sh,.specify/scripts/bash/create-new-feature.sh,1,gh search code
+teknokomo/universo-platformo-java,https://api.github.com/repos/teknokomo/universo-platformo-java,3.0,.specify/README.md,.specify/README.md,1,gh search code
+teknokomo/universo-platformo-next,https://api.github.com/repos/teknokomo/universo-platformo-next,5.0,.specify/memory/analysis/REVIEW-FINDINGS-RU.md,.specify/memory/analysis/REVIEW-FINDINGS-RU.md,1,gh search code
+teknokomo/universo-platformo-nuxt,https://api.github.com/repos/teknokomo/universo-platformo-nuxt,3.0,.specify/memory/package-creation-workflow-RU.md,.specify/memory/package-creation-workflow-RU.md,1,gh search code
+teknokomo/universo-platformo-svelte,https://api.github.com/repos/teknokomo/universo-platformo-svelte,3.0,.specify/memory/archive/WORK_COMPLETION_SUMMARY.md,.specify/memory/archive/WORK_COMPLETION_SUMMARY.md,1,gh search code
+TencentBlueKing/bk-monitor,https://api.github.com/repos/TencentBlueKing/bk-monitor,77.0,bklog/web/packages/web-v1/src/components/collection-access/components/step-add/label-target-dialog.vue,bklog/web/packages/web-v1/src/components/collection-access/components/step-add/label-target-dialog.vue,1,gh search code
+teorth/estimate_tools,https://api.github.com/repos/teorth/estimate_tools,75.0,EstimateTools/analysis/Section_3_1.lean,EstimateTools/analysis/Section_3_1.lean,1,gh search code
+terrytompkins/spec-kit-orchestrator,https://api.github.com/repos/terrytompkins/spec-kit-orchestrator,,src/orchestrator/services/interview_state.py,src/orchestrator/services/interview_state.py,1,gh search code
+thaiquangquy/rag-chatbot,https://api.github.com/repos/thaiquangquy/rag-chatbot,,text.md,text.md,1,gh search code
+thalesraymond/galaxify,https://api.github.com/repos/thalesraymond/galaxify,,.specify/scripts/bash/check-prerequisites.sh,.specify/scripts/bash/check-prerequisites.sh,1,gh search code
+thalesraymond/task-runner,https://api.github.com/repos/thalesraymond/task-runner,1.0,.npmignore,.npmignore,1,gh search code
+Thony-Crz/Epic-Mapping,https://api.github.com/repos/Thony-Crz/Epic-Mapping,3.0,.specify/memory/constitution.md,.specify/memory/constitution.md,1,gh search code
+tjespers/aipkg,https://api.github.com/repos/tjespers/aipkg,,.claude/commands/speckit.plan.md,.claude/commands/speckit.plan.md,1,gh search code
+TortoiseWolfe/HogBall,https://api.github.com/repos/TortoiseWolfe/HogBall,,.claude/commands/speckit.tasks.md,.claude/commands/speckit.tasks.md,1,gh search code
+TortoiseWolfe/Yoga,https://api.github.com/repos/TortoiseWolfe/Yoga,,.claude/commands/speckit.tasks.md,.claude/commands/speckit.tasks.md,1,gh search code
+traylorre/sentiment-analyzer-gsk,https://api.github.com/repos/traylorre/sentiment-analyzer-gsk,4.0,CONTEXT-CARRYOVER-2026-02-03-session4.md,CONTEXT-CARRYOVER-2026-02-03-session4.md,1,gh search code
+tribalspirit/singaporehandpans,https://api.github.com/repos/tribalspirit/singaporehandpans,,tasks.md,tasks.md,1,gh search code
+trifectatechfoundation/sudo-rs,https://api.github.com/repos/trifectatechfoundation/sudo-rs,4299.0,src/sudoers/policy.rs,src/sudoers/policy.rs,1,gh search code
+Trindade11/Spec-Orchestrator,https://api.github.com/repos/Trindade11/Spec-Orchestrator,4.0,commands/speckit-triage.md,commands/speckit-triage.md; .specify/docs/glossary.md,2,gh search code
+Trindade11/Teste,https://api.github.com/repos/Trindade11/Teste,,commands/speckit-triage.md,commands/speckit-triage.md; .specify/docs/glossary.md,2,gh search code
+Tsinghua-dhy/UR2,https://api.github.com/repos/Tsinghua-dhy/UR2,127.0,UR2_RL/OpenRLHF-RAG/dpsk1_5b-1node-grpo-jjh-log.txt,UR2_RL/OpenRLHF-RAG/dpsk1_5b-1node-grpo-jjh-log.txt,1,gh search code
+tsuzcx/qq_apk,https://api.github.com/repos/tsuzcx/qq_apk,109.0,com.tencent.tim/classes.jar/aafk.java,com.tencent.tim/classes.jar/aafk.java,1,gh search code
+ttiimmothy/dify,https://api.github.com/repos/ttiimmothy/dify,,web/i18n/it-IT/plugin.json,web/i18n/it-IT/plugin.json,1,gh search code
+tuliopc23/flying-dutchman-app,https://api.github.com/repos/tuliopc23/flying-dutchman-app,,.swiftformat,.swiftformat,1,gh search code
+tykeal/homeassistant-rental-control,https://api.github.com/repos/tykeal/homeassistant-rental-control,68.0,.specify/memory/constitution.md,.specify/memory/constitution.md,1,gh search code
+tzachbon/smart-ralph,https://api.github.com/repos/tzachbon/smart-ralph,260.0,plugins/ralph-speckit/commands/implement.md,plugins/ralph-speckit/commands/implement.md,1,gh search code
+umarprogrammer19/From-Code-to-Cloud-The-Evalution-of-Todo,https://api.github.com/repos/umarprogrammer19/From-Code-to-Cloud-The-Evalution-of-Todo,2.0,CLAUDE.md,CLAUDE.md,1,gh search code
+unbound-force/gaze,https://api.github.com/repos/unbound-force/gaze,,openspec/config.yaml,openspec/config.yaml,1,gh search code
+UnofficialSF/LightningFlowComponents,https://api.github.com/repos/UnofficialSF/LightningFlowComponents,643.0,flow_action_components/HTTPBuilder/force-app/main/default/lwc/mapJSONArrayCPE/mapJSONArrayCPE.html,flow_action_components/HTTPBuilder/force-app/main/default/lwc/mapJSONArrayCPE/mapJSONArrayCPE.html,1,gh search code
+vaadin/framework,https://api.github.com/repos/vaadin/framework,1807.0,documentation/layout/layout-absolutelayout.asciidoc,documentation/layout/layout-absolutelayout.asciidoc,1,gh search code
+valence-works/cshells,https://api.github.com/repos/valence-works/cshells,38.0,.specify/memory/constitution.md,.specify/memory/constitution.md,1,gh search code
+vfab/spec-kit-demo,https://api.github.com/repos/vfab/spec-kit-demo,,.github/agents/speckit.specify.agent.md,.github/agents/speckit.specify.agent.md,1,gh search code
+vgarciasc/xeupiu,https://api.github.com/repos/vgarciasc/xeupiu,55.0,src/xeupiu/text_database.py,src/xeupiu/text_database.py,1,gh search code
+vibecoder11200/obs-studio,https://api.github.com/repos/vibecoder11200/obs-studio,,frontend/data/locale/gl-ES.ini,frontend/data/locale/gl-ES.ini; frontend/data/locale/lo-LA.ini; frontend/data/locale/sv-SE.ini; frontend/data/locale/ms-MY.ini; frontend/data/locale/pl-PL.ini; frontend/data/locale/ka-GE.ini,6,gh search code
+VictorMusta/OBS-Patched,https://api.github.com/repos/VictorMusta/OBS-Patched,,frontend/data/locale/gl-ES.ini,frontend/data/locale/gl-ES.ini; frontend/data/locale/lo-LA.ini; frontend/data/locale/sv-SE.ini; frontend/data/locale/ms-MY.ini; frontend/data/locale/pl-PL.ini; frontend/data/locale/ka-GE.ini,6,gh search code
+vikramgorla/mcp-swiss,https://api.github.com/repos/vikramgorla/mcp-swiss,3.0,CHANGELOG.md,CHANGELOG.md,1,gh search code
+vinayakv22/speckit-agent-skills-for-openclaw,https://api.github.com/repos/vinayakv22/speckit-agent-skills-for-openclaw,,init-speckit-openclaw.sh,init-speckit-openclaw.sh,1,gh search code
+vindicta-platform/specs,https://api.github.com/repos/vindicta-platform/specs,,CONTRIBUTING.md,CONTRIBUTING.md,1,gh search code
+vindicta-platform/Vindicta-Agents,https://api.github.com/repos/vindicta-platform/Vindicta-Agents,,agents/architect/AGENT.md,agents/architect/AGENT.md,1,gh search code
+VisActor/VChart,https://api.github.com/repos/VisActor/VChart,1779.0,specs/001-fix-subtitle-layout-bug/plan.md,specs/001-fix-subtitle-layout-bug/plan.md,1,gh search code
+volk6022/rostender-parse,https://api.github.com/repos/volk6022/rostender-parse,,.claude/commands/speckit.refactor.md,.claude/commands/speckit.refactor.md; .opencode/command/speckit.refactor.md; .specify/extensions/README.md; .specify/extensions/DEVELOPMENT.md,4,gh search code
+vpittamp/nixos-config,https://api.github.com/repos/vpittamp/nixos-config,2.0,.specify/scripts/bash/create-new-feature.sh,.specify/scripts/bash/create-new-feature.sh,1,gh search code
+w9wen/Specify,https://api.github.com/repos/w9wen/Specify,,.specify/scripts/powershell/setup-parent-project.ps1,.specify/scripts/powershell/setup-parent-project.ps1,1,gh search code
+WanchengWildMan/xmuxy-honor-review,https://api.github.com/repos/WanchengWildMan/xmuxy-honor-review,,.cursor/commands/speckit.checklist.md,.cursor/commands/speckit.checklist.md; .cursor/commands/speckit.analyze.md,2,gh search code
+Wania-Kazmi/claude-code-autonomous-agent-workflow,https://api.github.com/repos/Wania-Kazmi/claude-code-autonomous-agent-workflow,5.0,CLAUDE.md,CLAUDE.md; .claude/quick-reference/enforcement-validation.md,2,gh search code
+wavesgroup/EarthVM,https://api.github.com/repos/wavesgroup/EarthVM,,wrf-4.2.1/phys/module_cu_mskf.F,wrf-4.2.1/phys/module_cu_mskf.F,1,gh search code
+wcpaxx/spec-kit-brownfield-extensions,https://api.github.com/repos/wcpaxx/spec-kit-brownfield-extensions,17.0,extension/commands/init.md,extension/commands/init.md,1,gh search code
+WebTigers/manual,https://api.github.com/repos/WebTigers/manual,1.0,docs/pt/zend.db.select.html,docs/pt/zend.db.select.html,1,gh search code
+WebTigers/Tiger,https://api.github.com/repos/WebTigers/Tiger,28.0,application/modules/manual/docs/pt/zend.db.select.html,application/modules/manual/docs/pt/zend.db.select.html,1,gh search code
+wengzehang/deformable_rigid_interaction_prediction,https://api.github.com/repos/wengzehang/deformable_rigid_interaction_prediction,18.0,src/ModelTraining.py,src/ModelTraining.py,1,gh search code
+wesleylhandy/stride,https://api.github.com/repos/wesleylhandy/stride,2.0,.specify/scripts/bash/setup-plan.sh,.specify/scripts/bash/setup-plan.sh,1,gh search code
+WesternCUSD12/RequestTrackerUtils,https://api.github.com/repos/WesternCUSD12/RequestTrackerUtils,,CLAUDE.md,CLAUDE.md,1,gh search code
+willowtreeapps/catalyst-slack-service,https://api.github.com/repos/willowtreeapps/catalyst-slack-service,12.0,conf/messages.es,conf/messages.es,1,gh search code
+wilson323/llmchat,https://api.github.com/repos/wilson323/llmchat,,.specify/plans/quickstart.md,.specify/plans/quickstart.md,1,gh search code
+wilsongis/genesis-template,https://api.github.com/repos/wilsongis/genesis-template,,specs/001-genesis-srs/research.md,specs/001-genesis-srs/research.md,1,gh search code
+wiseyoda/rogue-minesweeper,https://api.github.com/repos/wiseyoda/rogue-minesweeper,,.specify/phases/4030-dm-dialogue-ui.md,.specify/phases/4030-dm-dialogue-ui.md,1,gh search code
+wiseyoda/specflow,https://api.github.com/repos/wiseyoda/specflow,,IDEAS.md,IDEAS.md; commands/flow.memory.md; packages/cli/src/lib/scaffold.ts; .specify/templates/goal-coverage-template.md,4,gh search code
+wiseyoda/to-markdown,https://api.github.com/repos/wiseyoda/to-markdown,,.specify/0125-smart-pipeline/tasks.md,.specify/0125-smart-pipeline/tasks.md,1,gh search code
+wmjordan/PDFPatcher,https://api.github.com/repos/wmjordan/PDFPatcher,12266.0,App/Processor/Worker.cs,App/Processor/Worker.cs,1,gh search code
+wordflowlab/novel-writer,https://api.github.com/repos/wordflowlab/novel-writer,714.0,.specify/templates/commands/track.md,.specify/templates/commands/track.md; docs/why-codex-not-supported.md; .specify/scripts/powershell/manage-relations.ps1; scripts/powershell/manage-relations.ps1; .specify/templates/commands-gemini/timeline.toml,5,gh search code
+wordflowlab/novel-writer-skills,https://api.github.com/repos/wordflowlab/novel-writer-skills,131.0,templates/scripts/bash/analyze-story.sh,templates/scripts/bash/analyze-story.sh; templates/scripts/powershell/manage-relations.ps1,2,gh search code
+wso2/carbon-commons,https://api.github.com/repos/wso2/carbon-commons,57.0,components/wsdl-tools/wsdl2code/org.wso2.carbon.modules.wsdl2code.ui/src/main/java/org/wso2/carbon/wsdl2code/ui/client/codegen-options.xml,components/wsdl-tools/wsdl2code/org.wso2.carbon.modules.wsdl2code.ui/src/main/java/org/wso2/carbon/wsdl2code/ui/client/codegen-options.xml,1,gh search code
+wutaijieing/android_kernel_LIO_kirin990_103,https://api.github.com/repos/wutaijieing/android_kernel_LIO_kirin990_103,12.0,drivers/hwpower/cc_charger/wireless_charge/wireless_tx/wireless_tx_client_ui.c,drivers/hwpower/cc_charger/wireless_charge/wireless_tx/wireless_tx_client_ui.c,1,gh search code
+wyattowalsh/mdxpad,https://api.github.com/repos/wyattowalsh/mdxpad,,CODEX_NEXT_WAVE_PROMPT.md,CODEX_NEXT_WAVE_PROMPT.md,1,gh search code
+wyattowalsh/riso,https://api.github.com/repos/wyattowalsh/riso,,specs/001-build-riso-template/plan.md,specs/001-build-riso-template/plan.md,1,gh search code
+wykoong/CFF2,https://api.github.com/repos/wykoong/CFF2,,quickstart.md,quickstart.md,1,gh search code
+X-Sharp/XSharpPublic,https://api.github.com/repos/X-Sharp/XSharpPublic,138.0,src/Roslyn/docs/analyzers/Report Analyzer Format.md,src/Roslyn/docs/analyzers/Report Analyzer Format.md,1,gh search code
+xcalar/xcalar-idl,https://api.github.com/repos/xcalar/xcalar-idl,,3rd/jquery.caret-master/libs/qunit/pavlov.js,3rd/jquery.caret-master/libs/qunit/pavlov.js,1,gh search code
+xingxerx/Qallow,https://api.github.com/repos/xingxerx/Qallow,1.0,.specify/docs/COMMIT_MESSAGE_TEMPLATE.md,.specify/docs/COMMIT_MESSAGE_TEMPLATE.md,1,gh search code
+xlsynth/topstitch,https://api.github.com/repos/xlsynth/topstitch,4.0,src/port/connect.rs,src/port/connect.rs,1,gh search code
+xuejianjun/ESB481,https://api.github.com/repos/xuejianjun/ESB481,6.0,tools/org.wso2.carbon.modules.wsdl2code.ui/4.2.0/src/main/java/org/wso2/carbon/wsdl2code/ui/client/codegen-options.xml,tools/org.wso2.carbon.modules.wsdl2code.ui/4.2.0/src/main/java/org/wso2/carbon/wsdl2code/ui/client/codegen-options.xml; tools/org.wso2.carbon.modules.wsdl2code.ui/4.2.0/target/classes/org/wso2/carbon/wsdl2code/ui/client/codegen-options.xml,2,gh search code
+yaboyshades/super-alita,https://api.github.com/repos/yaboyshades/super-alita,,.specify/scripts/check-task-prerequisites.sh,.specify/scripts/check-task-prerequisites.sh,1,gh search code
+YFGaia/dify-plus,https://api.github.com/repos/YFGaia/dify-plus,2087.0,web/i18n/it-IT/plugin.json,web/i18n/it-IT/plugin.json,1,gh search code
+yokharian/AIBoilerplate,https://api.github.com/repos/yokharian/AIBoilerplate,32.0,.amp.md,.amp.md; .auggie.md; .jules,3,gh search code
+yunaamelia/Zulu-pilot,https://api.github.com/repos/yunaamelia/Zulu-pilot,,fix.md,fix.md; .npmignore,2,gh search code
+YutakaAoki/KeyTool,https://api.github.com/repos/YutakaAoki/KeyTool,14.0,src/sun/security/util/Resources_sv.java,src/sun/security/util/Resources_sv.java,1,gh search code
+zach-morris/same_cdi,https://api.github.com/repos/zach-morris/same_cdi,5.0,src/emu/diimage.cpp,src/emu/diimage.cpp,1,gh search code
+zach-morris/same_fmtowns,https://api.github.com/repos/zach-morris/same_fmtowns,3.0,src/emu/diimage.cpp,src/emu/diimage.cpp,1,gh search code
+ZacheryKuykendall/promptup,https://api.github.com/repos/ZacheryKuykendall/promptup,,src/templates/spec-kit/readme.md.hbs,src/templates/spec-kit/readme.md.hbs; src/templates/spec-kit/constitution.md.hbs,2,gh search code
+zainkhan1726/physical-ai-humanoid-robotics-textbook,https://api.github.com/repos/zainkhan1726/physical-ai-humanoid-robotics-textbook,,CLAUDE.md,CLAUDE.md,1,gh search code
+zhongyang219/TrafficMonitor,https://api.github.com/repos/zhongyang219/TrafficMonitor,43581.0,TrafficMonitor/TrafficMonitor.cpp,TrafficMonitor/TrafficMonitor.cpp; TrafficMonitor/SkinManager.cpp,2,gh search code
+zowe/zowe-cli,https://api.github.com/repos/zowe/zowe-cli,127.0,packages/cli/src/zosfiles/create/ussFile/ussFile.definition.ts,packages/cli/src/zosfiles/create/ussFile/ussFile.definition.ts,1,gh search code
+zxiaofan/JDK,https://api.github.com/repos/zxiaofan/JDK,669.0,JDK1.9/src/java.base/sun/security/util/AuthResources_ko.java,JDK1.9/src/java.base/sun/security/util/AuthResources_ko.java; JDK-16/src/java.base/sun/security/tools/keytool/Main.java; JDK10-Java SE Development Kit 10/src/java.base/sun/security/util/AuthResources_fr.java; JDK1.9/src/java.base/sun/security/util/Resources_ja.java,4,gh search code
