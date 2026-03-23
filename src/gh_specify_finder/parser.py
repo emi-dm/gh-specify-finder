@@ -77,7 +77,13 @@ def _extraer_ruta(data: dict[str, Any]) -> str:
         or data.get("file_path")
         or ""
     )
-    return str(ruta).strip()
+    ruta = str(ruta).strip()
+    if ruta:
+        return ruta
+    nombre = data.get("name")
+    if nombre is not None:
+        return str(nombre).strip()
+    return ""
 
 
 def normalizar_registros(items: Iterable[Any], origen: str = "") -> list[MatchRecord]:

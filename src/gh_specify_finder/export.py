@@ -1,8 +1,8 @@
 """
 Exportación de coincidencias a CSV y visualización en consola con Rich.
 
-Incluye un resumen tras ``buscar``/``procesar`` y la función ``mostrar_tabla_csv`` para volcar
-un CSV completo en tabla.
+Incluye un resumen tras ``buscar``/``procesar`` y ``mostrar_tabla_csv`` para volcar un CSV
+en tabla (opcionalmente acotando el número de filas).
 
 La columna ``vias`` resume el criterio inferido por ruta: ``directorio`` (segmento ``.specify``),
 ``gitignore`` (archivo ``.gitignore``) o ambos separados por ``;``.
@@ -91,15 +91,21 @@ def mostrar_tabla_csv(
     *,
     titulo: str | None = None,
     encoding: str = "utf-8",
+    max_filas: int | None = None,
 ) -> None:
     """
-    Lee un CSV y lo imprime completo como tabla Rich (todas las filas y columnas).
+    Lee un CSV y lo imprime como tabla Rich (todas las columnas).
 
-    Las celdas se muestran como texto; el contenido largo hace wrap (``overflow="fold"``).
+    Si ``max_filas`` es un entero positivo, solo se muestran las primeras N **filas de datos**
+    (sin contar la cabecera del CSV).
     """
     path = Path(path)
     df = pd.read_csv(path, encoding=encoding, dtype=str, keep_default_na=False)
     df = df.fillna("")
+
+    total_filas = len(df)
+    if max_filas is not None and max_filas > 0:
+        df = df.head(max_filas)
 
     titulo_tabla = titulo if titulo is not None else path.name
     tabla = Table(
@@ -118,4 +124,10 @@ def mostrar_tabla_csv(
         tabla.add_row(*["" if pd.isna(v) else str(v) for v in row])
 
     console.print(tabla)
-    console.print(f"[dim]{len(df)} filas × {len(df.columns)} columnas[/dim]")
+    n_cols = len(df.columns)
+    if max_filas is not None and max_filas > 0 and total_filas > len(df):
+        console.print(
+            f"[dim]mostrando {len(df)} de {total_filas} filas × {n_cols} columnas[/dim]"
+        )
+    else:
+        console.print(f"[dim]{total_filas} filas × {n_cols} columnas[/dim]")

@@ -13,7 +13,8 @@ from .gh_client import (
     DEFAULT_PAGE_DELAY,
     DEFAULT_RATE_LIMIT_RETRIES,
     DEFAULT_RATE_LIMIT_WAIT,
-    DEFAULT_SEARCH_LIMIT,
+    DEFAULT_TIMEOUT_RETRIES,
+    DEFAULT_TIMEOUT_WAIT,
     enriquecer_estrellas,
     ejecutar_busqueda_specify_kit,
 )
@@ -26,11 +27,13 @@ _EPILOGO = """ejemplos (desde el repo, con uv):
   uv run %(prog)s buscar --limite 500 --no-estrellas --sin-resumen
   uv run %(prog)s procesar resultados.json --salida repos.csv
   uv run %(prog)s mostrar matched_repos/resultados.csv
+  uv run %(prog)s mostrar repos.csv --filas 50
 
 Si %(prog)s está en el PATH (p. ej. tras pip install -e), puedes ejecutarlo sin "uv run ".
 
-La búsqueda usa varias consultas (subrutas bajo .specify + gitignore); GitHub limita 1000 resultados por consulta.
-Requiere la CLI de GitHub (gh) instalada y autenticada.
+Por defecto ~31 consultas (máx. cobertura vía API); GitHub limita 1000 resultados por consulta.
+Usa --rapido para solo 5 consultas de directorio. --limite 0 = sin tope de repos.
+Requiere gh instalado y autenticado.
 """
 
 
@@ -63,8 +66,13 @@ def construir_parser() -> argparse.ArgumentParser:
     buscar.add_argument(
         "--limite",
         type=int,
-        default=DEFAULT_SEARCH_LIMIT,
-        help="Número máximo de repositorios en el CSV.",
+        default=0,
+        help="Máximo de repositorios en el CSV (0 = sin tope; por defecto se exportan todos los hallados).",
+    )
+    buscar.add_argument(
+        "--rapido",
+        action="store_true",
+        help="Solo 5 consultas bajo .specify (sin lenguaje/extensión); más rápido y peor cobertura.",
     )
     buscar.add_argument(
         "--sin-resumen",
@@ -100,6 +108,18 @@ def construir_parser() -> argparse.ArgumentParser:
         type=float,
         default=DEFAULT_RATE_LIMIT_WAIT,
         help="Segundos de espera antes de cada reintento por rate limit.",
+    )
+    avanzado_buscar.add_argument(
+        "--reintentos-timeout",
+        type=int,
+        default=DEFAULT_TIMEOUT_RETRIES,
+        help="Reintentos por petición ante timeout HTTP 408 / consulta demasiado pesada.",
+    )
+    avanzado_buscar.add_argument(
+        "--espera-timeout",
+        type=float,
+        default=DEFAULT_TIMEOUT_WAIT,
+        help="Segundos entre reintentos por timeout de búsqueda de código.",
     )
     avanzado_buscar.add_argument(
         "--vista-previa",
@@ -139,10 +159,17 @@ def construir_parser() -> argparse.ArgumentParser:
 
     mostrar = subparsers.add_parser(
         "mostrar",
-        help="Muestra todo el contenido de un CSV como tabla Rich en la terminal.",
+        help="Muestra un CSV como tabla Rich en la terminal (todas las columnas; filas opcionales).",
         formatter_class=argparse.ArgumentDefaultsHelpFormatter,
     )
     mostrar.add_argument("csv", help="Ruta al archivo CSV.")
+    mostrar.add_argument(
+        "--filas",
+        type=int,
+        default=None,
+        metavar="N",
+        help="Mostrar solo las primeras N filas de datos (por defecto: todas).",
+    )
     mostrar.add_argument(
         "--titulo",
         default=None,
@@ -158,12 +185,16 @@ def construir_parser() -> argparse.ArgumentParser:
 
 
 def _ejecutar_buscar(args: argparse.Namespace) -> int:
+    limite_repos = None if args.limite <= 0 else args.limite
     resultado = ejecutar_busqueda_specify_kit(
-        limite=args.limite,
+        limite=limite_repos,
         espera_segundos=args.espera,
         espera_entre_consultas=args.espera_consultas,
         reintentos_rate_limit=args.reintentos_rate_limit,
         espera_rate_limit=args.espera_rate_limit,
+        reintentos_timeout=args.reintentos_timeout,
+        espera_timeout=args.espera_timeout,
+        busqueda_rapida=args.rapido,
     )
     for linea in resultado.info_metricas:
         print(f"info: {linea}", file=sys.stderr)
@@ -201,7 +232,12 @@ def main(argv: list[str] | None = None) -> int:
         if args.comando == "procesar":
             return _ejecutar_procesar(args)
         if args.comando == "mostrar":
-            mostrar_tabla_csv(args.csv, titulo=args.titulo, encoding=args.encoding)
+            mostrar_tabla_csv(
+                args.csv,
+                titulo=args.titulo,
+                encoding=args.encoding,
+                max_filas=args.filas,
+            )
             return 0
     except Exception as exc:  # pragma: no cover - mensajes de error para CLI
         parser.exit(1, f"error: {exc}\n")

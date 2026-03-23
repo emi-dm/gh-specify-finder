@@ -27,6 +27,17 @@ class MostrarCsvTests(unittest.TestCase):
             tabla = mock_print.call_args_list[0].args[0]
             self.assertEqual(tabla.title, "Mi tabla")
 
+    def test_mostrar_limita_filas(self):
+        with TemporaryDirectory() as tmp:
+            ruta = Path(tmp) / "t.csv"
+            ruta.write_text("a,b\n1,1\n2,2\n3,3\n", encoding="utf-8")
+            with patch("gh_specify_finder.export.console.print") as mock_print:
+                mostrar_tabla_csv(ruta, max_filas=2)
+            tabla = mock_print.call_args_list[0].args[0]
+            self.assertEqual(len(tabla.rows), 2)
+            pie = mock_print.call_args_list[1].args[0]
+            self.assertIn("mostrando 2 de 3", pie)
+
 
 if __name__ == "__main__":
     unittest.main()

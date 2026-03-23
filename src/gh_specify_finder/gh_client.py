@@ -13,32 +13,88 @@ import shutil
 import subprocess
 import time
 from dataclasses import dataclass, field
-from typing import Callable, Sequence
+from typing import Callable, Sequence, TypeAlias
 
-from .criteria import es_ruta_archivo_gitignore, es_ruta_directorio_specify
+from .criteria import es_ruta_directorio_specify
 from .models import MatchRecord
 from .parser import _as_dict, _extraer_ruta, normalizar_registros
 
-DEFAULT_SEARCH_LIMIT = 10000
+# None = no recortar repositorios (recomendado para máxima cobertura).
+DEFAULT_SEARCH_LIMIT: int | None = None
 SEARCH_PAGE_SIZE = 100
 DEFAULT_PAGE_DELAY = 1.0
 # La API de búsqueda de código limita ~9 peticiones/min; entre consultas distintas conviene pausar más.
 DEFAULT_ESPERA_ENTRE_CONSULTAS = 7.0
 
-# Subrutas habituales de Spec Kit (cada una cuenta como consulta aparte, hasta 1000 hits c/u).
-CONSULTAS_DIRECTORIO_FRAGMENTADAS: tuple[str, ...] = (
+# Pocas consultas (más rápido; peor cobertura si path:.specify supera 1000 resultados).
+CONSULTAS_DIRECTORIO_RAPIDAS: tuple[str, ...] = (
     "path:.specify/memory",
     "path:.specify/scripts",
     "path:.specify/templates",
     "path:.specify/extensions",
     "path:.specify",
 )
+
+_LENGUAJES_SPECIFY: tuple[str, ...] = (
+    "Python",
+    "JavaScript",
+    "TypeScript",
+    "Shell",
+    "PowerShell",
+    "Markdown",
+    "Go",
+    "Rust",
+    "Ruby",
+    "Java",
+    "C#",
+    "PHP",
+    "YAML",
+)
+_EXTENSIONES_SPECIFY: tuple[str, ...] = ("md", "sh", "ps1", "json", "yaml", "yml", "ts", "js", "py", "bash")
+
+
+def _dedupe_consultas_en_orden(consultas: list[str]) -> list[str]:
+    visto: set[str] = set()
+    salida: list[str] = []
+    for c in consultas:
+        if c not in visto:
+            visto.add(c)
+            salida.append(c)
+    return salida
+
+
+def construir_consultas_directorio_max_cobertura() -> tuple[str, ...]:
+    """
+    Lista amplia de consultas `path:` / `language:` / `extension:` para acercarse al techo
+    de 1000 resultados **por consulta** con conjuntos distintos (sigue sin ser exhaustivo).
+    """
+    raw: list[str] = [
+        "path:.specify/memory",
+        "path:.specify/scripts",
+        "path:.specify/templates",
+        "path:.specify/extensions",
+        "path:.specify/commands",
+        "path:.specify/skills",
+        "path:.specify",
+        *[f"path:.specify language:{lang}" for lang in _LENGUAJES_SPECIFY],
+        *[f"path:.specify extension:{ext}" for ext in _EXTENSIONES_SPECIFY],
+    ]
+    return tuple(_dedupe_consultas_en_orden(raw))
+
+
+# Por defecto se usa la lista amplia; `busqueda_rapida=True` usa CONSULTAS_DIRECTORIO_RAPIDAS.
+CONSULTAS_DIRECTORIO_TODAS: tuple[str, ...] = construir_consultas_directorio_max_cobertura()
+
 # Archivos .gitignore que contienen la cadena literal ".specify".
 CONSULTA_GITIGNORE_SPECIFY = 'filename:.gitignore ".specify"'
+
+FiltroRuta: TypeAlias = Callable[[str], bool] | None
 
 STAR_BATCH_SIZE = 25
 DEFAULT_RATE_LIMIT_RETRIES = 6
 DEFAULT_RATE_LIMIT_WAIT = 30.0
+DEFAULT_TIMEOUT_RETRIES = 3
+DEFAULT_TIMEOUT_WAIT = 15.0
 DEFAULT_STARS_TIMEOUT_SECONDS = 10.0
 
 
@@ -91,6 +147,17 @@ def _es_error_limite_mil(stderr: str) -> bool:
     return "cannot access beyond the first 1000 results" in texto or "beyond the first 1000" in texto
 
 
+def _es_error_timeout_busqueda(stderr: str) -> bool:
+    texto = stderr.lower()
+    return (
+        "timed out" in texto
+        or "timeout" in texto
+        or "http 408" in texto
+        or " 408" in texto
+        or "try a simpler query" in texto
+    )
+
+
 def _mensaje_rate_limit() -> str:
     return (
         "GitHub devolvió un rate limit durante la búsqueda. "
@@ -103,6 +170,14 @@ def _mensaje_limite_mil() -> str:
     return (
         "GitHub limitó esta consulta a las primeras 1000 coincidencias. "
         "Se conservaron las coincidencias ya obtenidas para esa consulta."
+    )
+
+
+def _mensaje_timeout_busqueda() -> str:
+    return (
+        "GitHub respondió timeout (408) en una petición de búsqueda de código. "
+        "Se conservaron las coincidencias ya obtenidas para esa consulta; prueba más tarde, "
+        "usa --rapido (menos consultas) o aumenta --espera-timeout / --reintentos-timeout."
     )
 
 
@@ -191,6 +266,8 @@ def _ejecutar_consulta_paginated(
     espera_segundos: float,
     reintentos_rate_limit: int,
     espera_rate_limit: float,
+    reintentos_timeout: int,
+    espera_timeout: float,
     extra_args: Sequence[str] | None,
 ) -> tuple[list[object], str, str, str | None, int | None]:
     items: list[object] = []
@@ -221,6 +298,12 @@ def _ejecutar_consulta_paginated(
             if espera_rate_limit > 0:
                 time.sleep(espera_rate_limit)
             proc = subprocess.run(comando, capture_output=True, text=True, check=False)
+        rt_local = reintentos_timeout
+        while proc.returncode != 0 and _es_error_timeout_busqueda(proc.stderr) and rt_local > 0:
+            rt_local -= 1
+            if espera_timeout > 0:
+                time.sleep(espera_timeout)
+            proc = subprocess.run(comando, capture_output=True, text=True, check=False)
         stdout_total.append(proc.stdout)
         if proc.returncode != 0:
             stderr_total.append(proc.stderr)
@@ -229,6 +312,9 @@ def _ejecutar_consulta_paginated(
                 break
             if _es_error_limite_mil(proc.stderr):
                 advertencia = _mensaje_limite_mil()
+                break
+            if _es_error_timeout_busqueda(proc.stderr):
+                advertencia = _mensaje_timeout_busqueda()
                 break
             raise RuntimeError(proc.stderr.strip() or "La búsqueda con gh falló.")
 
@@ -252,14 +338,23 @@ def _ejecutar_consulta_paginated(
     return items, "\n".join(stdout_total), "\n".join(stderr_total), advertencia, total_count_api
 
 
-def _filtrar_items_por_ruta(items: list[object], criterio_ruta: Callable[[str], bool]) -> list[object]:
+def _filtrar_items_por_ruta(items: list[object], criterio_ruta: FiltroRuta) -> list[object]:
+    """Si ``criterio_ruta`` es None (consulta gitignore), se confía en la API y no se filtra por path."""
     salida: list[object] = []
     for item in items:
         data = _as_dict(item)
         ruta = _extraer_ruta(data)
-        if ruta and criterio_ruta(ruta):
+        if criterio_ruta is None:
+            salida.append(item)
+        elif ruta and criterio_ruta(ruta):
             salida.append(item)
     return salida
+
+
+def total_consultas_busqueda(busqueda_rapida: bool = False) -> int:
+    """Número de consultas a search/code (directorio + gitignore)."""
+    n_dir = len(CONSULTAS_DIRECTORIO_RAPIDAS if busqueda_rapida else CONSULTAS_DIRECTORIO_TODAS)
+    return n_dir + 1
 
 
 def _combinar_advertencias(*avisos: str | None) -> str | None:
@@ -280,16 +375,19 @@ def _resumir_metrica_consulta(consulta_q: str, total_count: int | None, n_items:
 
 
 def ejecutar_busqueda_specify_kit(
-    limite: int = DEFAULT_SEARCH_LIMIT,
+    limite: int | None = DEFAULT_SEARCH_LIMIT,
     espera_segundos: float = DEFAULT_PAGE_DELAY,
     espera_entre_consultas: float = DEFAULT_ESPERA_ENTRE_CONSULTAS,
     reintentos_rate_limit: int = DEFAULT_RATE_LIMIT_RETRIES,
     espera_rate_limit: float = DEFAULT_RATE_LIMIT_WAIT,
+    reintentos_timeout: int = DEFAULT_TIMEOUT_RETRIES,
+    espera_timeout: float = DEFAULT_TIMEOUT_WAIT,
     extra_args: Sequence[str] | None = None,
+    busqueda_rapida: bool = False,
 ) -> GhSearchResult:
     """
-    Busca repositorios con carpeta `.specify` (varias consultas fragmentadas + filtro) o
-    `.gitignore` con `.specify`. Une todo, deduplica por repo y aplica ``limite``.
+    Busca repositorios con carpeta `.specify` (muchas consultas fragmentadas por defecto) o
+    `.gitignore` con `.specify`. Une todo, deduplica por repo y aplica ``limite`` (None = sin tope).
     """
     if shutil.which("gh") is None:
         raise RuntimeError("No se encontró 'gh' en PATH.")
@@ -300,9 +398,10 @@ def ejecutar_busqueda_specify_kit(
     advertencias: list[str | None] = []
     info_metricas: list[str] = []
 
-    consultas: list[tuple[str, Callable[[str], bool]]] = [
-        *[(q, es_ruta_directorio_specify) for q in CONSULTAS_DIRECTORIO_FRAGMENTADAS],
-        (CONSULTA_GITIGNORE_SPECIFY, es_ruta_archivo_gitignore),
+    consultas_dir = CONSULTAS_DIRECTORIO_RAPIDAS if busqueda_rapida else CONSULTAS_DIRECTORIO_TODAS
+    consultas: list[tuple[str, FiltroRuta]] = [
+        *[(q, es_ruta_directorio_specify) for q in consultas_dir],
+        (CONSULTA_GITIGNORE_SPECIFY, None),
     ]
 
     for indice, (consulta_q, filtro_ruta) in enumerate(consultas):
@@ -314,6 +413,8 @@ def ejecutar_busqueda_specify_kit(
             espera_segundos=espera_segundos,
             reintentos_rate_limit=reintentos_rate_limit,
             espera_rate_limit=espera_rate_limit,
+            reintentos_timeout=reintentos_timeout,
+            espera_timeout=espera_timeout,
             extra_args=extra_args,
         )
         filtrados = _filtrar_items_por_ruta(consulta_items, filtro_ruta)
@@ -337,8 +438,9 @@ def ejecutar_busqueda_specify_kit(
         "-X",
         "GET",
         "search/code",
-        f"fragmentos_directorio={len(CONSULTAS_DIRECTORIO_FRAGMENTADAS)}",
-        f"+gitignore=1",
+        f"consultas_directorio={len(consultas_dir)}",
+        "modo=rapido" if busqueda_rapida else "modo=completo",
+        "+gitignore=1",
         f"per_page={SEARCH_PAGE_SIZE}",
     ]
     return GhSearchResult(

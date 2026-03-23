@@ -8,7 +8,7 @@ from gh_specify_finder.criteria import (
     inferir_vias_deteccion,
 )
 from gh_specify_finder.export import registros_a_dataframe
-from gh_specify_finder.parser import cargar_desde_json, normalizar_registros
+from gh_specify_finder.parser import _extraer_ruta, cargar_desde_json, normalizar_registros
 
 
 class CriteriaTests(unittest.TestCase):
@@ -36,6 +36,10 @@ class CriteriaTests(unittest.TestCase):
 
 
 class ParserTests(unittest.TestCase):
+    def test_extraer_ruta_usa_name_si_path_vacio(self):
+        self.assertEqual(_extraer_ruta({"name": ".gitignore", "path": ""}), ".gitignore")
+        self.assertEqual(_extraer_ruta({"name": ".gitignore"}), ".gitignore")
+
     def test_normalizar_registros_agrupa_rutas(self):
         items = [
             {"repository": {"nameWithOwner": "acme/app", "url": "https://github.com/acme/app", "stargazerCount": 10}, "path": "a/.specify"},

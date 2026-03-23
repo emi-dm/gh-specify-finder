@@ -2,15 +2,17 @@
 
 CLI en Python para localizar repositorios públicos que usan [Spec Kit](https://github.com/github/spec-kit): bien porque tienen la carpeta **`.specify`**, bien porque su **`.gitignore`** menciona **`.specify`**. Usa la API de búsqueda de código de GitHub a través de `gh`.
 
+**Historial de cambios y referencia de errores** (`rate limit`, HTTP 408, tope 1000, etc.): [CHANGELOG.md](CHANGELOG.md).
+
 ## Qué hace
 
-- **`buscar`**: ejecuta **varias consultas** a `gh api search/code`, las fusiona y agrupa por repositorio:
-  1. **Directorio `.specify`**: varias consultas fragmentadas (`path:.specify/memory`, `scripts`, `templates`, `extensions` y `path:.specify` amplia) para sortear el tope de **1000 coincidencias por consulta**; luego un **filtro** en Python exige el segmento de carpeta `.specify` en la ruta.
-  2. **`.gitignore`**: archivos `.gitignore` que contienen la cadena `.specify`.
+- **`buscar`**: por defecto ejecuta **31 consultas** a `gh api search/code` (30 sobre directorio `.specify` + 1 sobre `.gitignore`), fusiona ítems y agrupa por repositorio **sin tope de filas** salvo que indiques `--limite`:
+  1. **Directorio `.specify`**: subrutas típicas (`memory`, `scripts`, `templates`, `extensions`, `commands`, `skills`), la consulta amplia `path:.specify`, y **fragmentación por lenguaje y extensión** (Python, Markdown, Shell, etc.) para obtener conjuntos distintos bajo el tope de 1000 por consulta. Luego un **filtro** en Python exige el segmento de carpeta `.specify` en la ruta.
+  2. **`.gitignore`**: `filename:.gitignore ".specify"`; se **confía en la respuesta de la API** (no se descartan ítems por path), y si falta `path` en el JSON se usa el campo `name`.
 - En **stderr** imprime líneas `info:` con el `total_count` que devuelve GitHub por consulta (coincidencias de código indexadas), cuántos ítems se recuperaron y cuántos pasaron el filtro; al final, cuántos **repositorios únicos** hay tras deduplicar. Si `total_count` supera 1000, se indica que la API solo permite bajar 1000 por esa consulta.
 - Tras la pasada de directorio, aplica un **filtro adicional** en Python para descartar rutas que solo contienen `.specify` como parte de un nombre de archivo (p. ej. `speckit.specify.md`).
 - **`procesar`**: convierte JSON o JSONL exportado manualmente desde `gh search code` en el mismo formato CSV (sin volver a lanzar las consultas fijas de `buscar`).
-- **`mostrar`**: lee un CSV y lo pinta **entero** en la terminal como tabla con **Rich** (todas las filas y columnas).
+- **`mostrar`**: lee un CSV y lo pinta en la terminal con **Rich** (todas las columnas; opcionalmente solo las primeras **N** filas con `--filas`).
 - Exporta CSV con **pandas** y muestra un resumen opcional con **rich**.
 - Opcionalmente completa **estrellas** con GraphQL (`gh api graphql`).
 
@@ -21,7 +23,7 @@ CLI en Python para localizar repositorios públicos que usan [Spec Kit](https://
 **Qué hace esta herramienta al respecto**
 
 - En la pasada de **directorio**, las consultas usan subcadenas en `path:` (incluida una amplia `path:.specify`); después se **filtran** los resultados en Python: solo cuentan rutas donde un **segmento** del path sea exactamente `.specify`. Así se excluye la mayor parte del ruido anterior.
-- En la pasada **`.gitignore`**, solo se consideran archivos cuyo nombre es `.gitignore` y que coinciden con la búsqueda de contenido configurada; la columna `vias` del CSV indica si el repo entró por carpeta, por `.gitignore` o por ambos.
+- En la pasada **`.gitignore`**, la consulta de GitHub ya restringe a archivos `.gitignore`; la columna `vias` del CSV indica si el repo entró por carpeta `.specify`, por `.gitignore` o por ambos.
 
 **Si usas `procesar` con JSON propio**, ese archivo puede traer coincidencias laxas según la consulta que usaste con `gh`; el CSV seguirá reflejando esas rutas. Para el criterio estricto de directorio + `.gitignore`, conviene usar el subcomando **`buscar`**.
 
@@ -65,10 +67,11 @@ Si el comando quedó instalado en tu entorno global o virtual (`pip install -e .
 | Opción | Descripción |
 |--------|-------------|
 | `--salida` | Ruta del CSV (por defecto `salida.csv`). |
-| `--limite` | Máximo de **repositorios** en el CSV (`buscar` solo). |
+| `--limite` | Máximo de **repositorios** en el CSV (`0` = sin tope, **por defecto**). |
+| `--rapido` | Solo 5 consultas de directorio (sin lenguaje/extensión); más rápido, **menos cobertura**. |
 | `--sin-resumen` | No imprime la tabla en consola. |
 | `--no-estrellas` | No llama a GraphQL para rellenar estrellas. |
-| `mostrar` | Argumento posicional: ruta al CSV. Flags: `--titulo`, `--encoding`. |
+| `mostrar` | Posicional: ruta al CSV. `--filas N`, `--titulo`, `--encoding`. |
 
 ## Grupo avanzado (`buscar`)
 
@@ -78,6 +81,8 @@ Si el comando quedó instalado en tu entorno global o virtual (`pip install -e .
 | `--espera-consultas` | Pausa entre **consultas distintas** (fragmentos + gitignore); por defecto 7 s para respetar el límite ~9 peticiones/min de code search. |
 | `--reintentos-rate-limit` | Reintentos ante rate limit por petición paginada. |
 | `--espera-rate-limit` | Segundos entre reintentos por rate limit. |
+| `--reintentos-timeout` | Reintentos ante HTTP 408 / timeout de búsqueda (por petición). |
+| `--espera-timeout` | Pausa entre esos reintentos. |
 | `--vista-previa` | Filas máximas en la tabla resumen (por defecto 15). |
 
 ## Procesar un JSON ya descargado
@@ -92,10 +97,26 @@ uv run gh-specify-finder procesar resultados.json --salida matched_repos/resulta
 
 ```bash
 uv run gh-specify-finder mostrar matched_repos/resultados.csv
+uv run gh-specify-finder mostrar repos.csv --filas 25
 uv run gh-specify-finder mostrar repos.csv --titulo "Repos Spec Kit"
 ```
 
-Opcional: `--encoding` si el archivo no es UTF-8.
+- `--filas N`: solo las primeras **N** filas de datos (la cabecera del CSV no cuenta como fila de datos).
+- `--encoding` si el archivo no es UTF-8.
+
+## Cómo se eliminan los duplicados
+
+Tras juntar todos los ítems de las consultas a GitHub, la función [`normalizar_registros`](src/gh_specify_finder/parser.py) construye **como mucho una fila por repositorio** en el CSV:
+
+1. **Clave única:** el identificador es el nombre del repo en forma `propietario/nombre` (`nameWithOwner` en la API), normalizado al campo `nombre_repo`. Cualquier coincidencia adicional del **mismo** repo no crea una segunda fila.
+
+2. **Fusión de datos:** si el mismo repo aparece en varias consultas o archivos, se **unen** en un solo registro: se rellenan `url_repo` y `estrellas` si antes faltaban y el nuevo ítem las trae.
+
+3. **Rutas:** cada ítem aporta una ruta de archivo (`path` o `name`). Esas rutas se acumulan en una lista **sin repetir** la misma ruta dos veces (`add_path` en [`MatchRecord`](src/gh_specify_finder/models.py)). La primera ruta define `ruta_coincidente`; el resto queda en `rutas_coincidentes` y en el contador `coincidencias`.
+
+4. **Orden:** los repositorios se ordenan alfabéticamente por `nombre_repo` (y de forma estable por ruta principal) antes de exportar.
+
+El mismo criterio aplica cuando usas **`procesar`** sobre un JSON/JSONL: una fila por `owner/repo`, rutas acumuladas.
 
 ## Formato del CSV
 
@@ -121,8 +142,10 @@ Opcional: `--encoding` si el archivo no es UTF-8.
 
 ## Limitaciones
 
-- La búsqueda de código de GitHub es **mejor esfuerzo**: índice, permisos y cuotas afectan los resultados.
-- **Tope duro de la API:** como mucho **1000 coincidencias de código recuperables por consulta**, aunque el JSON indique un `total_count` mayor (p. ej. varios miles). Ese número es de **coincidencias en el índice**, no de repositorios únicos; al agrupar por repo el CSV suele tener **menos filas** que la suma de `total_count` de cada consulta.
-- **Fragmentación:** varias consultas (`memory`, `scripts`, … + `gitignore`) suman hasta **6000 ítems** recuperables en el mejor caso (6 consultas × 1000), con solapamiento y deduplicación por repo; aun así puede haber repos fuera del índice o sin coincidencias en esas rutas.
-- La API de **code search** limita las peticiones (~9/min autenticado); muchas consultas y páginas hacen el `buscar` lento salvo que ajustes `--espera` / `--espera-consultas`.
-- Si aparece *rate limit*, el programa avisa y conserva lo ya obtenido; puedes reintentar más tarde o usar `--no-estrellas` para reducir llamadas extra.
+- **No existe garantía de “todos los repos de GitHub”.** La API pública `search/code` tiene techos, huecos de índice y cuotas; para un censo exhaustivo harían falta enfoques ajenos a esta CLI (p. ej. analizar [GitHub Archive](https://www.gharchive.org/) / BigQuery u otros datos masivos). Esta herramienta **maximiza lo razonable** vía muchas consultas disjuntas, pero no certifica completitud.
+- La búsqueda de código es **mejor esfuerzo**: repos privados, no indexados o con layouts muy raros pueden no aparecer.
+- **Tope duro:** como mucho **1000 coincidencias recuperables por consulta**; el `total_count` del JSON puede ser mayor. Tras agrupar por repo, el CSV tiene **menos filas** que la suma de coincidencias.
+- **Modo completo (por defecto):** hasta **31** consultas × 1000 = **31 000 ítems** como techo teórico de código antes de deduplicar; en la práctica hay mucho solapamiento y el run es **largo** (decenas de minutos no es raro).
+- La API de **code search** limita peticiones (~9/min autenticado); usa `--espera-consultas` / `--espera` o `--rapido` si necesitas acortar tiempo.
+- **Timeout (HTTP 408):** GitHub a veces corta consultas de código “pesadas”. La herramienta **reintenta** cada petición fallida (por defecto 3 veces con 15 s entre intentos; ajusta `--reintentos-timeout` / `--espera-timeout`). Si sigue fallando, **no aborta todo el `buscar`**: guarda lo ya obtenido en esa consulta, muestra un `warning` y **continúa** con el resto. Con muchos timeouts, prueba `--rapido`, más `--espera` entre páginas o ejecuta en otro momento.
+- Si aparece *rate limit*, se avisa y se conserva lo obtenido; reintenta más tarde o usa `--no-estrellas` para menos carga tras la búsqueda.
