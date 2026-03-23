@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gh-specify-finder"
+version = "0.1.0"
+description = "CLI en español para procesar resultados de gh search code y exportar .specify a CSV"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "pandas>=2.0",
+  "rich>=13.0",
+]
+authors = [
+  { name = "Copilot" },
+]
+keywords = ["github", "gh", "specify", "csv", "cli"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+]
+
+[project.scripts]
+gh-specify-finder = "gh_specify_finder.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]

@@ -1,0 +1,18 @@
+[
+  {
+    "repository": {
+      "nameWithOwner": "acme/app",
+      "url": "https://github.com/acme/app",
+      "stargazerCount": 42
+    },
+    "path": "docs/.specify"
+  },
+  {
+    "repository": {
+      "nameWithOwner": "acme/app",
+      "url": "https://github.com/acme/app",
+      "stargazerCount": 42
+    },
+    "path": "src/.specify"
+  }
+]
