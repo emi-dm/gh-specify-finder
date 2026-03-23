@@ -1,18 +1,32 @@
+"""
+Exportación de coincidencias a CSV y visualización en consola con Rich.
+
+Incluye un resumen tras ``buscar``/``procesar`` y la función ``mostrar_tabla_csv`` para volcar
+un CSV completo en tabla.
+
+La columna ``vias`` resume el criterio inferido por ruta: ``directorio`` (segmento ``.specify``),
+``gitignore`` (archivo ``.gitignore``) o ambos separados por ``;``.
+"""
+
 from __future__ import annotations
 
 from pathlib import Path
 
 import pandas as pd
+from rich import box
 from rich.console import Console
 from rich.table import Table
 
+from .criteria import inferir_vias_deteccion
 from .models import MatchRecord
 
+VISTA_PREVIA_TABLA_DEFAULT = 15
 
 console = Console()
 
 
 def registros_a_dataframe(registros: list[MatchRecord]) -> pd.DataFrame:
+    """Construye un DataFrame con una fila por repositorio y la columna derivada ``vias``."""
     filas = []
     for registro in registros:
         filas.append(
@@ -23,13 +37,27 @@ def registros_a_dataframe(registros: list[MatchRecord]) -> pd.DataFrame:
                 "ruta_coincidente": registro.ruta_coincidente,
                 "rutas_coincidentes": "; ".join(registro.rutas_coincidentes),
                 "coincidencias": len(registro.rutas_coincidentes),
+                "vias": inferir_vias_deteccion(registro.rutas_coincidentes),
                 "origen": registro.origen,
             }
         )
-    return pd.DataFrame(filas, columns=["nombre_repo", "url_repo", "estrellas", "ruta_coincidente", "rutas_coincidentes", "coincidencias", "origen"])
+    return pd.DataFrame(
+        filas,
+        columns=[
+            "nombre_repo",
+            "url_repo",
+            "estrellas",
+            "ruta_coincidente",
+            "rutas_coincidentes",
+            "coincidencias",
+            "vias",
+            "origen",
+        ],
+    )
 
 
 def guardar_csv(registros: list[MatchRecord], salida: str | Path) -> Path:
+    """Escribe el CSV en ``salida`` (crea directorios padre si hace falta)."""
     salida = Path(salida)
     salida.parent.mkdir(parents=True, exist_ok=True)
     df = registros_a_dataframe(registros)
@@ -37,8 +65,9 @@ def guardar_csv(registros: list[MatchRecord], salida: str | Path) -> Path:
     return salida
 
 
-def mostrar_resumen(registros: list[MatchRecord], limite: int = 10) -> None:
-    tabla = Table(title="Resultados .specify")
+def mostrar_resumen(registros: list[MatchRecord], limite: int = VISTA_PREVIA_TABLA_DEFAULT) -> None:
+    """Imprime una tabla con los primeros ``limite`` repositorios y el total."""
+    tabla = Table(title="Resultados Spec Kit (.specify / .gitignore)")
     tabla.add_column("Repositorio", style="cyan", no_wrap=False)
     tabla.add_column("Estrellas", justify="right")
     tabla.add_column("Ruta principal", style="green")
@@ -55,3 +84,38 @@ def mostrar_resumen(registros: list[MatchRecord], limite: int = 10) -> None:
 
     console.print(tabla)
     console.print(f"[bold]{len(registros)}[/bold] repositorio(s) procesado(s).")
+
+
+def mostrar_tabla_csv(
+    path: str | Path,
+    *,
+    titulo: str | None = None,
+    encoding: str = "utf-8",
+) -> None:
+    """
+    Lee un CSV y lo imprime completo como tabla Rich (todas las filas y columnas).
+
+    Las celdas se muestran como texto; el contenido largo hace wrap (``overflow="fold"``).
+    """
+    path = Path(path)
+    df = pd.read_csv(path, encoding=encoding, dtype=str, keep_default_na=False)
+    df = df.fillna("")
+
+    titulo_tabla = titulo if titulo is not None else path.name
+    tabla = Table(
+        title=titulo_tabla,
+        show_header=True,
+        header_style="bold cyan",
+        box=box.ROUNDED,
+        show_lines=False,
+        expand=True,
+        pad_edge=False,
+    )
+    for col in df.columns:
+        tabla.add_column(str(col), overflow="fold", no_wrap=False)
+
+    for _, row in df.iterrows():
+        tabla.add_row(*["" if pd.isna(v) else str(v) for v in row])
+
+    console.print(tabla)
+    console.print(f"[dim]{len(df)} filas × {len(df.columns)} columnas[/dim]")

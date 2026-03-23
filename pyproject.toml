@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "gh-specify-finder"
 version = "0.1.0"
-description = "CLI en español para procesar resultados de gh search code y exportar .specify a CSV"
+description = "CLI para encontrar repos con carpeta .specify o .gitignore que mencione .specify (Spec Kit), vía gh search code"
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [

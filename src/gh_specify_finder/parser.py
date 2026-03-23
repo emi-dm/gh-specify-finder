@@ -1,3 +1,9 @@
+"""
+Carga y normalización de resultados de `gh search code` (JSON / JSONL).
+
+Agrupa filas por repositorio y acumula rutas de coincidencia en un solo `MatchRecord`.
+"""
+
 from __future__ import annotations
 
 import json
@@ -75,6 +81,7 @@ def _extraer_ruta(data: dict[str, Any]) -> str:
 
 
 def normalizar_registros(items: Iterable[Any], origen: str = "") -> list[MatchRecord]:
+    """Unifica ítems de búsqueda en registros únicos por `nombre_repo`, ordenados alfabéticamente."""
     registros: dict[str, MatchRecord] = {}
 
     for item in items:
@@ -107,6 +114,7 @@ def normalizar_registros(items: Iterable[Any], origen: str = "") -> list[MatchRe
 
 
 def cargar_desde_json(path: str | Path) -> list[MatchRecord]:
+    """Lee un JSON array/objeto o JSONL desde disco y devuelve registros normalizados."""
     texto = Path(path).read_text(encoding="utf-8")
     if not texto.strip():
         return []

@@ -1,3 +1,5 @@
+"""Modelo de datos para una coincidencia agregada por repositorio."""
+
 from __future__ import annotations
 
 from dataclasses import dataclass, field
@@ -6,6 +8,7 @@ from typing import Any
 
 @dataclass(slots=True)
 class MatchRecord:
+    """Un repositorio con una o más rutas donde se encontró coincidencia."""
     nombre_repo: str
     url_repo: str = ""
     estrellas: int | None = None

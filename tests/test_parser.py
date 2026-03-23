@@ -2,8 +2,37 @@ from pathlib import Path
 import tempfile
 import unittest
 
+from gh_specify_finder.criteria import (
+    es_ruta_archivo_gitignore,
+    es_ruta_directorio_specify,
+    inferir_vias_deteccion,
+)
 from gh_specify_finder.export import registros_a_dataframe
 from gh_specify_finder.parser import cargar_desde_json, normalizar_registros
+
+
+class CriteriaTests(unittest.TestCase):
+    def test_directorio_specify_positivos(self):
+        self.assertTrue(es_ruta_directorio_specify(".specify/README.md"))
+        self.assertTrue(es_ruta_directorio_specify("apps/foo/.specify/bar.md"))
+        self.assertTrue(es_ruta_directorio_specify("a\\.specify\\x"))  # normaliza
+
+    def test_directorio_specify_negativos(self):
+        self.assertFalse(es_ruta_directorio_specify(".claude/commands/speckit.specify.md"))
+        self.assertFalse(es_ruta_directorio_specify("common/mk/specify.mk"))
+        self.assertFalse(es_ruta_directorio_specify(""))
+        self.assertFalse(es_ruta_directorio_specify("   "))
+
+    def test_gitignore_y_vias(self):
+        self.assertTrue(es_ruta_archivo_gitignore(".gitignore"))
+        self.assertTrue(es_ruta_archivo_gitignore("pkg/.gitignore"))
+        self.assertFalse(es_ruta_archivo_gitignore("foo.txt"))
+        self.assertEqual(inferir_vias_deteccion([".specify/x"]), "directorio")
+        self.assertEqual(inferir_vias_deteccion([".gitignore"]), "gitignore")
+        self.assertEqual(
+            inferir_vias_deteccion([".specify/a", ".gitignore"]),
+            "directorio;gitignore",
+        )
 
 
 class ParserTests(unittest.TestCase):
@@ -28,6 +57,7 @@ class ParserTests(unittest.TestCase):
             self.assertEqual(df.loc[0, "nombre_repo"], "acme/app")
             self.assertEqual(df.loc[0, "estrellas"], 10)
             self.assertEqual(df.loc[0, "ruta_coincidente"], "a/.specify")
+            self.assertEqual(df.loc[0, "vias"], "directorio")
 
 
 if __name__ == "__main__":

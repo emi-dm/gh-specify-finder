@@ -1,19 +1,41 @@
+"""
+Cliente de GitHub CLI (`gh`) para búsqueda de código.
+
+Ejecuta varias consultas a `search/code` (fragmentación por subrutas bajo `.specify` más
+una consulta amplia y la vía `.gitignore`), fusiona ítems y agrupa por repositorio.
+La API solo devuelve hasta 1000 coincidencias por consulta; varias consultas suman cobertura.
+"""
+
 from __future__ import annotations
 
 import json
 import shutil
 import subprocess
 import time
-from dataclasses import dataclass
-from typing import Sequence
+from dataclasses import dataclass, field
+from typing import Callable, Sequence
 
+from .criteria import es_ruta_archivo_gitignore, es_ruta_directorio_specify
 from .models import MatchRecord
-from .parser import normalizar_registros
+from .parser import _as_dict, _extraer_ruta, normalizar_registros
 
 DEFAULT_SEARCH_LIMIT = 10000
 SEARCH_PAGE_SIZE = 100
 DEFAULT_PAGE_DELAY = 1.0
-SEARCH_VARIANTS = ("", "in:file", "in:path")
+# La API de búsqueda de código limita ~9 peticiones/min; entre consultas distintas conviene pausar más.
+DEFAULT_ESPERA_ENTRE_CONSULTAS = 7.0
+
+# Subrutas habituales de Spec Kit (cada una cuenta como consulta aparte, hasta 1000 hits c/u).
+CONSULTAS_DIRECTORIO_FRAGMENTADAS: tuple[str, ...] = (
+    "path:.specify/memory",
+    "path:.specify/scripts",
+    "path:.specify/templates",
+    "path:.specify/extensions",
+    "path:.specify",
+)
+# Archivos .gitignore que contienen la cadena literal ".specify".
+CONSULTA_GITIGNORE_SPECIFY = 'filename:.gitignore ".specify"'
+
 STAR_BATCH_SIZE = 25
 DEFAULT_RATE_LIMIT_RETRIES = 6
 DEFAULT_RATE_LIMIT_WAIT = 30.0
@@ -27,6 +49,15 @@ class GhSearchResult:
     stdout: str
     stderr: str
     advertencia: str | None = None
+    info_metricas: list[str] = field(default_factory=list)
+
+
+def _total_count_desde_respuesta(parsed: object) -> int | None:
+    if isinstance(parsed, dict):
+        tc = parsed.get("total_count")
+        if isinstance(tc, int):
+            return tc
+    return None
 
 
 def _extraer_items_paginate(parsed: object) -> list[object]:
@@ -71,7 +102,7 @@ def _mensaje_rate_limit() -> str:
 def _mensaje_limite_mil() -> str:
     return (
         "GitHub limitó esta consulta a las primeras 1000 coincidencias. "
-        "Se conservaron los resultados obtenidos y se continuó con variantes de búsqueda."
+        "Se conservaron las coincidencias ya obtenidas para esa consulta."
     )
 
 
@@ -85,20 +116,6 @@ def _partes_repositorio(nombre_repo: str) -> tuple[str, str] | None:
     if not owner or not name:
         return None
     return owner, name
-
-
-def _construir_consultas(consulta: str) -> list[str]:
-    texto = consulta.strip()
-    if not texto:
-        return [consulta]
-
-    if "in:file" in texto or "in:path" in texto:
-        return [texto]
-
-    consultas = [texto]
-    for variante in SEARCH_VARIANTS[1:]:
-        consultas.append(f"{texto} {variante}")
-    return consultas
 
 
 def _formar_query_estrellas(registros: list[MatchRecord]) -> tuple[str, list[tuple[str, MatchRecord]]]:
@@ -175,12 +192,13 @@ def _ejecutar_consulta_paginated(
     reintentos_rate_limit: int,
     espera_rate_limit: float,
     extra_args: Sequence[str] | None,
-) -> tuple[list[object], str, str, str | None]:
+) -> tuple[list[object], str, str, str | None, int | None]:
     items: list[object] = []
     stdout_total: list[str] = []
     stderr_total: list[str] = []
     pagina = 1
     advertencia = None
+    total_count_api: int | None = None
     comando_base = [
         "gh",
         "api",
@@ -219,6 +237,9 @@ def _ejecutar_consulta_paginated(
         except json.JSONDecodeError as exc:
             raise RuntimeError("La salida de gh no fue JSON válido.") from exc
 
+        if pagina == 1:
+            total_count_api = _total_count_desde_respuesta(parsed)
+
         page_items = _extraer_items_paginate(parsed)
         items.extend(page_items)
         if len(page_items) < SEARCH_PAGE_SIZE:
@@ -228,58 +249,105 @@ def _ejecutar_consulta_paginated(
         if espera_segundos > 0:
             time.sleep(espera_segundos)
 
-    return items, "\n".join(stdout_total), "\n".join(stderr_total), advertencia
+    return items, "\n".join(stdout_total), "\n".join(stderr_total), advertencia, total_count_api
 
 
-def ejecutar_busqueda_gh(
-    consulta: str,
+def _filtrar_items_por_ruta(items: list[object], criterio_ruta: Callable[[str], bool]) -> list[object]:
+    salida: list[object] = []
+    for item in items:
+        data = _as_dict(item)
+        ruta = _extraer_ruta(data)
+        if ruta and criterio_ruta(ruta):
+            salida.append(item)
+    return salida
+
+
+def _combinar_advertencias(*avisos: str | None) -> str | None:
+    partes = [a.strip() for a in avisos if a and a.strip()]
+    if not partes:
+        return None
+    return " ".join(partes) if len(partes) == 1 else " | ".join(partes)
+
+
+def _resumir_metrica_consulta(consulta_q: str, total_count: int | None, n_items: int, n_filtrados: int) -> str:
+    q_corta = consulta_q if len(consulta_q) <= 72 else consulta_q[:69] + "..."
+    if total_count is not None:
+        cap_msg = f"GitHub total_count={total_count} coincidencias de código"
+        if total_count > 1000:
+            cap_msg += " (la API solo permite recuperar 1000 por consulta)"
+        return f"{q_corta} → {cap_msg}; ítems obtenidos={n_items}, tras filtro={n_filtrados}"
+    return f"{q_corta} → ítems obtenidos={n_items}, tras filtro={n_filtrados}"
+
+
+def ejecutar_busqueda_specify_kit(
     limite: int = DEFAULT_SEARCH_LIMIT,
     espera_segundos: float = DEFAULT_PAGE_DELAY,
+    espera_entre_consultas: float = DEFAULT_ESPERA_ENTRE_CONSULTAS,
     reintentos_rate_limit: int = DEFAULT_RATE_LIMIT_RETRIES,
     espera_rate_limit: float = DEFAULT_RATE_LIMIT_WAIT,
-    incluir_texto: bool = False,
     extra_args: Sequence[str] | None = None,
 ) -> GhSearchResult:
+    """
+    Busca repositorios con carpeta `.specify` (varias consultas fragmentadas + filtro) o
+    `.gitignore` con `.specify`. Une todo, deduplica por repo y aplica ``limite``.
+    """
     if shutil.which("gh") is None:
         raise RuntimeError("No se encontró 'gh' en PATH.")
 
-    items: list[object] = []
     stderr_total: list[str] = []
     stdout_total: list[str] = []
-    advertencia = None
+    items_totales: list[object] = []
+    advertencias: list[str | None] = []
+    info_metricas: list[str] = []
 
-    consultas = _construir_consultas(consulta)
-    for indice, consulta_actual in enumerate(consultas):
-        if indice > 0 and espera_segundos > 0:
-            time.sleep(espera_segundos)
+    consultas: list[tuple[str, Callable[[str], bool]]] = [
+        *[(q, es_ruta_directorio_specify) for q in CONSULTAS_DIRECTORIO_FRAGMENTADAS],
+        (CONSULTA_GITIGNORE_SPECIFY, es_ruta_archivo_gitignore),
+    ]
 
-        consulta_items, consulta_stdout, consulta_stderr, consulta_advertencia = _ejecutar_consulta_paginated(
-            consulta_actual,
+    for indice, (consulta_q, filtro_ruta) in enumerate(consultas):
+        if indice > 0 and espera_entre_consultas > 0:
+            time.sleep(espera_entre_consultas)
+
+        consulta_items, consulta_stdout, consulta_stderr, consulta_advertencia, total_count_api = _ejecutar_consulta_paginated(
+            consulta_q,
             espera_segundos=espera_segundos,
             reintentos_rate_limit=reintentos_rate_limit,
             espera_rate_limit=espera_rate_limit,
             extra_args=extra_args,
         )
-        items.extend(consulta_items)
+        filtrados = _filtrar_items_por_ruta(consulta_items, filtro_ruta)
+        items_totales.extend(filtrados)
         stdout_total.append(consulta_stdout)
         if consulta_stderr:
             stderr_total.append(consulta_stderr)
-        if consulta_advertencia:
-            advertencia = consulta_advertencia
-            break
+        advertencias.append(consulta_advertencia)
+        info_metricas.append(
+            _resumir_metrica_consulta(consulta_q, total_count_api, len(consulta_items), len(filtrados))
+        )
 
+    advertencia = _combinar_advertencias(*advertencias)
+    registros = normalizar_registros(items_totales, origen="gh search code")
     if limite is not None:
-        registros = normalizar_registros(items, origen="gh search code")
         registros = registros[:limite]
-    else:
-        registros = normalizar_registros(items, origen="gh search code")
 
+    comando_repr = [
+        "gh",
+        "api",
+        "-X",
+        "GET",
+        "search/code",
+        f"fragmentos_directorio={len(CONSULTAS_DIRECTORIO_FRAGMENTADAS)}",
+        f"+gitignore=1",
+        f"per_page={SEARCH_PAGE_SIZE}",
+    ]
     return GhSearchResult(
         registros=registros,
-        comando=["gh", "api", "-X", "GET", "search/code", "-f", f"q={consulta}", "-f", f"per_page={SEARCH_PAGE_SIZE}", "-f", "page=1"],
+        comando=comando_repr,
         stdout="\n".join(stdout_total),
         stderr="\n".join(stderr_total),
         advertencia=advertencia,
+        info_metricas=info_metricas,
     )
 
 

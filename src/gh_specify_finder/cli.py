@@ -1,61 +1,59 @@
+"""
+Interfaz de línea de comandos para buscar repositorios con Spec Kit (`.specify` / `.gitignore`).
+"""
+
 from __future__ import annotations
 
 import argparse
 import sys
-from pathlib import Path
 
-from .export import guardar_csv, mostrar_resumen
+from .export import VISTA_PREVIA_TABLA_DEFAULT, guardar_csv, mostrar_resumen, mostrar_tabla_csv
 from .gh_client import (
+    DEFAULT_ESPERA_ENTRE_CONSULTAS,
     DEFAULT_PAGE_DELAY,
     DEFAULT_RATE_LIMIT_RETRIES,
     DEFAULT_RATE_LIMIT_WAIT,
     DEFAULT_SEARCH_LIMIT,
     enriquecer_estrellas,
-    ejecutar_busqueda_gh,
+    ejecutar_busqueda_specify_kit,
 )
 from .parser import cargar_desde_json
+
+_EPILOGO = """ejemplos (desde el repo, con uv):
+  uv run %(prog)s --help
+  uv run %(prog)s buscar --help
+  uv run %(prog)s buscar --salida repos.csv
+  uv run %(prog)s buscar --limite 500 --no-estrellas --sin-resumen
+  uv run %(prog)s procesar resultados.json --salida repos.csv
+  uv run %(prog)s mostrar matched_repos/resultados.csv
+
+Si %(prog)s está en el PATH (p. ej. tras pip install -e), puedes ejecutarlo sin "uv run ".
+
+La búsqueda usa varias consultas (subrutas bajo .specify + gitignore); GitHub limita 1000 resultados por consulta.
+Requiere la CLI de GitHub (gh) instalada y autenticada.
+"""
 
 
 def construir_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
         prog="gh-specify-finder",
-        description="Busca y procesa coincidencias de .specify a partir de resultados de gh.",
+        description=(
+            "Spec Kit en GitHub: buscar repos (carpeta .specify o .gitignore), procesar JSON de gh, "
+            "o mostrar un CSV completo en la terminal con Rich."
+        ),
+        epilog=_EPILOGO,
+        formatter_class=argparse.RawDescriptionHelpFormatter,
     )
-    subparsers = parser.add_subparsers(dest="comando", required=True)
+    subparsers = parser.add_subparsers(
+        dest="comando",
+        required=True,
+        metavar="{buscar,procesar,mostrar}",
+    )
 
     buscar = subparsers.add_parser(
         "buscar",
-        help="Ejecuta gh search code como fuente de entrada de mejor esfuerzo.",
-    )
-    buscar.add_argument(
-        "consulta",
-        nargs="?",
-        default=".specify",
-        help='Consulta para gh search code. Por defecto usa ".specify".',
-    )
-    buscar.add_argument(
-        "--limite",
-        type=int,
-        default=DEFAULT_SEARCH_LIMIT,
-        help=f"Número máximo de resultados (por defecto {DEFAULT_SEARCH_LIMIT}).",
-    )
-    buscar.add_argument(
-        "--espera",
-        type=float,
-        default=DEFAULT_PAGE_DELAY,
-        help=f"Segundos de espera entre páginas (por defecto {DEFAULT_PAGE_DELAY}).",
-    )
-    buscar.add_argument(
-        "--reintentos-rate-limit",
-        type=int,
-        default=DEFAULT_RATE_LIMIT_RETRIES,
-        help=f"Reintentos cuando GitHub responde rate limit (por defecto {DEFAULT_RATE_LIMIT_RETRIES}).",
-    )
-    buscar.add_argument(
-        "--espera-rate-limit",
-        type=float,
-        default=DEFAULT_RATE_LIMIT_WAIT,
-        help=f"Segundos de espera antes de cada reintento por rate limit (por defecto {DEFAULT_RATE_LIMIT_WAIT}).",
+        help="Ejecuta la búsqueda en GitHub y exporta CSV.",
+        formatter_class=argparse.ArgumentDefaultsHelpFormatter,
     )
     buscar.add_argument(
         "--salida",
@@ -63,34 +61,57 @@ def construir_parser() -> argparse.ArgumentParser:
         help="Ruta del CSV a generar.",
     )
     buscar.add_argument(
-        "--vista-previa",
+        "--limite",
         type=int,
-        default=10,
-        help="Número de filas a mostrar en la tabla resumen.",
+        default=DEFAULT_SEARCH_LIMIT,
+        help="Número máximo de repositorios en el CSV.",
     )
     buscar.add_argument(
         "--sin-resumen",
         action="store_true",
         help="No mostrar la tabla resumen en consola.",
     )
-    buscar_enriquecer = buscar.add_mutually_exclusive_group()
-    buscar_enriquecer.add_argument(
-        "--enriquecer-estrellas",
-        dest="enriquecer_estrellas",
+    buscar.add_argument(
+        "--no-estrellas",
         action="store_true",
-        default=True,
-        help="Completa automáticamente el número de estrellas cuando falte.",
+        help="No consultar estrellas vía GraphQL (más rápido, CSV con estrellas vacías si no vienen en la búsqueda).",
     )
-    buscar_enriquecer.add_argument(
-        "--sin-enriquecer-estrellas",
-        dest="enriquecer_estrellas",
-        action="store_false",
-        help="No consultar estrellas adicionales.",
+    avanzado_buscar = buscar.add_argument_group("avanzado", "Afinado de ritmo y reintentos (pocas veces necesario).")
+    avanzado_buscar.add_argument(
+        "--espera",
+        type=float,
+        default=DEFAULT_PAGE_DELAY,
+        help="Segundos de espera entre páginas de la misma consulta a search/code.",
+    )
+    avanzado_buscar.add_argument(
+        "--espera-consultas",
+        type=float,
+        default=DEFAULT_ESPERA_ENTRE_CONSULTAS,
+        help="Segundos entre consultas distintas (fragmentos + gitignore); alivia el límite ~9 req/min de code search.",
+    )
+    avanzado_buscar.add_argument(
+        "--reintentos-rate-limit",
+        type=int,
+        default=DEFAULT_RATE_LIMIT_RETRIES,
+        help="Reintentos cuando GitHub responde rate limit (por solicitud paginada).",
+    )
+    avanzado_buscar.add_argument(
+        "--espera-rate-limit",
+        type=float,
+        default=DEFAULT_RATE_LIMIT_WAIT,
+        help="Segundos de espera antes de cada reintento por rate limit.",
+    )
+    avanzado_buscar.add_argument(
+        "--vista-previa",
+        type=int,
+        default=VISTA_PREVIA_TABLA_DEFAULT,
+        help="Filas máximas en la tabla resumen (solo si no se usa --sin-resumen).",
     )
 
     procesar = subparsers.add_parser(
         "procesar",
-        help="Procesa un archivo JSON/JSONL exportado desde gh search code.",
+        help="Procesa JSON/JSONL exportado desde gh search code.",
+        formatter_class=argparse.ArgumentDefaultsHelpFormatter,
     )
     procesar.add_argument("entrada", help="Archivo JSON o JSONL con resultados de gh.")
     procesar.add_argument(
@@ -99,45 +120,60 @@ def construir_parser() -> argparse.ArgumentParser:
         help="Ruta del CSV a generar.",
     )
     procesar.add_argument(
-        "--vista-previa",
-        type=int,
-        default=10,
-        help="Número de filas a mostrar en la tabla resumen.",
-    )
-    procesar.add_argument(
         "--sin-resumen",
         action="store_true",
         help="No mostrar la tabla resumen en consola.",
     )
-    procesar_enriquecer = procesar.add_mutually_exclusive_group()
-    procesar_enriquecer.add_argument(
-        "--enriquecer-estrellas",
-        dest="enriquecer_estrellas",
+    procesar.add_argument(
+        "--no-estrellas",
         action="store_true",
-        default=True,
-        help="Completa automáticamente el número de estrellas cuando falte.",
+        help="No consultar estrellas vía GraphQL.",
     )
-    procesar_enriquecer.add_argument(
-        "--sin-enriquecer-estrellas",
-        dest="enriquecer_estrellas",
-        action="store_false",
-        help="No consultar estrellas adicionales.",
+    avanzado_proc = procesar.add_argument_group("avanzado")
+    avanzado_proc.add_argument(
+        "--vista-previa",
+        type=int,
+        default=VISTA_PREVIA_TABLA_DEFAULT,
+        help="Filas máximas en la tabla resumen.",
+    )
+
+    mostrar = subparsers.add_parser(
+        "mostrar",
+        help="Muestra todo el contenido de un CSV como tabla Rich en la terminal.",
+        formatter_class=argparse.ArgumentDefaultsHelpFormatter,
+    )
+    mostrar.add_argument("csv", help="Ruta al archivo CSV.")
+    mostrar.add_argument(
+        "--titulo",
+        default=None,
+        help="Título de la tabla (por defecto: nombre del archivo).",
+    )
+    mostrar.add_argument(
+        "--encoding",
+        default="utf-8",
+        help="Codificación del archivo.",
     )
 
     return parser
 
 
 def _ejecutar_buscar(args: argparse.Namespace) -> int:
-    resultado = ejecutar_busqueda_gh(
-        args.consulta,
+    resultado = ejecutar_busqueda_specify_kit(
         limite=args.limite,
         espera_segundos=args.espera,
+        espera_entre_consultas=args.espera_consultas,
         reintentos_rate_limit=args.reintentos_rate_limit,
         espera_rate_limit=args.espera_rate_limit,
     )
+    for linea in resultado.info_metricas:
+        print(f"info: {linea}", file=sys.stderr)
+    print(
+        f"info: repositorios únicos tras deduplicar: {len(resultado.registros)}",
+        file=sys.stderr,
+    )
     if resultado.advertencia:
         print(f"warning: {resultado.advertencia}", file=sys.stderr)
-    if args.enriquecer_estrellas:
+    if not args.no_estrellas:
         enriquecer_estrellas(resultado.registros)
     guardar_csv(resultado.registros, args.salida)
     if not args.sin_resumen:
@@ -147,7 +183,7 @@ def _ejecutar_buscar(args: argparse.Namespace) -> int:
 
 def _ejecutar_procesar(args: argparse.Namespace) -> int:
     registros = cargar_desde_json(args.entrada)
-    if args.enriquecer_estrellas:
+    if not args.no_estrellas:
         enriquecer_estrellas(registros)
     guardar_csv(registros, args.salida)
     if not args.sin_resumen:
@@ -164,6 +200,9 @@ def main(argv: list[str] | None = None) -> int:
             return _ejecutar_buscar(args)
         if args.comando == "procesar":
             return _ejecutar_procesar(args)
+        if args.comando == "mostrar":
+            mostrar_tabla_csv(args.csv, titulo=args.titulo, encoding=args.encoding)
+            return 0
     except Exception as exc:  # pragma: no cover - mensajes de error para CLI
         parser.exit(1, f"error: {exc}\n")
 
