@@ -46,6 +46,19 @@ uv sync
 uv run gh-specify-finder buscar --salida matched_repos/resultados.csv
 ```
 
+### Ejecutarlo por cron a las 11:00
+
+Si quieres ejecutarlo cada día a las **11:00** (hora local del servidor), añade una entrada como esta en `crontab`:
+
+```bash
+0 11 * * * cd /ruta/al/repositorio && uv run gh-specify-finder buscar --salida matched_repos/resultados.csv >> /ruta/al/repositorio/cron.log 2>&1
+```
+
+Notas:
+
+- Si el archivo de salida ya existe dentro de `matched_repos`, la herramienta **no lo sobreescribe**: crea automáticamente otro CSV con sufijo de fecha/hora (por ejemplo `resultados_20260324_110000.csv`).
+- Fuera de `matched_repos`, se mantiene el comportamiento habitual de sobrescritura del CSV de salida.
+
 Sin instalar el script global:
 
 ```bash
