@@ -206,7 +206,12 @@ def _ejecutar_buscar(args: argparse.Namespace) -> int:
         print(f"warning: {resultado.advertencia}", file=sys.stderr)
     if not args.no_estrellas:
         enriquecer_estrellas(resultado.registros)
-    guardar_csv(resultado.registros, args.salida)
+    destino = guardar_csv(resultado.registros, args.salida)
+    if str(destino) != str(args.salida):
+        print(
+            f"info: salida existente detectada en matched_repos; guardado en {destino}",
+            file=sys.stderr,
+        )
     if not args.sin_resumen:
         mostrar_resumen(resultado.registros, limite=args.vista_previa)
     return 0
@@ -216,7 +221,12 @@ def _ejecutar_procesar(args: argparse.Namespace) -> int:
     registros = cargar_desde_json(args.entrada)
     if not args.no_estrellas:
         enriquecer_estrellas(registros)
-    guardar_csv(registros, args.salida)
+    destino = guardar_csv(registros, args.salida)
+    if str(destino) != str(args.salida):
+        print(
+            f"info: salida existente detectada en matched_repos; guardado en {destino}",
+            file=sys.stderr,
+        )
     if not args.sin_resumen:
         mostrar_resumen(registros, limite=args.vista_previa)
     return 0

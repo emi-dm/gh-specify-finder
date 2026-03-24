@@ -10,6 +10,7 @@ La columna ``vias`` resume el criterio inferido por ruta: ``directorio`` (segmen
 
 from __future__ import annotations
 
+from datetime import datetime
 from pathlib import Path
 
 import pandas as pd
@@ -31,6 +32,24 @@ def enlace_github_canonico(nombre_repo: str) -> str:
     return f"https://github.com/{n}"
 
 console = Console()
+
+
+def _resolver_destino_sin_sobrescritura(salida: Path) -> Path:
+    """
+    Evita sobrescribir archivos existentes dentro de ``matched_repos``.
+
+    Si ``salida`` ya existe y está dentro de una ruta que contiene el segmento
+    ``matched_repos``, genera un nombre alternativo con marca temporal.
+    """
+    if "matched_repos" not in salida.parts or not salida.exists():
+        return salida
+    marca = datetime.now().strftime("%Y%m%d_%H%M%S")
+    candidato = salida.with_name(f"{salida.stem}_{marca}{salida.suffix}")
+    indice = 1
+    while candidato.exists():
+        candidato = salida.with_name(f"{salida.stem}_{marca}_{indice}{salida.suffix}")
+        indice += 1
+    return candidato
 
 
 def registros_a_dataframe(registros: list[MatchRecord]) -> pd.DataFrame:
@@ -70,9 +89,10 @@ def guardar_csv(registros: list[MatchRecord], salida: str | Path) -> Path:
     """Escribe el CSV en ``salida`` (crea directorios padre si hace falta)."""
     salida = Path(salida)
     salida.parent.mkdir(parents=True, exist_ok=True)
+    destino = _resolver_destino_sin_sobrescritura(salida)
     df = registros_a_dataframe(registros)
-    df.to_csv(salida, index=False)
-    return salida
+    df.to_csv(destino, index=False)
+    return destino
 
 
 def mostrar_resumen(registros: list[MatchRecord], limite: int = VISTA_PREVIA_TABLA_DEFAULT) -> None:
