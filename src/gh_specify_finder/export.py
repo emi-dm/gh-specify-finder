@@ -39,17 +39,18 @@ def _resolver_destino_sin_sobrescritura(salida: Path) -> Path:
     Evita sobrescribir archivos existentes dentro de ``matched_repos``.
 
     Si ``salida`` ya existe y está dentro de una ruta que contiene el segmento
-    ``matched_repos``, genera un nombre alternativo con marca temporal.
+    ``matched_repos``, genera un nombre alternativo con marca temporal
+    (incluyendo microsegundos) para minimizar colisiones.
     """
     if "matched_repos" not in salida.parts or not salida.exists():
         return salida
     marca = datetime.now().strftime("%Y%m%d_%H%M%S_%f")
     candidato = salida.with_name(f"{salida.stem}_{marca}{salida.suffix}")
-    indice = 1
-    while candidato.exists():
+    for indice in range(1, 101):
+        if not candidato.exists():
+            return candidato
         candidato = salida.with_name(f"{salida.stem}_{marca}_{indice}{salida.suffix}")
-        indice += 1
-    return candidato
+    raise RuntimeError(f"No se pudo generar nombre de salida único para: {salida}")
 
 
 def registros_a_dataframe(registros: list[MatchRecord]) -> pd.DataFrame:
