@@ -43,7 +43,7 @@ def _resolver_destino_sin_sobrescritura(salida: Path) -> Path:
     """
     if "matched_repos" not in salida.parts or not salida.exists():
         return salida
-    marca = datetime.now().strftime("%Y%m%d_%H%M%S")
+    marca = datetime.now().strftime("%Y%m%d_%H%M%S_%f")
     candidato = salida.with_name(f"{salida.stem}_{marca}{salida.suffix}")
     indice = 1
     while candidato.exists():

@@ -6,6 +6,7 @@ from __future__ import annotations
 
 import argparse
 import sys
+from pathlib import Path
 
 from .export import VISTA_PREVIA_TABLA_DEFAULT, guardar_csv, mostrar_resumen, mostrar_tabla_csv
 from .gh_client import (
@@ -207,7 +208,7 @@ def _ejecutar_buscar(args: argparse.Namespace) -> int:
     if not args.no_estrellas:
         enriquecer_estrellas(resultado.registros)
     destino = guardar_csv(resultado.registros, args.salida)
-    if str(destino) != str(args.salida):
+    if destino.resolve() != Path(args.salida).resolve():
         print(
             f"info: salida existente detectada en matched_repos; guardado en {destino}",
             file=sys.stderr,
@@ -222,7 +223,7 @@ def _ejecutar_procesar(args: argparse.Namespace) -> int:
     if not args.no_estrellas:
         enriquecer_estrellas(registros)
     destino = guardar_csv(registros, args.salida)
-    if str(destino) != str(args.salida):
+    if destino.resolve() != Path(args.salida).resolve():
         print(
             f"info: salida existente detectada en matched_repos; guardado en {destino}",
             file=sys.stderr,
