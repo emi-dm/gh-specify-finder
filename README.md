@@ -51,11 +51,14 @@ uv run gh-specify-finder buscar --salida matched_repos/resultados.csv
 Si quieres ejecutarlo cada día a las **11:00** (hora local del servidor), añade una entrada como esta en `crontab`:
 
 ```bash
-0 11 * * * cd /ruta/al/repositorio && uv run gh-specify-finder buscar --salida matched_repos/resultados.csv >> /ruta/al/repositorio/cron.log 2>&1
+0 11 * * * cd /ruta/al/repositorio && uv run gh-specify-finder buscar --salida matched_repos/resultados.csv >> cron.log 2>&1 && git add -A matched_repos && if ! git diff --cached --quiet; then git commit -m "Actualizar resultados Spec Kit en matched_repos" && git push; fi
 ```
 
 Notas:
 
+- El `cd` deja el shell dentro del repositorio, así que el log se escribe como `cron.log` en la raíz del proyecto.
+- Este ejemplo sube automáticamente a GitHub los CSV generados dentro de `matched_repos/`.
+- Para que `git push` funcione, el repositorio debe tener un remoto configurado y credenciales válidas (SSH o token con permiso de escritura).
 - Si el archivo de salida ya existe dentro de `matched_repos`, la herramienta **no lo sobreescribe**: crea automáticamente otro CSV con sufijo de fecha/hora (por ejemplo `resultados_20260324_110000.csv`).
 - Fuera de `matched_repos`, se mantiene el comportamiento habitual de sobrescritura del CSV de salida.
 
