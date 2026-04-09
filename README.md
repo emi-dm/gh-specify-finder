@@ -46,17 +46,17 @@ uv sync
 uv run gh-specify-finder buscar --salida matched_repos/resultados.csv
 ```
 
-### Ejecutarlo por cron a las 11:00
+### Ejecutarlo por cron a las 10:00
 
-Si quieres ejecutarlo cada día a las **11:00** (hora local del servidor), añade una entrada como esta en `crontab`:
+Cron no hereda tu `PATH` de shell, así que evita `uv run` directamente ahí. Usa el helper `scripts/cron_buscar.sh`, que ejecuta el CLI con el Python de `.venv`:
 
 ```bash
-0 11 * * * cd /ruta/al/repositorio && uv run gh-specify-finder buscar --salida matched_repos/resultados.csv >> cron.log 2>&1 && git add -A matched_repos && if ! git diff --cached --quiet; then git commit -m "Actualizar resultados Spec Kit en matched_repos" && git push; fi
+0 10 * * * /ruta/al/repositorio/scripts/cron_buscar.sh >> /ruta/al/repositorio/cron.log 2>&1
 ```
 
 Notas:
 
-- El `cd` deja el shell dentro del repositorio, así que el log se escribe como `cron.log` en la raíz del proyecto.
+- El script cambia al repositorio antes de ejecutar, así que el log sigue quedando en `cron.log` en la raíz del proyecto.
 - Este ejemplo sube automáticamente a GitHub los CSV generados dentro de `matched_repos/`.
 - Para que `git push` funcione, el repositorio debe tener un remoto configurado y credenciales válidas (SSH o token con permiso de escritura).
 - Si el archivo de salida ya existe dentro de `matched_repos`, la herramienta **no lo sobreescribe**: crea automáticamente otro CSV con sufijo de fecha/hora (por ejemplo `resultados_20260324_110000.csv`).
