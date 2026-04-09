@@ -57,7 +57,7 @@ Cron no hereda tu `PATH` de shell, así que evita `uv run` directamente ahí. Us
 Notas:
 
 - El script cambia al repositorio antes de ejecutar, así que el log sigue quedando en `cron.log` en la raíz del proyecto.
-- El helper reutiliza el token de `gh auth login` y lo exporta al proceso; si tu cron no puede leer esa sesión, define `GH_TOKEN` o `GITHUB_TOKEN` en el entorno del cron.
+- El helper primero carga `.env` desde la raíz del repositorio; si no hay token ahí, intenta reutilizar la sesión de `gh auth login`.
 - Este ejemplo sube automáticamente a GitHub los CSV generados dentro de `matched_repos/`.
 - Para que `git push` funcione, el repositorio debe tener un remoto configurado y credenciales válidas (SSH o token con permiso de escritura).
 - Si el archivo de salida ya existe dentro de `matched_repos`, la herramienta **no lo sobreescribe**: crea automáticamente otro CSV con sufijo de fecha/hora (por ejemplo `resultados_20260324_110000.csv`).
