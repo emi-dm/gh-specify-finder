@@ -46,12 +46,12 @@ uv sync
 uv run gh-specify-finder buscar --salida matched_repos/resultados.csv
 ```
 
-### Ejecutarlo por cron a las 10:00
+### Ejecutarlo por cron a las 11:05
 
 Cron no hereda tu `PATH` de shell, así que evita `uv run` directamente ahí. Usa el helper `scripts/cron_buscar.sh`, que ejecuta el CLI con el Python de `.venv`:
 
 ```bash
-0 10 * * * /ruta/al/repositorio/scripts/cron_buscar.sh >> /ruta/al/repositorio/cron.log 2>&1
+5 11 * * * /ruta/al/repositorio/scripts/cron_buscar.sh >> /ruta/al/repositorio/cron.log 2>&1
 ```
 
 Notas:
